@@ -1,0 +1,15 @@
+{
+    "id": 101,
+    "name": " 错误传送",
+    "preId": "pre101",
+    "mapId": "map101",
+    "objId": "obj101",
+    "taskId": "task101",
+    "visionOpen": 0,
+    "limitTime": 8.0,
+    "passCondition": [
+        1
+    ],
+    "courses": "基础移动",
+    "describe": "悟空通过登陆舱来到了一个未知的星球，星球表面残破不堪。/n悟空在编程猫的引导下发现了一些可以提供能源的神秘结晶。/n这些神秘结晶引起了悟空的兴趣，悟空开始收集它们。"
+}

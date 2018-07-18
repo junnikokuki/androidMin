@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="hasContent"
+            type="boolean"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:text="@string/mobile_title"
+            android:textColor="@color/first_text"
+            android:textSize="@dimen/standard_text_size_24dp_t1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="42dp"
+            android:paddingRight="42dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bind_phone" />
+
+            <EditText
+                android:id="@+id/et_intput_mobile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/login_mobile_hint"
+                android:layout_marginLeft="10dp"
+                android:inputType="number" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:onClick="clearMobileNumber"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/ic_archives_clear"
+                android:visibility="@{hasContent ? View.VISIBLE : View.INVISIBLE}" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@color/border"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="42dp"
+            android:paddingRight="42dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bind_validate_code" />
+
+            <EditText
+                android:id="@+id/et_input_code"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:maxLength="4"
+                android:inputType="number"
+                android:hint="@string/login_mobile_obtain" />
+
+            <TextView
+                android:id="@+id/btn_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="vertification"
+                android:gravity="center"
+                android:background="@drawable/selector_vertification_code"
+                android:textColor="@color/vertification_code_color_selector"
+                android:textSize="@dimen/standard_text_size_12dp_t7"
+                android:text="@string/binding_obtain_code"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@color/border"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/SolidBlueBtnStyle"
+            android:layout_width="240dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:onClick="bingMobileNumber"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/next_step" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BtnMobileSmall" width="153" height="92" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgDb" source="mobile_ui_json.btn_small" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="imgLabel" horizontalCenter="0" verticalCenter="0" source="mobile_ui_json.label_edit"/>
+</e:Skin>

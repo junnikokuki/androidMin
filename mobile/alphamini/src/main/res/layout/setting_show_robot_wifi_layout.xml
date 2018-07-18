@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg_color">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ViewStub
+        android:id="@+id/vb_network_simple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tool_bar_height"
+        android:layout="@layout/layout_change_wifi_simple"
+        android:visibility="gone"/>
+
+
+    <ViewStub
+        android:id="@+id/vb_network_no_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tool_bar_height"
+        android:layout="@layout/layout_change_wifi_disconnect"
+        android:visibility="gone"/>
+
+    <ViewStub
+        android:id="@+id/vb_network_mobile_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tool_bar_height"
+        android:layout="@layout/layout_change_wifi_mobile_no_connection"
+        android:visibility="gone"/>
+
+    <ViewStub
+        android:id="@+id/vb_network_connected_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tool_bar_height"
+        android:layout="@layout/layout_change_wifi_connect_failed"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

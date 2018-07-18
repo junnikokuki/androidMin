@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tool_bar_height">48dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="one_px">1px</dimen>
+
+    <dimen name="page_padding">20dp</dimen>
+    <dimen name="action_btn_space">10dp</dimen>
+    <dimen name="back_btn_top_space">30dp</dimen>
+    <dimen name="back_btn_left_space">30dp</dimen>
+    <dimen name="margin_top_26">45dp</dimen>
+    <dimen name="location_btn_top_space">110dp</dimen>
+    <dimen name="top_title_height">120px</dimen>
+    <dimen name="input_wifi_edittext_margin_right">30px</dimen>
+    <dimen name="action_image_height">120px</dimen>
+    <dimen name="text_third_size">30px</dimen>
+    <dimen name="text_second_size">60px</dimen>
+    <dimen name="divider_height">1px</dimen>
+
+
+    <dimen name="action_button_height">36dp</dimen>
+    <dimen name="action_button_text_size">14sp</dimen>
+    <dimen name="action_button_min_width">105dp</dimen>
+    <dimen name="action_button_padding_horizontal">4dp</dimen>
+
+    <dimen name="text_size_46px">23dp</dimen>
+    <dimen name="text_size_32px">16dp</dimen>
+    <dimen name="text_size_30px">15dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_23">23sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="share_state_height">500dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="share_space">20dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="share_btn_height">75dp</dimen>
+    <dimen name="network_load_status_height">200dp</dimen>
+    <dimen name="font_size_mid">14sp</dimen>
+    <dimen name="font_size_big">16sp</dimen>
+    <dimen name="share_user_height">80dp</dimen>
+    <dimen name="item_height">80dp</dimen>
+    <dimen name="tag_height_padding">5dp</dimen>
+    <dimen name="tag_width_padding">10dp</dimen>
+
+    <dimen name="text_top_size">60px</dimen>
+    <dimen name="text_second_big_size">40px</dimen>
+    <dimen name="text_third_large_size">32px</dimen>
+    <dimen name="text_third_size_small">28px</dimen>
+    <dimen name="text_click_size">24px</dimen>
+    <dimen name="text_medium_size">26px</dimen>
+    <dimen name="text_small_size">24px</dimen>
+    <dimen name="text_smaller_size">20px</dimen>
+    <dimen name="btn_bottom_height">80px</dimen>
+    <!--设置界面的menu-->
+    <dimen name="menu_height">88px</dimen>
+    <dimen name="menu_height_padding_top_bottom">26px</dimen>
+    <dimen name="menu_text_margin_top">20px</dimen>
+    <!--日程详情界面-->
+    <dimen name="time_container_height">140px</dimen>
+    <dimen name="time_item_height">88px</dimen>
+    <dimen name="text_drawable_padding">40px</dimen>
+    <dimen name="hint_text_drawable_padding">30px</dimen>
+    <dimen name="hint_text_padding_left_and_right">30px</dimen>
+    <dimen name="hint_text_padding_top_and_bottom">50px</dimen>
+    <dimen name="repeat_item_padding_top_and_bottom">18px</dimen>
+    <dimen name="repeat_dialog_width">720px</dimen>
+    <dimen name="repeat_item_checkbox">40px</dimen>
+    //对话框
+
+    <dimen name="skill_info_margin_top">30px</dimen>
+    <dimen name="skill_header_margin_top">22px</dimen>
+
+    <dimen name="skill_icon_large">60px</dimen>
+    <!--隶属于控件sidebar-->
+    <dimen name="textSize_quicksidebar">10sp</dimen>
+    <dimen name="textSize_quicksidebar_choose">15sp</dimen>
+    <dimen name="textSize_quicksidebartips">20sp</dimen>
+    <dimen name="height_quicksidebartips">45dp</dimen>
+    <dimen name="height_quicksidebaritem">20dp</dimen>
+
+
+    <!--标准字体大小-->
+    <dimen name="standard_text_size_24dp_t1">24dp</dimen>
+    <dimen name="standard_text_size_18dp_t1">18dp</dimen>
+    <dimen name="standard_text_size_16dp_t3">16dp</dimen>
+    <dimen name="standard_text_size_15dp_t4">15dp</dimen>
+    <dimen name="standard_text_size_14dp_t5">14dp</dimen>
+    <dimen name="standard_text_size_13dp_t6">13dp</dimen>
+    <dimen name="standard_text_size_12dp_t7">12dp</dimen>
+    <dimen name="standard_text_size_19dp_t8">19dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="dialog_action_button_height">32dp</dimen>
+    <dimen name="dialog_action_button_text_size">14sp</dimen>
+    <dimen name="dialog_action_button_min_width">56dp</dimen>
+    <dimen name="dialog_action_button_padding_horizontal">4dp</dimen>
+
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_17">17dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_33">33dp</dimen>
+    <dimen name="dimen_34">34dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_42">42dp</dimen>
+    <dimen name="dimen_43">43dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_47">47dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+    <dimen name="dimen_78">78dp</dimen>
+    <dimen name="dimen_84">84dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_105">105dp</dimen>
+    <dimen name="dimen_108">108dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_122">122dp</dimen>
+    <dimen name="dimen_144">144dp</dimen>
+    <dimen name="dimen_162">162dp</dimen>
+    <dimen name="dimen_260">260dp</dimen>
+</resources>

@@ -1,0 +1,203 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//获取产品的名字
+def getProductName() {
+    return "alphamini_v" + rootProject.ext.alphamini.versionName + "${getJenkinsBuild()}"
+
+}
+
+//获取当前系统的时间
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+boolean isInJeknins() {
+    Map<String, String> map = System.getenv()
+    if (map == null) {
+        return false
+    }
+//    printf('env=%s\n',map.toMapString())
+    String str
+    Iterator it = map.iterator();
+    while (it.hasNext()) {
+        str = it.next();
+        if (str.contains("jenkins")) {
+            return true
+        }
+    }
+    return false;
+}
+//获取jenkins build number
+def getJenkinsBuild() {
+    boolean flag = isInJeknins();
+    if (flag) {
+        ext.env = System.getenv()
+        ext.buildNumber = env.get("BUILD_NUMBER");
+        return "#" + "$buildNumber"
+    } else {
+        return ""
+    }
+}
+
+def getAppName() {
+    if ('release' == rootProject.ext.app.serverEnviroment) {
+        return '悟空机器人'
+    }
+    return '悟空测试版'
+}
+
+android {
+    compileSdkVersion rootProject.ext.alphamini.compileSdkVersion
+    buildToolsVersion rootProject.ext.alphamini.buildToolsVersion
+    defaultConfig {
+        applicationId "com.ubtechinc.alpha.mini"
+        minSdkVersion rootProject.ext.alphamini.minSdkVersion
+        targetSdkVersion rootProject.ext.alphamini.targetSdkVersion
+        versionCode rootProject.ext.app.versionCode
+        versionName rootProject.ext.app.versionName
+        //targetSdkVersion不要超过 23 （android 6.0）权限改成了动态申请，在androidManifest.xml中设置无效
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //信鸽默认的配置文件
+        manifestPlaceholders = [
+                XG_ACCESS_ID : "fgfgsfgsfsgf",
+                XG_ACCESS_KEY: "fsfgsgfsgfgsfs",
+                appName      : getAppName()
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'alpha2'
+            keyPassword 'ubtrobot*alpha2'
+            storeFile file('./src/main/key/alpha2')
+            storePassword 'ubtrobot*alpha2'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            //混淆
+            minifyEnabled false
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        //debug版本用release版本的签名，避免单独添加key
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+
+    packagingOptions {
+        exclude 'BeaconVersion.txt'
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds = false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ["libs"]
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs', '../../xingepushlibrary/libs'
+            dirs 'libs', '../tvsloginsupport/libs'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+    }
+
+    applicationVariants.all { variant ->
+        def customVersionName = variant.mergedFlavor.versionName
+        boolean flag = isInJeknins()
+        if (!flag) {
+            def currentBranchName = 'git rev-parse --abbrev-ref HEAD'.execute().text.trim()
+            variant.mergedFlavor.versionName = customVersionName + "_${artifactory_username}"+"_${currentBranchName}"+"_${releaseTime()}"
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(name: 'blelibrary', ext: 'aar')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support'
+    })
+    compile rootProject.ext.deps.multidex
+    compile rootProject.ext.deps.bugly
+    compile rootProject.ext.deps.umeng
+    compile project(':netutils')
+    compile project(':bluetoothlibrary')
+    compile project(':mobile:tvsloginsupport')
+    compile project(':mobile:AvatarClient')
+    compile project(':xingepushlibrary')
+    //noinspection GradleCompatible
+    compile 'com.android.support:design:26.0.0'
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+    compile 'com.android.support:cardview-v7:26.0.0'
+    annotationProcessor 'com.android.support:support-annotations:26.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.orhanobut:logger:2.1.1'
+    compile 'android.arch.lifecycle:runtime:1.0.0-alpha9'
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha9'
+    compile 'com.yanzhenjie:permission:1.1.0'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'android.arch.lifecycle:compiler:1.0.0-alpha9'
+    compile 'com.ubtrobot.communication:communication-mobile:0.0.21-SNAPSHOT'
+    compile 'com.ubtrobot.param.sync:param-sync:0.0.10'
+    compile 'com.ubtrobot.lib.sync:mobile-sync:0.0.11'
+    compile 'jp.wasabeef:glide-transformations:1.3.0'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    compile files('libs/weibosdkcore.jar')
+    compile project(":lancommunicationhelper")
+    compile 'com.qiniu:qiniu-android-sdk:7.2.+'
+    compile 'com.qiniu:qiniu-java-sdk:7.1.+'
+    compile project(':codemaosdk')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:2.0.0'
+
+
+    compile 'com.shuyu:gsyVideoPlayer-java:5.0.1'
+    compile 'com.shuyu:gsyVideoPlayer-armv5:5.0.1'
+    compile 'com.shuyu:gsyVideoPlayer-armv7a:5.0.1'
+    compile 'com.shuyu:gsyVideoPlayer-arm64:5.0.1'
+
+    debugCompile rootProject.ext.deps.leakcanary
+    releaseCompile rootProject.ext.deps.leakcanary_no_op
+
+    compile 'com.github.ronghao:FrameAnimationView:1.0.2'
+
+}

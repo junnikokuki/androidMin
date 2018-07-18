@@ -1,0 +1,17 @@
+{
+    "id": 110,
+    "name": "坚守阵地",
+    "preId": "pre110",
+    "mapId": "map110",
+    "objId": "obj110",
+    "taskId": "task110",
+    "visionOpen": 2,
+    "limitTime": 80.0,
+    "passCondition": [
+        1,
+        2,
+        3
+    ],
+    "courses": "条件判断;if...",
+    "describe": "好消息：在逃跑的过程中我们终于遇到了一名探险者，我们决定合作将那颗从营地中找到的晶石送回总部。/n坏消息：传送器老化严重，必须要有一个人手动操作。"
+}

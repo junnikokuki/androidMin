@@ -1,0 +1,52 @@
+[
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "终于冲出来了，但接下来应该往哪里走！"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "恭喜探险者，你已经在沉默森林的边缘地区了。"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "太，太好了。"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "(・ˍ・*)，但是......"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "但是？？？"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "你没有注意到，你的战友已经被包围了吗？"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "呃......我还真没注意。"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "我这就回去支援他！"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "请你坚持自己的判断和想法，系统正在尽全力分析周边信息。"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "祝你好运    ，(｡・`ω´･)"
+    }
+]

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/upgrade_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_update"/>
+
+    <TextView
+        android:id="@+id/upgrade_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/first_text"
+        android:textSize="15sp"
+        android:layout_below="@id/upgrade_icon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/upgrade_need_update"/>
+
+    <TextView
+        android:id="@+id/upgrade_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_gray"
+        android:layout_below="@id/upgrade_title"
+        android:text="@string/upgrade_new_version"/>
+
+    <FrameLayout
+        android:id="@+id/download_btn_lay"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/download_btn"
+            style="@style/BlueBtnStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/download"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/upgrade_btn"
+            style="@style/BlueBtnStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/upgrade"
+            android:visibility="gone"/>
+        <com.ubtechinc.alpha.mini.widget.ProgressBtn
+            android:id="@+id/download_progress"
+            style="@style/ParentBtnStyle"
+            android:text="@string/downloading_progress"
+            app:progressbtn_radius="4dp"
+            app:progressbtn_backgroud_color="@color/btn_blue"
+            app:progressbtn_backgroud_second_color="@android:color/white"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/upgrade_version"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_above="@id/download_btn_lay">
+
+        <TextView
+            android:id="@+id/upgrade_msg"
+            android:layout_width="290dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            android:lineSpacingExtra="5dp"
+            android:text="1、sdfsfsdfsdaf\n2、fsdfsdfsdf\n2、dsfsfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf\n2、fsdfsdf"/>
+
+    </ScrollView>
+    
+</RelativeLayout>

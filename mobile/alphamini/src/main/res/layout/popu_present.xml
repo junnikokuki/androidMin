@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#3f000000"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_view"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_pop_gift"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_fill"
+        android:layout_alignLeft="@id/iv_fill"
+        android:layout_alignRight="@id/iv_fill"
+        android:background="@drawable/bg_qq_member"
+        android:paddingTop="25dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="25dp"
+        android:textSize="13sp"
+        android:textColor="#5F5F5F"
+        android:text="@string/present_tip" />
+
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_next"
+            android:text="@string/nexttime_receive" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="#FF3B30"
+            android:id="@+id/tv_receive"
+            android:text="@string/receive_now" />
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+// 移动，direction: "up" | "down" | "left" | "right"
+// step 缺省为1，代表移动一步，一步代表地图中的6小格
+hero.moveDirection(direction:string, step:number):Promise
+
+// 寻找最近的敌人，返回敌人id
+hero.findNearestEnemy():number;
+
+// 根据敌人名字攻击
+hero.attack(name:string):Promise;
+// 寻找最近的敌人，根据敌人id攻击
+var enemy = hero.findNearestEnemy();
+hero.attack(id:number):Promise;
+
+// 说话(持续2秒)
+hero.say("hello world!"):Promise;
+
+// 计算英雄与某个对象之间的距离
+var dis = hero.distanceTo(id:number):number;
+
+// 当游戏已经准备好时会调用下面这个函数
+window.onCodeArenaPrepared()
+
+// 加载关卡,lv: 101 ~ 111
+codearena.load(lv)
+
+//加载关卡完成后回调（如果有定义onLevelLoaded的话）
+codearena.onLevelLoaded = function(lv){
+    console.log(lv + ' 加载完成');
+}
+
+// 移除当前场景，退出游戏只需调用该接口，然后隐藏canvas
+codearena.unload() 
+
+// 开始闯关(任务机制生效)
+codearena.gameControl.run();
+// 停止闯关
+codearena.gameControl.run();

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "推走箱子",
+        "describe": "把所有箱子推到小岔路的尽头。",
+        "type": 7,
+        "argument": [
+            2,
+            3
+        ],
+        "state": 1,
+        "completeOperate": 3,
+        "operateTarget": 5,
+        "toggleStatus": "playActive"
+    },
+    {
+        "id": 2,
+        "name": "推箱子1",
+        "describe": "把箱子1推到小岔路的尽头。",
+        "type": 4,
+        "argument": [
+            2,
+            37,
+            5,
+            35
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 3,
+        "name": "推箱子2",
+        "describe": "把箱子2推到小岔路的尽头。",
+        "type": 4,
+        "argument": [
+            3,
+            5,
+            13,
+            35
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 4,
+        "name": "捡起晶石",
+        "describe": "捡起地图里的晶石。",
+        "type": 3,
+        "argument": [
+            4
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 5,
+        "name": "代码限行",
+        "describe": "代码不能超过5行。",
+        "type": 5,
+        "argument": [
+            5
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

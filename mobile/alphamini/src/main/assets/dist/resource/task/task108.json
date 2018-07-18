@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "采集晶石",
+        "describe": "采集地图里的所有晶石。",
+        "type": 3,
+        "argument": [
+            5,
+            6,
+            7
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "玩家存活",
+        "describe": "玩家必须存活。",
+        "type": 1,
+        "argument": [
+            1,
+            0
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 3,
+        "name": "代码限制",
+        "describe": "代码必须在10行内完成。",
+        "type": 5,
+        "argument": [
+            10
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

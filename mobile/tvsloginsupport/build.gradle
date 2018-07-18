@@ -1,0 +1,86 @@
+apply plugin: 'com.android.library'
+
+def getProps() {
+    def Properties props = new Properties()
+    def proFile = file('config/config.properties')
+    if (proFile.canRead()) {
+        props.load(new FileInputStream(proFile))
+    }
+    props
+}
+
+android {
+    compileSdkVersion rootProject.ext.alphamini.compileSdkVersion
+    buildToolsVersion rootProject.ext.alphamini.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.alphamini.minSdkVersion
+        targetSdkVersion rootProject.ext.alphamini.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            def props = getProps()
+            if (props) {
+                def qqOpenAppId = props['qq_open_app_id']
+                def wxAppId = props['wx_app_id']
+                buildConfigField 'String', 'WX_APP_ID', wxAppId
+                buildConfigField 'String', 'QQ_OPEN_APP_ID', qqOpenAppId
+                manifestPlaceholders = [
+                        "qq_open_app_id": qqOpenAppId
+                ]
+                printf('wx_app_id=%s,qq_open_app_id=%s\n', wxAppId, qqOpenAppId)
+            }
+        }
+        release {
+            def props = getProps()
+            if (props) {
+                def qqOpenAppId = props['qq_open_app_id']
+                def wxAppId = props['wx_app_id']
+                buildConfigField 'String', 'WX_APP_ID', wxAppId
+                buildConfigField 'String', 'QQ_OPEN_APP_ID', qqOpenAppId
+                manifestPlaceholders = [
+                        "qq_open_app_id": qqOpenAppId
+                ]
+                printf('wx_app_id=%s,qq_open_app_id=%s\n', wxAppId, qqOpenAppId)
+            }
+        }
+    }
+    repositories {
+
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+/*    provided files('libs/wup-1.0.0-SNAPSHOT.jar')
+    compile files('libs/tvssdk.jar')
+    compile files('libs/qrom_component_log.jar')
+    compile files('libs/qrom_component_wup.jar')
+    compile files('libs/wh_statistics.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5793.jar')
+    compile files('libs/qb_guidutil.jar')*/
+    compile files('libs/wh_statistics.jar')
+    compile (name:'tvsloginlib', ext:'aar')
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+    compile rootProject.ext.deps.appCompatV7
+    testCompile 'junit:junit:4.12'
+}

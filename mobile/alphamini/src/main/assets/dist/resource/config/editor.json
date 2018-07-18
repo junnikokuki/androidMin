@@ -1,0 +1,165 @@
+{
+    "api":{
+        "move_left":{
+            "name": "move_left",
+            "type": "api",
+            "display": "coder.move_left()",
+            "code": "coder.move_left({0})",
+            "args": ["int"],
+            "return": "void",
+            "default":true
+        },
+        "move_right":{
+            "name": "move_right",
+            "type": "api",
+            "display": "coder.move_right()",
+            "code": "coder.move_right({0})",
+            "args": ["int"],
+            "return": "void",
+            "default":true
+        },
+        "move_down":{
+            "name": "move_down",
+            "type": "api",
+            "display": "coder.move_down()",
+            "code": "coder.move_down({0})",
+            "args": ["int"],
+            "return": "void",
+            "default":true
+        },
+        "move_up":{
+            "name": "move_up",
+            "type": "api",
+            "display": "coder.move_up()",
+            "code": "coder.move_up({0})",
+            "args": ["int"],
+            "return": "void",
+            "default":true
+        },
+        "move_xy":{
+            "name": "move_xy",
+            "type": "api",
+            "display": "coder.move_xy(,)",
+            "code": "coder.move_xy({0},{1})",
+            "args": ["int", "int"],
+            "return": "void"
+        },
+        "attack":{
+            "name": "attack",
+            "type": "api",
+            "display": "coder.attack()",
+            "code": "coder.attack({0})",
+            "args": ["object"],
+            "return": "void"
+        },
+        "find_nearest_enemy":{
+            "name": "find_nearest_enemy",
+            "type": "api",
+            "display": "coder.find_nearest_enemy()",
+            "code": "coder.find_nearest_enemy()",
+            "args": [],
+            "return": "int"
+        }
+    },
+    "value":{
+        "True":{
+            "name": "True",
+            "type": "value",
+            "display": "True",
+            "code": "True",
+            "return": "boolean"
+        },
+        "False":{
+            "name": "False",
+            "type": "value",
+            "display": "False",
+            "code": "False",
+            "return": "boolean"
+        }
+    },
+    "opera":{
+        "op":{
+            "name":"op",
+            "type":"opera",
+            "display":"",
+            "code":"{0} {1} {2}",
+            "args":["object","camp","int"]
+        }
+    },
+    "block":{
+        "while":{
+            "name":"while",
+            "type":"block",
+            "display":"while",
+            "code":"while {0}{1}{2}:",
+            "args":["object","camp","number"]
+        },
+        "if":{
+            "name":"if",
+            "type":"block",
+            "display":"if",
+            "code":"if {0}{1}{2}:",
+            "args":["object","camp","number"]
+        },
+        "else":{
+            "name":"else",
+            "type":"block",
+            "display":"else",
+            "code":"else:",
+            "args":[]
+        },
+        "elif":{
+            "name":"elif",
+            "type":"block",
+            "display":"elif",
+            "code":"elif {0}{1}{2}:",
+            "args":["object","camp","number"]
+        },
+        "var":{
+            "name": "var",
+            "type": "block",
+            "code": "{0} = {1}",
+            "args": ["object","api"],
+            "return": "void"
+        }
+    },
+    "entry":{
+        "move":{
+            "name": "移动",
+            "child": [
+                "move_left",
+                "move_right",
+                "move_up",
+                "move_down",
+                "move_xy"
+            ]
+        },
+        "attack":{
+            "name": "攻击",
+            "child": [
+                "attack"
+            ]
+        },
+        "var":{
+            "name": "变量",
+            "child": [
+                "var"
+            ]
+        },
+        "loop":{
+            "name": "循环",
+            "child": [
+                "while"
+            ]
+        },
+        "judge":{
+            "name": "判断",
+            "child": [
+                "if",
+                "elif",
+                "else"
+            ]
+        }
+    }
+    
+}

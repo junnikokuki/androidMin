@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="msg"
+            type="com.ubtechinc.alpha.mini.entity.Message" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/msg_title_txt"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="11sp"
+            android:background="@drawable/shape_grey_rectangle_bg"
+            android:backgroundTint="@color/msg_title_item_bg"
+            android:textColor="@color/white"
+            android:text="@string/temp_date"/>
+    </FrameLayout>
+
+</layout>

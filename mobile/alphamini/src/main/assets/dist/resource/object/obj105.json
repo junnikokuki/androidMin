@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "type": "player",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 4.0,
+            "y": 7.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 2,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 10.0,
+            "y": 19.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 3,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 22.0,
+            "y": 13.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 4,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 40.0,
+            "y": 25.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 5,
+        "type": "npc",
+        "typeId": 102,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 10.0,
+            "y": 16.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 6,
+        "type": "npc",
+        "typeId": 103,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 22.0,
+            "y": 15.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 7,
+        "type": "npc",
+        "typeId": 104,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 37.0,
+            "y": 25.0
+        },
+        "spawnFace": "left",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    }
+]

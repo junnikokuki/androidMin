@@ -1,0 +1,17 @@
+{
+    "id": 109,
+    "name": "符号谜题",
+    "preId": "pre109",
+    "mapId": "map109",
+    "objId": "obj109",
+    "taskId": "task109",
+    "visionOpen": 2,
+    "limitTime": 40.0,
+    "passCondition": [
+        1,
+        2,
+        3
+    ],
+    "courses": "精准移动:坐标; coder.move_xy()",
+    "describe": "路边竟然还有这么大一块无人看守的空地？/n而且，地上奇怪的符号似乎隐藏了什么。/n仔细研究看看吧。"
+}

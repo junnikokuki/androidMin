@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+        <variable
+            name="canEdit"
+            type="boolean" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@android:color/white"
+            android:enabled="@{canEdit ? true : false}"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_conmunication_item_name"
+                android:textColor="@{canEdit ? @color/first_text :@color/text_gray}"
+                android:textSize="@dimen/font_size_big" />
+
+            <com.ubtechinc.alpha.mini.widget.SwitchButton
+                android:id="@+id/switchbtn_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:enabled="@{canEdit ? true : false}"
+                app:kswBackDrawable="@drawable/switch_multi_conver"
+                app:kswThumbDrawable="@drawable/switch_thumb_multi_drawable"
+                app:kswThumbHeight="25dip"
+                app:kswThumbMargin="3dip"
+                app:kswThumbWidth="25dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_conmunication_open_hint"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_conmunication_hint_agreenment"
+                android:textColor="@color/color_communication_privacy"
+                android:textSize="@dimen/standard_text_size_14dp_t5"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/app_conmunication_item_name"
+            android:textColor="@color/first_text"
+            android:textSize="@dimen/standard_text_size_18dp_t1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/app_conmunication_title_content"
+            android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:text="@string/app_conmunication_hint_title"
+            android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/app_conmunication_open"
+            android:textColor="@color/first_text"
+            android:textSize="@dimen/standard_text_size_14dp_t5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/app_conmunication_close"
+            android:textColor="@color/first_text"
+            android:textSize="@dimen/standard_text_size_14dp_t5"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_privacy_setting" />
+    </LinearLayout>
+
+</layout>
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="color_gray">#ABABAB</color>
+    <color name="white">#ffffff</color>
+    <color name="white_95">#f2ffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="alexa_button_press_blue">#00b0ca</color>
+    <color name="alexa_button_normal_blue">#00c1de</color>
+    <!-- theme color start-->
+    <color name="first_text">#000000</color>
+    <color name="status_black">#ff000000</color>
+    <color name="second_text">#ABABAB</color>
+    <color name="border">#E2E2E2</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="alexa_color_main_ten">#f0f0f0</color>
+    <color name="alexa_text_color_black">#282c3b</color>
+    <color name="alexa_red_press">#ff4646</color>
+    <color name="alext_color_timer_line">#d5d8e6</color>
+    <color name="text_color_t3">#FFFFFF</color>
+    <color name="page_bg">@android:color/white</color>
+    <color name="setting_bg">#f2f2f2</color>
+
+    <color name="blue_btn_normal">#3FB4D5</color>
+    <color name="blue_btn_press">#3290AA</color>
+
+
+    <color name="red_btn_normal">#FF3B30</color>
+    <color name="red_btn_press">#CC2F26</color>
+
+    <color name="green_btn_normal">#5CC404</color>
+    <color name="green_btn_press">#499C03</color>
+    <!-- theme color end-->
+
+    <!-- menu start-->
+    <color name="menu_bg">#FAFAFA</color>
+    <color name="menu_border">@color/border</color>
+    <color name="menu_text_normal">#ABABAB</color>
+    <color name="menu_text_activated">#0072FF</color>
+    <!-- menu end-->
+    <color name="popup_bg">#FFFFFF</color>
+    <color name="loading_dialog_bg">#99000000</color>
+    <color name="img_dialog_bg">#66000000</color>
+    <color name="popup_title">#FFFFFF</color>
+    <color name="popup_sub_title">#ABABAB</color>
+    <color name="action_btn_bg">#F8F8F8</color>
+    <color name="online_point">#1BD486</color>
+    <color name="offline_point">#E4E4E4</color>
+    <color name="open_ble">#3FB4D5</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="card_background">#ffffff</color>
+    <color name="window_background">#00000000</color>
+    <color name="main_color">#00c1de</color>
+    <color name="black">#3d3d3d</color>
+    <color name="gray_bg_color">#f5f5f5</color>
+    <color name="text_gray">#A2A2A2</color>
+    <color name="grep">#BEBEBE</color>
+    <color name="activity_bg">#FAFAFA</color>
+
+    <!-- msg start -->
+    <color name="msg_title">@color/black</color>
+    <color name="msg_sub">#A2A2A2</color>
+    <color name="share_tag">#e3e3e3</color>
+    <color name="msg_detail">#3FB4D5</color>
+    <color name="msg_title_item_bg">#CECECE</color>
+    <color name="trans">#00000000</color>
+    <color name="btn_blue">#3FB4D5</color>
+    <color name="btn_blue_p">#089bc4</color>
+    <color name="btn_red">#FE6461</color>
+    <color name="btn_disable">#E2E2E2</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="alexa_text_color_gray">#9ca1b5</color>
+    <color name="toast_blue">#26BEE8</color>
+    <color name="toast_red">#FE6461</color>
+
+    <!-- add 2015-8-18 -->
+    <color name="main_bg_black">#ffffff</color>
+    <!-- add 2015-8-22 -->
+    <color name="main_funciton_bg">#ffffff</color>
+    <color name="red">#2E86EF</color>
+    <color name="top_title_red">#8C94A7</color>
+    <color name="color_setting">#ffffff</color>
+    <!-- 新UI -->
+    <color name="text_gray2">#b7b7b7</color>
+    <color name="edit_hint">#9a9a9a</color>
+    <color name="sex_black">#55595c</color>
+    <color name="black_hint">#9a9aa4</color>
+    <color name="main_page_active_select_bg">#f7f7f8</color>
+    <color name="main_page_active_unselect_bg">#ededed</color>
+    <color name="left_menu_line">#d8d8d8</color>
+    <color name="dialog_bg">#28000000</color>
+    <!-- 根据新的GUI 的新颜色 -->
+    <color name="bg_color_b3">#FFFFFF</color>
+    <color name="bg_color_b4">#EDEDED</color>
+    <color name="bg_color_b5">#F3F3F3</color>
+    <color name="bg_color_b6">#F7F7F8</color>
+    <color name="text_color_t2">#4A4A4A</color>
+    <color name="text_color_t4">#9B9B9B</color>
+    <color name="text_color_t5">#6CA8FF</color>
+    <color name="text_color_t6">#FB5453</color>
+    <color name="text_color_t5_press">#5898E2</color>
+    <!-- alexa UI 颜色 -->
+    <color name="tab_text_color_normal">#9ca1b5</color>
+    <color name="tab_text_color_selected">#4f86f5</color>
+    <color name="alexa_text_color_blue">#317add</color>
+    <color name="alexa_text_color_light_blue">#727a99</color>
+    <color name="alexa_text_color_red">#ff4646</color>
+    <color name="alexa_text_color_light_red">#ffdfef</color>
+    <color name="alexa_color_line">#ebebeb</color>
+    <color name="alexa_btn_disable_gray">#e9ecf4</color>
+    <color name="alexa_divider_color">#e2e5ed</color>
+    <color name="alexa_text_color_green">#7fc854</color>
+    <color name="alexa_edit_focus_line_bg">#4f86f5</color>
+    <color name="alexa_edit_nomal_bg">#dee2e9</color>
+    <color name="alexa_edit_text_color">#727a99</color>
+    <color name="alexa_white_color">#ffffff</color>
+    <color name="alexa_skill_time_line">#eceef5</color>
+    <color name="alexa_text_color_yellow">#ffa921</color>
+    <color name="alexa_input_nomal_color">#eef1f7</color>
+    <color name="alexa_bg_press_color">#f7f7f7</color>
+    <color name="alexa_text_color_black2">#292c3b</color>
+    <color name="alexa_scheduled_hint_text_color">#ff48a1</color>
+    <color name="alexa_scheduled_hint_bg_color">#32ff48a1</color>
+    <color name="alexa_scheduled_divider_color">#EBEBEB</color>
+    <color name="video_player_bg">#E6282C3B</color>
+    <color name="switch_button_white">#FFDDDDDD</color>
+    <color name="video_bg_color">#E5E5E5</color>
+    <color name="login_second_textcolor1">#3F5658</color>
+    <color name="login_normal_color">#1694c3</color>
+    <color name="login_press_color">#16b4d2</color>
+
+
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="black_de">#DE000000</color>
+
+    <color name="main_color_press">#00b0ca</color>
+
+    //新主题颜色值
+    <color name="alexa_color_main_one">#00C1DE</color>
+    <color name="alexa_color_main_two">#000000</color>
+    <color name="alexa_color_main_three">#ff4646</color>
+    <color name="alexa_color_main_four">#7fc854</color>
+    <color name="alexa_color_main_five">#ffa921</color>
+    <color name="alexa_color_main_six">#c651e8</color>
+    <color name="alexa_color_main_seven">#ababab</color>
+    <color name="alexa_color_main_eight">#e0e0e0</color>
+    <color name="alexa_color_main_nine">#d1d1d1</color>
+    <color name="avatar_mode_bg_color">#AA000000</color>
+    <color name="action_name_color">#ABABAB</color>
+    <color name="avatar_model_heng_split_line_color">#E0E0E0</color>
+    <color name="avatar_model_stop_btn_color">#00C1DE</color>
+    <color name="avatar_loading_gray">#E9ECF4</color>
+    <color name="skill_line_red">#FF679C</color>
+    <color name="avatar_powervalue_color">#FF5C91</color>
+    <color name="avatar_powertip_color">#FF5C91</color>
+    <color name="avatar_power_background">#ffffff</color>
+    <color name="dialog_tip_text_color">#111111</color>
+    <color name="line_color">#cdced2</color>
+    <color name="manual_gray">#C9C9C9</color>
+    <color name="main_top_error_net">#FFDADA</color>
+    <color name="album_notifacation">#FE6461</color>
+    <color name="album_notifacation_bg">#4DFE6461</color>
+    <color name="nophoto">#F9F9F9</color>
+    <color name="connect_bg">#F5E2E2</color>
+    <color name="connect_error_bg">#FF3b30</color>
+    <color name="unable_save_bg">#DCDCDC</color>
+    <color name="download_linear">#3FB4D5</color>
+    <color name="robot_offline_color">#F71D1D</color>
+    <color name="robot_normal_color">#A2A2A2</color>
+    <color name="mine_robot_manager">#3FB4D5</color>
+    <color name="mine_robot_share_user">#0BC576</color>
+
+    <color name="color_contacts_choose">#3F51B5</color>
+
+    <color name="color_contacts_yellow">#FAB80F</color>
+    <color name="color_contacts_blue">#0AAECF</color>
+    <color name="color_contacts_green">#83C708</color>
+    <color name="color_contacts_red">#F34D77</color>
+    <color name="color_contacts_purper">#CC64f1</color>
+    <color name="color_contacts_divider_line">#e2e2e2</color>
+    <color name="color_unbind_red">#ff3b30</color>
+    <color name="color_unbind_gray">#6b6b6b</color>
+    
+    <color name="color_delete_solid">#fff6f6</color>
+    <color name="color_delete_border">#ff3b30</color>
+
+    <color name="color_normal_border">#3fb4d5</color>
+    <color name="color_normal_solid">#EBFAFF</color>
+    
+    <color name="color_transparent_40">#66000000</color>
+    
+    <color name="dialog_button_text_black">#000000</color>
+    <color name="dialog_button_text_disable_gray">#c7c7c7</color>
+    <color name="dialog_button_text_hover_gray">#f2f2f2</color>
+    <color name="dialog_button_text_strok_gray">#cbcbcb</color>
+
+
+    <color name="multi_interact_text">#666666</color>
+    <color name="multi_inter_btn_checked">#13e17f</color>
+    <color name="multi_inter_btn_unchecked">#c2c2c2</color>
+
+    <color name="color_car_title_checked">#0BA3ff</color>
+    <color name="color_car_title_default">#666666</color>
+    <color name="color_car_title_police_mode_checked">#14c3fa</color>
+    <color name="color_car_title_police_mode_default">#0486ae</color>
+
+    <color name="color_car_edit_stroke">#adadad</color>
+    <color name="color_car_activity_bg">#f1f1f1</color>
+    <color name="color_car_auth_words_green">#19e5dd</color>
+    <color name="color_car_auth_words_yellow">#ffd33d</color>
+    <color name="color_car_auth_words_pink">#fda785</color>
+    <color name="color_car_auth_words_dark_blue">#84b7fb</color>
+    <color name="color_car_auth_words_light_blue">#4fc7f5</color>
+    <color name="color_car_auth_words_puple">#af8afb</color>
+    <color name="color_car_wave_simple_color">#ff9035</color>
+    <color name="color_car_wave_police_color">#20eafc</color>
+    <color name="color_car_define_words_et_hint_color">#1a6278</color>
+    <color name="color_car_police_mode_line_color">#193343</color>
+
+    <color name="color_communication_privacy">#0ba3ff</color>
+
+    <color name="color_000000">#000000</color>
+    <color name="color_0BA3FF">#0BA3FF</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_C7C7C7">#C7C7C7</color>
+    <color name="color_A2A2A2">#A2A2A2</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_19000000">#E5000000</color>
+
+    <color name="sample_popup_title">#454545</color>
+    <color name="sample_popup_recycler_bg1">@color/toast_blue</color>
+    <color name="sample_popup_recycler_bg2">#E8F8FD</color>
+    <color name="circle_text_unselect_bg1">#80C2CDCE</color>
+    <color name="circle_text_select_bg">@color/toast_blue</color>
+
+</resources>

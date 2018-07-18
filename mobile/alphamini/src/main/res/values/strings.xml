@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">悟空机器人</string>
+    <string name="alpha_mini">我的悟空</string>
+    <string name="wu_kong">悟空</string>
+    <string name="wu_kong_robot">悟空机器人</string>
+
+    <string name="copyright">2018 Ubtech Robotics Corp. All rights reserved.</string>
+    <string name="nice_to_meet_you">很高兴 遇到你</string>
+
+    <string name="robot">机器人</string>
+    <string name="coding">编程探险</string>
+    <string name="me">我</string>
+
+    <string name="birthday">生日</string>
+    <string name="pet_phrase">口头禅</string>
+    <string name="representative_action">代表动作</string>
+    <string name="strategy">攻略</string>
+    <string name="share">共享</string>
+    <string name="robot_share">机器人共享</string>
+    <string name="setting">设置</string>
+    <string name="robot_setting">机器人设置</string>
+
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_tips">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="serial_number">序列号:</string>
+    <string name="bind_mini_please">请绑定机器人</string>
+    <string name="bind_mini_please_content">绑定悟空机器人后可以使用各项技能</string>
+    <string name="robot_connect_fail">机器人连接失败</string>
+    <string name="robot_connecting">机器人正在连接...</string>
+    <string name="robot_connect_success">机器人连接成功</string>
+    <string name="start_binding">开始绑定</string>
+    <string name="retry">重试</string>
+    <string name="avatar_offline">悟空机器人不在线，不能使用视频监控模式哦</string>
+    <string name="avatar_lowpower">悟空电量过低，无法进行视频监控</string>
+
+    <string name="base_skill">基本技能</string>
+    <string name="video_surveillance">视频监控</string>
+    <string name="read_gallery">查看相册</string>
+    <string name="notify">提醒</string>
+    <string name="home_freind">交朋友</string>
+    <string name="gallery">相册</string>
+    <string name="contact">通讯录</string>
+    <string name="has_not_permission">你没有使用%1$s的权限</string>
+    <string name="concat_for_permission">请联系%1$s为你开放权限</string>
+    <string name="permission_open">%1$s已经向你开放了%2$s使用权限</string>
+    <string name="permission_close">%1$s已经关闭了你%2$s的使用权限</string>
+    <string name="already_request_permission">您已经申请过权限，请等待对方同意</string>
+
+    <string name="my_robot">我的机器人</string>
+    <string name="message">消息</string>
+    <string name="qqmusicmember">QQ音乐会员</string>
+    <string name="no_shrea_message">没有共享消息</string>
+    <string name="account_security">账号与安全</string>
+    <string name="accept_time">%s   接受邀请</string>
+    <string name="suggestion">意见反馈</string>
+    <string name="about">关于</string>
+    <string name="robot_show">机器人演示</string>
+
+    <string name="member_des">你购买的QQ音乐会员仅供\n以下机器人使用，请确认：</string>
+    <string name="member_already_receive">QQ音乐会员已被领取！</string>
+    <string name="not_binded">未绑定</string>
+    <string name="zhi">只</string>
+    <string name="system_msg">系统公告</string>
+
+    <string name="loading">加载中</string>
+
+    <string name="wait_a_moment">稍等片刻，马上就好</string>
+    <string name="try_again">服务器秀逗了，点击重试</string>
+    <string name="not_data">暂无内容</string>
+    <string name="not_message">没有公告</string>
+
+    <string name="simple_message_cancel">取消</string>
+    <string name="simple_message_comfire">确认</string>
+
+
+    <string name="error_unknown_error">未知错误</string>
+    <string name="error_message_1">token验证错误</string>
+    <string name="error_message_100">无效的请求头</string>
+    <string name="error_message_101">参数错误</string>
+    <string name="error_message_1001">不能发送重复的邀请</string>
+    <string name="error_message_1002">发送短信失败</string>
+    <string name="error_message_1003">该设备已解绑</string>
+    <string name="error_message_1004">机器人序列号不存在</string>
+    <string name="error_message_1005">不能重复绑定机器人</string>
+    <string name="error_message_1006">该机器人已被其他用户绑定</string>
+    <string name="error_message_1007">不能重复授权</string>
+    <string name="error_message_1008">该机器人不存在或未被关联</string>
+    <string name="error_message_102">该手机已被注册</string>
+    <string name="error_message_104">输入的验证码有误</string>
+    <string name="error_message_105">获取验证码过于频繁</string>
+    <string name="error_message_201">用户名或密码不正确</string>
+    <string name="error_message_2001">用户未注册</string>
+    <string name="error_message_2002">用户不存在</string>
+    <string name="error_message_2003">手机已经绑定其他用户</string>
+    <string name="error_message_2004">邮箱已经绑定其他用户</string>
+    <string name="error_message_3001">该动作不存在</string>
+    <string name="error_message_4001">包含了敏感字符</string>
+    <string name="error_message_4002">不能重复收藏</string>
+    <string name="error_message_500">服务器异常，请稍后再试</string>
+    <string name="error_message_550">业务异常，请稍后再试</string>
+    <string name="error_message_750">非法参数</string>
+    <string name="error_message_751">参数不能为空</string>
+
+    <!--崩溃日志 -->
+    <string name="crash_hint">很抱歉,程序出现异常,即将退出</string>
+
+
+    <!-- temp start -->
+    <string name="unknown">未知</string>
+    <string name="temp_power">未知</string>
+    <string name="temp_date">2017年9月10日</string>
+    <string name="temp_pet_phrase">啊哈哈哈哈哈哈</string>
+    <string name="temp_pet_action">斗鸡眼</string>
+
+    <string name="open_power_tip">请按住电源键3秒\n等待悟空机器人站起来</string>
+    <string name="alpha_mini_stand_up">悟空机器人已站起</string>
+    <string name="next_step">下一步</string>
+    <string name="cancle_share">取消共享</string>
+
+    <string name="permission_message_hint">你没有权限使用%1$s,请联系%2$s开通</string>
+    <string name="share_no_user_hint">共享后，其他用户也能使用悟空</string>
+    <string name="auto_connent_no_response">没反应？手动连接机器人</string>
+    <string name="bluetooth_opened">蓝牙已开启</string>
+    <string name="open_bluetooth">打开蓝牙</string>
+    <string name="allow_location_info">允许悟空机器人获取位置信息</string>
+    <string name="authorized_location_info">已授权悟空机器人获取位置信息</string>
+    <string name="connect_bluetooth_tips">查看条形码下方的序列号后\n从以下列表选择匹配的序列号</string>
+    <string name="bindstart_tips">绑定后，即可与悟空玩耍</string>
+    <string name="bind">去绑定</string>
+    <string name="unbind">解绑</string>
+    <string name="open">打开</string>
+    <string name="unbind_title">请选择一个管理员</string>
+    <string name="unbind_message">若放弃选择，其他用户其他用户将自动解除绑定，无法使用机器人</string>
+    <string name="unbind_opreation">放弃选择，直接解绑</string>
+    <string name="unbind_simple_title">确定解绑机器人吗？</string>
+    <string name="unbind_simple_message">解绑后，你将失去机器人的控制权</string>
+    <string name="unbind_slave_success">已取消%1$s共享权限</string>
+    <string name="searching_bluetooth_dialog_title_norobot">没有感知到悟空机器人</string>
+    <string name="searching_bluetooth_tips">正在搜索附近的悟空机器人...</string>
+    <string name="searching_bluetooth_tips_norobot">没有找到悟空机器人</string>
+    <string name="searching_bluetooth_help_tips">帮助</string>
+    <string name="searching_bluetooth_retry_find_tips">重新搜索</string>
+    <string name="searching_bluetooth_call">拨打客服</string>
+    <string name="searching_bluetooth_help_message">1、请确认机器人电源已打开;</string>
+    <string name="searching_bluetooth_help_message_1">2、请让手机靠近机器人;</string>
+    <string name="searching_bluetooth_help_message_2">3、如果仍然没有反应，请尝试点击页面下方的手动连接机器人。</string>
+    <string name="searching_bluetooth_help_message_3">3、如果仍然没有搜索到悟空机器人，请联系客服：400-6666-700。</string>
+    <string name="request_control_right_hint">你可以向%1$s申请共享悟空机器人</string>
+    <string name="request_send_control_right_tips">发送共享申请</string>
+    <string name="request_sended_control_right_tips">申请发送成功</string>
+    <string name="request_right_title_tips">悟空机器人已被%1$s绑定</string>
+    <string name="router_mainpage">进入首页</string>
+    <string name="ble_location_info">蓝牙与位置信息</string>
+    <string name="open_ble_buletooth_tips">请打开蓝牙开关，并允许悟空机器人获取你的位置信息，以便其进行网络连接</string>
+    <string name="please_close_to_the_alpha_mini">请将手机靠近悟空机器人</string>
+    <string name="no_response">手动连接机器人</string>
+    <string name="more_close">再靠近一点</string>
+    <string name="please_choose_wifi">请选择Wi-Fi</string>
+    <string name="please_input_wifi_pwd">请输入Wi-Fi密码</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="choose_other_wifi">选择其他Wi-Fi</string>
+    <string name="complate">完成</string>
+    <string name="connecting">连网中...</string>
+    <string name="no_find_wifi">没有找到WiFi</string>
+    <string name="album_no_photo">没有照片</string>
+    <string name="album_no_photo_hint_msg">没有新的照片更新</string>
+
+    <string name="common_select_all">全选</string>
+    <string name="surveillance_save">保存</string>
+    <string name="permissions_cellphone_albums_title">相册权限</string>
+    <string name="permissions_cellphone_albums_dialogue">相册权限</string>
+    <string name="permissions_cellphone_bluetooth_title">蓝牙权限</string>
+    <string name="permissions_cellphone_bluetooth_dialogue">蓝牙权限</string>
+    <string name="share_dialog">悟空机器人想要打开%1$s</string>
+    <string name="bluetooth_pairing">蓝牙配对成功</string>
+
+    <string name="network_mobile">正在使用移动网络</string>
+    <string name="network_mobile_message">下载将消耗你的2G/3G/4G流量，确定下载吗？</string>
+    <string name="common_button_settings">设置</string>
+    <string name="common_btn_not_allow">禁止</string>
+    <string name="no_network_toast">没有网络</string>
+    <string name="common_deselect_all">取消全选</string>
+    <string name="album_save">保存照片</string>
+    <string name="delete_pic">删除照片</string>
+    <string name="common_btn_save">保存</string>
+    <string name="common_btn_share">分享</string>
+    <string name="origin_size">原图 (%1$s)</string>
+    <string name="thumb_size">缩略图 (%1$s)</string>
+    <string name="btn_get_origin">查看原图(%1$s)</string>
+    <string name="btn_get_origin_progress">    %1$s％    </string>
+    <string name="confirm">确定</string>
+    <string name="common_btn_cancel">取消</string>
+    <string name="album_delete_all">全部删除</string>
+    <string name="album_delete_one">删除</string>
+    <string name="album_delete_phototips">删除%1$d张照片</string>
+    <string name="album_update">已更新%1$d张照片</string>
+    <string name="album_show_failed">加载失败,点击重试</string>
+
+    <string name="album_dowand_count">正在下载%1$d/%2$d</string>
+    <string name="common_button_delete">删除</string>
+    <string name="error_message_network_error">网络异常</string>
+    <string name="common_btn_allow_access">允许</string>
+    <string name="network_disconnect">网络未连接</string>
+    <string name="network_loadding">加载中……</string>
+    <string name="network_load_fail">加载失败</string>
+    <string name="network_no_robot">没有共享给其他人</string>
+    <string name="network_unavaliable">手机无网络连接</string>
+    <string name="network_unavaliable_album">手机无网络</string>
+    <string name="add_share">＋ 添加共享用户</string>
+    <string name="add_new_alphamini">绑定新悟空机器人</string>
+    <string name="bind_new_alphamini">绑定新悟空机器人</string>
+    <string name="bangding_fialed">绑定失败</string>
+    <string name="robot_wifi_unable_msg">机器人无网络连接，请更换其他Wi-Fi网络</string>
+    <string name="phone_network_error_msg">手机无法连接网络，无法完成绑定</string>
+    <string name="change_wifi">更换WiFi</string>
+    <string name="please_try_again">重试</string>
+    <string name="net_work_error">网络不给力，请稍后重试</string>
+    <string name="i_know">我知道了</string>
+    <string name="send_apply_share_msg">发送共享申请</string>
+    <string name="send_apply_share_success">申请发送成功</string>
+    <string name="bletooth_off_title">手机蓝牙关闭</string>
+    <string name="please_open_ble">请打开蓝牙，完成设置</string>
+    <string name="exit_ble">退出</string>
+    <string name="open_ble">打开蓝牙</string>
+    <string name="connect_timeout">连接超时</string>
+    <string name="setting_robot_disconnect">机器人未连接Wi-Fi</string>
+
+    <string name="setting_multi_interact">多轮语音交互</string>
+    <string name="setting_multi_interact_item_name">多轮交互</string>
+
+    <string name="setting_multi_interact_title_hint">多轮交互体验尚不完善，诚邀广大用户参与试用，助力优化！</string>
+    <string name="setting_multi_interact_title_content">使用过程中，你可以通过触摸机器人额头，结束当前对话。如果想彻底关闭多轮交互，请关闭上述开关。</string>
+    <string name="setting_multi_open_dialog_hint">多轮交互体验尚不完善，仅供试用。</string>
+    <string name="setting_network_suck">网络不给力,请稍后再试</string>
+    <string name="setting_network_error">网络不给力</string>
+
+    <!-- temp end -->
+
+
+    <!-- msg start-->
+    <string name="check_msg_detail">查看详情</string>
+    <string name="expired">已过期</string>
+    <string name="msg_expired">你不是管理员，无法设置相应权限</string>
+    <string name="without_noread_msg">暂无未读消息</string>
+    <string name="noread_msg_count">%1$d条未读</string>
+    <string name="share_to_wechat">共享给微信好友</string>
+    <string name="share_to_qq">共享给QQ好友</string>
+    <string name="share_user_tip">悟空机器人已共享给</string>
+    <string name="choose_share">选择共享好友</string>
+    <string name="common_btn_edit">编辑</string>
+    <string name="albums">相册</string>
+    <string name="album_save_success">已保存到系统相册</string>
+    <string name="album_save_failed">保存失败</string>
+    <string name="album_pull_hint">正在同步悟空的照片...</string>
+    <string name="album_auto_save_title">自动保存</string>
+    <string name="album_auto_save_dialogue">自动保存</string>
+    <string name="share_permission">共享机器人</string>
+    <string name="setting_private_permission">请设置隐私权限</string>
+    <string name="apply_permission_desc">对方默认无法使用视频监控、相册和通讯录功能</string>
+    <string name="setting_private_permission_tip">对象默认无法使用视频监控、相册和通讯录功能</string>
+    <string name="setting_private_permission_descript">对方将拥有以下功能使用权限：</string>
+    <string name="setting_private_permission_descript2">对方将拥有以下功能使用权限：闲聊、动作、舞蹈、音乐、动作、百科、提醒等</string>
+    <string name="setting_private_permission_descript3">对方将拥有以下功能使用权限：</string>
+    <string name="share_status">共享状态</string>
+    <string name="permision_setting">权限设置</string>
+    <string name="update_succes">权限修改成功</string>
+    <string name="update_fail">权限修改失败</string>
+    <string name="title_cancle_share">确定取消共享吗？</string>
+    <string name="cancel_share_tip">取消共享后对方将无法控制机器人</string>
+    <string name="ok">确定</string>
+    <string name="cancle_permission_fail_network">手机无网络连接，无法完成绑定</string>
+    <string name="cancle_permission_fail">解绑失败</string>
+    <string name="cancle_permission_success">解绑成功</string>
+    <string name="wifi_pwd_error">Wi-Fi密码错误</string>
+
+    <string name="add_user_max_count">最多共享给5个用户</string>
+
+    <string name="accept">接受</string>
+    <string name="reject">拒绝</string>
+    <string name="robot_shared">已将机器人共享给对方</string>
+    <string name="robot_shared_to">已接受将机器人共享给%1$s</string>
+    <string name="rejected_shared_to">已拒绝将机器人共享给%1$s</string>
+    <string name="robot_shared_tips">已接受共享机器人</string>
+    <string name="rejected_shared_tips">已拒绝共享机器人</string>
+    <string name="rejected">已拒绝</string>
+    <string name="can_not_use_robot">对方无法使用机器人</string>
+    <string name="can_use_robot">对方可以使用机器人</string>
+    <string name="switching_robot">正在切换机器人</string>
+    <string name="bind_now">快去绑定吧</string>
+    <string name="not_binding_robot">没有绑定悟空机器人</string>
+
+    <string name="share_permissions">对方无法使用%1$s、%2$s、%3$s和%4$s功能</string>
+    <string name="share_permissions_1">对方可以使用%s功能</string>
+    <string name="share_permissions_2">对方无法使用%s功能</string>
+    <string name="share_permissions_3">但不可以使用%s功能</string>
+    <string name="concat">，</string>
+
+    <string name="share_title">%1$s向你共享悟空机器人</string>
+    <string name="share_summary">点击接收共享</string>
+    <string name="share_photo">共享图片</string>
+
+    <string name="request_share_fail">申请共享悟空机器人失败</string>
+    <string name="request_share_success">申请共享悟空机器人成功</string>
+
+    <string name="ble_disconnect">蓝牙连接中断</string>
+    <string name="ble_connect_try_again">请点击重试，重新连接蓝牙</string>
+    <string name="connect_success">连接成功</string>
+    <string name="switch_success">切换成功</string>
+    <string name="switching">切换中</string>
+    <string name="banding_tips">绑定中...</string>
+    <string name="connect_error">连接失败</string>
+    <string name="ble_by_other">其他人正使用悟空进行编程或配网\n请稍后再试</string>
+    <string name="op_fail">操作失败，请稍后重试</string>
+    <string name="op_success">操作成功</string>
+    <string name="not_more">没有更多了</string>
+    <string name="robot_dangan">机器人档案</string>
+
+    <string name="sync_friend_success">同步成功</string>
+    <string name="sync_friend_fail">同步失败</string>
+    <string name="robot_friend_loading">正在同步悟空好友</string>
+    <string name="robot_friend">悟空好友</string>
+
+    <string name="no_find_wifi_message">请检查网络连接</string>
+    <string name="album_no_photo_hint">试试对悟空说</string>
+    <string name="album_no_photo_phrase">“悟空悟空，拍照”</string>
+    <string name="setting_robot_wifi">机器人Wi-Fi设置</string>
+    <string name="cellular_data">蜂窝移动网络</string>
+    <string name="headware_update">固件升级</string>
+    <string name="voice_mutile_interact">语音交互模式</string>
+    <string name="system_update">关于机器人</string>
+    <string name="usb_test">USB调试</string>
+    <string name="serial_number_1">序列号：%1$s</string>
+    <string name="manager_name">管理员：%1$s</string>
+    <string name="read_all_msg">确定将所有消息标为已读？</string>
+
+    <string name="pop_title_hint">你是管理员，请选择</string>
+    <string name="robot_detail_master_unbind_title_hint">你是管理员，请选择</string>
+    <string name="robot_detail_master_unbind_mine_robot">仅解绑自己</string>
+    <string name="robot_detail_master_unbind_all_slaver">解绑所有人</string>
+
+    <string name="robot_detail_slaver_unbind_title">确定解绑吗？</string>
+    <string name="robot_detail_master_unbind_all_slaver_title">确定解绑所有人吗？</string>
+    <string name="robot_detail_master_unbind_all_slaver_message">解绑后，你将失去对机器人摄像头和所存照片的管理权限，请注意你的隐私！</string>
+    <string name="robot_detail_master_unbind_mine_robot_title">确定解绑自己吗？</string>
+    <string name="robot_detail_master_unbind_mine_robot_message">解绑后：\n新管理员将能查看照片、使用视频通话和通讯录，请注意你的隐私！</string>
+
+
+    <string name="robot_detail_toolbar_title">机器人信息</string>
+
+    <string name="robot_detail_choose_master">选择管理员</string>
+
+    <string name="robot_detail_new_master">新管理员是: %1$s</string>
+
+
+    <string name="robot_unbind_grant_master_right_hint">管理员解绑时候，需要移交管理权</string>
+
+
+    <!-- msg end-->
+    <string name="forbidden">你的票据已过期，请重新登录</string>
+    <string name="force_offline">你已经被强制踢出了</string>
+    <string name="agree_shared">%1$s已同意你的共享申请</string>
+    <string name="reject_shared">%1$s已拒绝你的共享申请</string>
+    <string name="wenxin_tips">温馨提示</string>
+    <string name="bangding_tips">正在联网绑定中，你确定退出本次联网绑定吗？</string>
+    <string name="open_location_tips">请到设置悟空机器人应用权限管理中开启定位权限！</string>
+    <string name="contact_customers">联系客服</string>
+    <string name="wifi_invisible">Wi-Fi不可用</string>
+    <string name="share_fail">分享失败，请检查网络</string>
+    <string name="manager">管理员</string>
+    <string name="share_user">共享自%1$s</string>
+    <string name="robot_offline">机器人离线</string>
+    <string name="robot_offline_message">机器人上线后可看到完整照片</string>
+    <string name="notifactionText">悟空离线无法同步照片</string>
+    <string name="notifaction_phone">手机无网络连接，无法同步照片</string>
+    <string name="robot_not_exist">此机器人序列号不存在，无法绑定，请联系客服</string>
+    <string name="robot_has_banding">该机器人已被用户(ubt1510047646071)绑定</string>
+    <string name="can_not_bind">无法绑定</string>
+    <string name="bluetooth_fail">蓝牙发送失败</string>
+
+    <string name="can_not_bind_network_error">网络不给力，解绑失败</string>
+
+    <string name="album_delete_phototips_title">删除机器人本地存储照片</string>
+    <string name="album_save_title">保存%1$d张照片到手机</string>
+    <string name="total_space">总容量</string>
+    <string name="avaible_space">可用容量</string>
+    <string name="main_app_version">主服务版本</string>
+    <string name="system_version">系统版本</string>
+    <string name="serail_number_1">序列号</string>
+    <string name="adb_switcher">调试模式</string>
+    <string name="hardware_version">胸口板版本</string>
+    <string name="battery_capacity">电池容量</string>
+    <string name="operator">运营商</string>
+    <string name="meid">MEID</string>
+    <string name="imei">IMEI</string>
+    <string name="mac">Mac</string>
+    <string name="activation_time">激活时间</string>
+    <string name="today">今天</string>
+    <string name="feedback">问题和意见</string>
+    <string name="invalite_phone">电话号码不正确，请重新输入</string>
+    <string name="contact_information">联系电话（选填）</string>
+    <string name="robot_serial_number">机器人序列号</string>
+    <string name="log_remind">请保证悟空在线,上传日志后,以便我们更好的解决你遇到的问题.</string>
+    <string name="call">客服电话</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_detail">请描述你的问题与意见，至少2个字</string>
+    <string name="connect_detail">请留你的手机</string>
+    <string name="commit">提交</string>
+    <string name="select_robot">选择机器人</string>
+
+    <!--相册start-->
+
+    <string name="albums_edit_title">选择照片</string>
+    <string name="albums_netowrk_error">手机无网络连接，不能同步照片</string>
+    <string name="albums_robot_connect_error">悟空离线，不能同步照片</string>
+    <string name="albums_robot_delete_dialog_title">删除%1$d张照片</string>
+    <string name="albums_delete">删除照片</string>
+
+    <string name="albums_edit_title_choosed">已选择%1$d张照片</string>
+    <string name="albums_download_finish">已完成</string>
+    <string name="albums_progress">    %1$s％   </string>
+    <string name="albums_delete_hint">"删除机器人本地机器人存储照片"</string>
+    <string name="albums_sdcard">开启存储空间权限</string>
+    <string name="albums_save_msg">你还没有开启存储空间权限，开启之后即可存储照片到相册</string>
+    <string name="albums_hint"></string>
+    <!--相册end-->
+
+    <!--setting start-->
+    <string name="setting_choose_action">选择代表动作</string>
+    <string name="setting_recomand_phrase">推荐口头禅</string>
+    <string name="setting_modify_phrase">修改口头禅</string>
+    <string name="setting_multi_interact_network_fail">手机无网络连接，无法设置语音交互模式</string>
+    <string name="setting_multi_interact_im_connect_fail">机器人离线，无法设置语音交互模式</string>
+    <string name="setting_multi_interact_request_fail">网络不给力，无法设置语音交互模式</string>
+    <string name="setting_modify_file_network_error">手机无网络，无法修改档案</string>
+    <string name="setting_limit_hint_phrase">口头禅需在20个字符以内(%d/20)</string>
+    <string name="setting_limit_no_space_phrase">口头禅不能包含空格</string>
+    <string name="setting_limit_language_phrase">口头禅只能包含中英文</string>
+    <string name="setting_phrase_offline_modify_hint">更新的档案将在机器人开机联网后同步生效!</string>
+    <string name="setting_modify_phrase_hint">请使用中英文，20个字以内，不能含有空格和特殊符号</string>
+    <!--setting end-->
+    <string name="tips">提示</string>
+    <string name="wx_not_install">请先安装微信APP</string>
+
+    <string name="bind_tips">请先绑定悟空机器人</string>
+    <string name="bind_message">绑定悟空机器人后可以使用各项技能</string>
+
+    <string name="wx_not_support">你当前使用的微信版本过低，请更新版本</string>
+    <string name="network_disable">网络不可用，请检查手机网络</string>
+    <string name="network_invalid_tip">手机无网络连接，请稍后再试</string>
+    <string name="mobile_connected_error">手机无网络连接</string>
+    <string name="robot_connected_error">机器人离线</string>
+    <string name="commit_sucess">提交成功，感谢你的反馈！</string>
+    <string name="commit_failed">提交失败，请重试！</string>
+    <string name="delete_sucess">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+
+    <string name="gravity_center">center</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_right">right</string>
+    <string name="mini_robot">mini机器人</string>
+    <string name="service">服务协议</string>
+
+    <string name="ubtec">优必选科技有限公司  版权所有</string>
+
+    <string name="switch_tips">点击切换机器人</string>
+    <string name="mine_robot_add_too_much_robot">最多只能绑定25个机器人</string>
+
+    <string name="share_no_user_sub_hint">最多可以共享5位用户</string>
+
+
+    <string name="robot_wifi_curr_name">机器人当前Wi-Fi</string>
+    <string name="change_robot_wifi">切换机器人Wi-Fi</string>
+    <string name="start_setting_robot_wifi">开始设置Wi-Fi</string>
+    <string name="phone_must_connect_network">手机联网后可设置Wi-Fi</string>
+    <string name="no_connect">未连接</string>
+
+    <string name="robot_id">机器人序列号:%1$s</string>
+    <string name="robot_id2">序列号:</string>
+    <string name="robot_count">%1$d只</string>
+
+    <!--人脸识别 end-->
+    <string name="setting_biaoqian">共享自%1$s</string>
+    <string name="setting_file_nettwork_error_hint">手机无网络连接，无法修改档案</string>
+    <string name="copyright_service">2018 Ubtech Robotics Corp. All rights reserved.</string>
+    <string name="connecting_wifi">正在配置网络...</string>
+
+    <string name="getting_robot_wifi">获取中...</string>
+
+    <string name="bind_robot_too_many">你最多只能绑定25个机器人</string>
+
+
+    <!--人脸识别 start-->
+    <string name="face_detect_add_friend">+ 添加新的好友</string>
+    <string name="face_detect_max_message">你最多只能添加100位好友</string>
+    <string name="face_detect_top_title">机器人的好友</string>
+    <string name="face_detect_add_title">悟空想要认识你</string>
+    <string name="face_detect_add_sub_title">点击下方按钮，和悟空成为好朋友吧</string>
+    <string name="face_detecting_title">请看着悟空的眼睛</string>
+    <string name="face_detect_success">悟空认识你啦</string>
+    <string name="face_detect_low_power_hint">悟空电量低，无法录入人脸信息</string>
+
+    <string name="face_detect_modify_name_limit_hint">名字需在20个字符以内(%d/20)</string>
+    <string name="face_detect_modify_name_no_space">名字不能包含空格</string>
+    <string name="face_detect_modify_name_limit_language">请使用中英文</string>
+    <string name="face_detect_modify_hint">请使用中英文，20个字以内，不能含有空格和特殊符号</string>
+    <string name="face_detect_detecting">悟空正在录入其他人的人脸信息，请稍后再试</string>
+    <string name="face_detect_edit">编辑</string>
+
+    <string name="face_detect_mobile_next_time">下次再说</string>
+    <string name="face_detect_mobile_offline_hint">手机无网络连接，无法同步好友信息</string>
+    <string name="face_detect_robot_offline_hint">悟空离线，无法同步好友信息</string>
+    <string name="face_detect_mobile_input_network_error_hint">手机无网络连接，无法进行下一步</string>
+    <string name="face_detect_mobile_input_offline_hint">悟空离线，无法进行下一步</string>
+    <string name="face_detect_mobile_detect_network_error_hint">手机无网络连接</string>
+    <string name="face_detect_mobile_modify_network_error_hint">手机无网络连接,无法修改人脸信息</string>
+    <string name="face_detect_mobile_modify_offline_hint">悟空离线，无法修改信息</string>
+    <string name="face_detect_mobile_detect_offline_hint">悟空不在线，无法录入人脸信息</string>
+    <string name="friend_name_modify_title">请输入你的名字</string>
+    <string name="friend_modify_name">修改名字</string>
+    <string name="friend_modify_avatar">修改头像</string>
+    <string name="friend_info_title">好友信息</string>
+    <string name="friend_name_next_step">下一步</string>
+    <string name="friend_info_avatar">头像</string>
+    <string name="friend_info_name">名字</string>
+    <string name="friend_info_delete_friend">删除好友</string>
+    <string name="friend_info_delete_one_friend">删除后，悟空将无法认出该好友</string>
+    <string name="friend_info_delete_mutil_friends">确定要删除%d个人脸信息吗？</string>
+    <string name="friend_info_detect_error_repete_face">无法重复录入相同的人脸</string>
+    <string name="friend_info_detect_error_detection">未检测到人脸, 请看着悟空的眼睛，不要晃动了</string>
+    <string name="friend_info_detect_error_simple">人脸采集失败</string>
+    <string name="friend_info_detect_add_face_failure">添加失败</string>
+    <string name="friend_info_detect_exit">确定退出人脸识别吗?</string>
+    <string name="devies_connect_by_other">机器人正在被他人绑定，请稍后再试</string>
+    <string name="error_robot_busy">悟空正在做一些厉害的技能呢，一会再试吧</string>
+    <string name="error_robot_busy_book">悟空正在绘本阅读，请稍后再试</string>
+    <string name="error_robot_busy_avatar">悟空正处于监控中，请稍后再试</string>
+    <string name="error_robot_busy_call">悟空正在通话中，请稍后再试</string>
+    <string name="error_robot_timeout">操作超时，请稍后再试</string>
+    <!--人脸识别 end-->
+
+    <!--通讯录 start-->
+    <string name="mini_contacts">通讯录</string>
+    <string name="mini_phone_history">最近通话</string>
+    <string name="mini_contacts_network_error">手机无网络连接，无法同步通讯录</string>
+    <string name="mini_contacts_network_robot_connect_error">悟空离线，无法同步通讯录</string>
+    <string name="mini_contacts_import">导入手机通讯录</string>
+    <string name="mini_contacts_new_contact">新建联系人</string>
+    <string name="mini_contacts_choose_contact">导入手机联系人</string>
+    <string name="mini_contacts_add_selected_contact">导入所选联系人</string>
+    <string name="mini_contacts_robot_number_hint">悟空号码: </string>
+    <string name="mini_contacts_robot_number">未知</string>
+    <string name="mini_contacts_choose_contacts_number_title">已选择%d个联系人</string>
+    <string name="mini_contacts_no_contact">没有联系人</string>
+
+    <string name="mini_contacts_name_tips">请使用中文或数字，10个字以内，不能含有空格和特殊符号</string>
+    <string name="mini_contacts_name_tips_chinese">请使用中文或数字</string>
+    <string name="mini_contacts_name_tips_same">悟空无法语音识别同音联系人</string>
+    <string name="mini_contacts_name_tips_long">名字需在10个字以内(%1$d/10)</string>
+    <string name="mini_contacts_name_tips_empty">名字不能为空</string>
+    <string name="mini_contacts_name_tips_blank">名字不能含有空格或特殊符号</string>
+    <string name="mini_contacts_permission_title">悟空想访问你的通讯录</string>
+    <string name="mini_contacts_permission_content">访问你的通讯录后，才能将你的联系人导入到悟空的通讯录中</string>
+    <string name="mini_contacts_permission_negative">不允许</string>
+    <string name="mini_contacts_permission_positive">好</string>
+    <string name="mini_contacts_name_tips_long2">名字需在10个字以内</string>
+    <string name="mini_contacts_name_tips_same_or_english">悟空无法语音识别同音或英文联系人</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="mini_contacts_edit_contact">编辑联系人</string>
+    <string name="sure_to_delete_contact">确定要删除联系人吗？</string>
+
+    <string name="concat_offline">悟空不在线，不能使用电话功能</string>
+    <string name="concat_no_sim">悟空未安装SIM卡</string>
+    <string name="concat_enter_fail">获取SIM卡状态失败，请稍后重试</string>
+    <string name="concat_privacy_policy">隐私协议</string>
+    <string name="concat_privacy_policy_content">要使用电话功能，悟空需要获取你的联系人信息</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+
+    <string name="import_all_contact">导入所选联系人</string>
+
+    <string name="please_change_concat_name">请修改联系人名称</string>
+
+    <string name="contact_name_error_tips">你有%1$d位联系人的名字%2$s</string>
+    <string name="contact_name_error_tips2">悟空暂时无法识别英文或相同读音的联系人，为了更好的体验，请修改</string>
+    <string name="go_to_modify">去修改</string>
+
+    <string name="mobile_contacts_name_tips_chinese">悟空无法识别同音或英文联系人,请进行修改</string>
+    <string name="mobile_contacts_name_tips_same">悟空无法识别同音或英文联系人,请进行修改</string>
+    <string name="mobile_contacts_name_tips_long">名字需在10个字以内,请进行修改</string>
+    <string name="mobile_contacts_name_tips_blank">名字不能含有空格或特殊符号,请进行修改</string>
+
+    <string name="mobile_contacts_name_permission_hint_title">开启通讯录权限</string>
+    <string name="mobile_contacts_name_permission_hint_message">你还没有开启通讯录权限，开启之后即可导入手机联系人</string>
+    <string name="mobile_contacts_name_permission_position_button">去开启</string>
+    <string name="op_conflict">当前有人正在修改机器人通讯录，请稍后重试</string>
+    <string name="params_error">参数错误，请稍后重试</string>
+
+    <!--通讯录 end-->
+    <string name="call_permission_hint_title">开启打电话权限</string>
+    <string name="call_permission_hint_message">你还没有开启打电话权限，开启之后即可拨打电话</string>
+
+    <!--通话记录 start-->
+    <string name="yesterday">昨天</string>
+
+    <string-array name="weekdays">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+
+    <string name="day_format">yyyy/MM/dd</string>
+    <string name="time_format">HH:mm</string>
+
+    <string name="type_incoming">呼入%1$s</string>
+    <string name="type_call">呼出%1$s</string>
+    <string name="type_missed">未接来电</string>
+    <string name="type_rejected">拒绝来电</string>
+
+    <string name="duration_second">%1$d秒钟</string>
+    <string name="duration_minute">%1$d分钟</string>
+    <string name="duration_hour">%1$d小时%2$d分钟</string>
+
+    <string name="no_call_record">没有通话记录</string>
+    <string name="sync_success">同步完成</string>
+    <string name="sync_fail">同步失败</string>
+
+    <!--通话记录 end-->
+
+    <!-- 蜂窝数据 start-->
+    <string name="close">关闭</string>
+    <string name="cell_data">蜂窝移动数据</string>
+    <string name="cell_roam">数据漫游</string>
+    <string name="not_sim">未安装SIM卡</string>
+    <string name="sure_open_cell_data">确定开启蜂窝移动数据吗</string>
+    <string name="sure_open_cell_data_detail">开启蜂窝移动数据后,悟空机器人将会在没有wifi时使用你的移动流量</string>
+    <string name="sure_open_roam_data">确定开启漫游数据吗</string>
+    <string name="sure_open_roam_data_detail">开启数据漫游可能会产生高额漫游费用</string>
+    <string name="submitting">提交中...</string>
+    <string name="empty"> </string>
+    <!-- 蜂窝数据 end-->
+
+    <!--绑定手机 start-->
+    <string name="mobile_title">请绑定手机号</string>
+    <string name="login_mobile_hint">请输入手机号</string>
+    <string name="login_mobile_tite">请输入手机号码</string>
+    <string name="login_mobile_rigint_toast">请输入正确的手机号码</string>
+    <string name="login_mobile_confirm_hint_code">请输入手机密码</string>
+    <string name="mobile_change_mobile_success">手机更换成功</string>
+
+    <string name="login_mobile_mobile_wrong_hint_exceeds">手机号码不能超过11位</string>
+    <string name="login_mobile_mobile_wrong_hint_inceeds">手机号码不足11位</string>
+
+    <string name="login_mobile_obtain">输入验证码</string>
+    <string name="login_mobile_resend">重新发送</string>
+    <string name="login_mobile_count">重新发送(%1$d)</string>
+    <string name="login_mobile_count_2005">验证码错误</string>
+    <string name="login_mobile_error_code_2021">同一账号一分钟只能发送一次短信</string>
+    <string name="login_mobile_error_code_2024">同一账号一小时内最多只能发送5次短信</string>
+    <string name="login_mobile_error_code_2025">同一帐号24小时内最多只能发送10次短信</string>
+    <string name="login_mobile_count_2026">验证码过期</string>
+    <string name="bind_mobie">绑定手机</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_clear_cacheMessage">确定清除本地缓存</string>
+    <string name="setting_clear_cache_success">已清除本地缓存</string>
+    <string name="setting_clear_cache_failed">清除失败，请重试</string>
+    <string name="binding_obtain_code">获取验证码</string>
+    <string name="binding_input_new_phone_hint">请输入新的手机号</string>
+    <!--绑定手机 end-->
+    <string name="go_to_connect">去连接</string>
+    <string name="still_offline">还是不在线？</string>
+    <string name="still_disconnect">还是连不上？</string>
+    <string name="try_try">试试</string>
+    <string name="switch_wifi">切换Wi-Fi</string>
+
+    <!-- 固件升级 start -->
+    <string name="checking_version">正在检查固件新版本...</string>
+    <string name="robot_offline_summary">悟空上线后可检查固件新版本</string>
+    <string name="mobile_offline_summary">手机连网后可检查固件新版本</string>
+    <string name="upgrade_newest">固件已是最新版本</string>
+    <string name="upgrade_need_update">有新的固件可以升级</string>
+    <string name="upgrade_new_version">新版本：%1$s</string>
+    <string name="upgrade_current_version">当前版本：%1$s</string>
+    <string name="download">下载</string>
+    <string name="downloading_progress">正在下载：%1$s</string>
+    <string name="upgrade">开始升级</string>
+    <string name="download_fail">下载失败</string>
+    <string name="download_finish">固件下载完成</string>
+    <string name="upgrade_fail">更新失败</string>
+    <string name="upgrade_start">悟空开始升级</string>
+    <string name="upgrade_start_tips">升级期间，悟空会重新启动，请勿拔掉电源。升级耗时较长，请耐心等待。</string>
+    <string name="upgrade_fail_no_charging">悟空未连接电源，无法升级</string>
+    <string name="upgrade_fail_low_power">悟空电量小于50%，无法升级</string>
+    <!-- 固件升级 end -->
+
+    <string name="service_agreement">欢迎你使用悟空软件及服务！\n
+                 为使用悟空（以下简称“本软件”）及服务，你应当阅读并遵守《软件许可及服务协议》（以下简称“本协议”），以及《服务协议》、《软件许可及服务协议》等相关协议。请你务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款，以及开通或使用某项服务的单独协议，并选择接受或不接受。限制、免责条款可能以加粗形式提示你注意。\n
+                 除非你已阅读并接受本协议所有条款，否则你无权下载、安装或使用本软件及相关服务。你的下载、安装、使用、获取企业最终用户帐号（以下简称：企业帐号）、登录等行为即视为你已阅读并同意上述协议的约束。\n
+                 如果你未满18周岁，请在法定监护人的陪同下阅读本协议及其他上述协议，并特别注意未成年人使用条款。</string>
+    <string name="receive_continue">继续领取</string>
+    <string name="renew">续费</string>
+    <string name="open_now">马上开通</string>
+    <string name="title_activity_qqmusic">QQMusicActivity</string>
+    <string name="qqmusic_tip">每购买1台悟空，我们将赠送你6个月的QQ音乐会员，一旦领取即归属于你的个人账号。</string>
+    <string name="qqmusic_member_tip">QQ音乐会员6个月</string>
+    <string name="already_receive">已领取</string>
+    <string name="wait_receive">待领取</string>
+    <string name="already_open">已开通</string>
+    <string name="already_outtime">已过期</string>
+    <string name="unopen">未开通</string>
+    <string name="robot_number">序列号：%1$s</string>
+    <string name="qqmusic_status_des_receive_now">QQ音乐会员尚未领取</string>
+    <string name="qqmusic_status_des_receive_continue_now">你的QQ音乐会员将于%1$s到期</string>
+    <string name="qqmusic_status_des_renew">你的QQ音乐会员已到期</string>
+    <string name="qqmusic_status_des_opennow">你的QQ音乐会员尚未开通</string>
+    <string name="qqmusic_status_receive_now">马上领取</string>
+    <string name="qqmusic_status_receive_continue_now">继续领取</string>
+    <string name="qqmusic_status_renew">续费</string>
+    <string name="qqmusic_status_opennow">马上开通</string>
+    <string name="qqmusic_status_tip_present">每购买1台悟空，我们将赠送你6个月的QQ音乐会员，一旦领取即归属于你的个人账号。</string>
+    <string name="qqmusic_status_tip_renew">你的QQ音乐会员已到期，续费后可继续享受最优质的音乐资源！</string>
+    <string name="qqmusic_status_tip_opennow">未开通QQ音乐会员的情况下，悟空音乐功能将有所限制，开通后即可享受最优质的音乐资源！</string>
+    <string name="open_member">自费开通</string>
+    <string name="nexttime_receive">下次再说</string>
+    <string name="receive_now">马上领取</string>
+    <string name="qq_member_title">QQ音乐会员</string>
+    <string name="present_tip">这是一份来自悟空的见面礼，\n为期6个月的QQ音乐VIP会员，\n在会员有效期内，\n悟空将为你提供最优质的音乐盛宴！</string>
+
+    <!--编程猫-->
+    <string name="codemao_bluetooth_disconnect_title">蓝牙已断开</string>
+    <string name="codemao_bluetooth_close">当前蓝牙已关闭，请开启蓝牙！</string>
+    <string name="codemao_bluetooth_disconnect">当前蓝牙已断开，请重试！</string>
+    <string name="codemao_bluetooth_cancel">取消</string>
+    <string name="codemao_bluetooth_sure">确定</string>
+    <string name="codemao_bluetooth_switch">切换</string>
+    <string name="codemao_bind_alpha_mini">绑定机器人</string>
+    <string name="codemao_bind_msg">绑定机器人后才可以使用完整功能</string>
+    <string name="codemao_skip">跳过</string>
+    <string name="codemao_bind_robot">绑定机器人</string>
+    <string name="codemao_make_sure_disconnect_title">确定断开连接吗</string>
+    <string name="codemao_make_sure_disconnect_msg">断开连接后，无法在此机器人上运行程序</string>
+    <string name="codemao_make_sure_disconnect_btn1">断开连接</string>
+    <string name="phone_must_connect_network_codemao">手机联网后可开始编程</string>
+    <string name="network_error_codemao">网络不给力</string>
+    <string name="coding_open_ble_tips">请打开蓝牙开关，并允许悟空机器人获取你的位置信息，以便其进行网络连接</string>
+    <string name="coding_connect_fail">连接失败，请重试！</string>
+    <string name="coding_connect_success">连接机器人成功</string>
+    <string name="coding_sn_tips">机器人系列号位于背包下方</string>
+    <string name="coding_select_run_robot">请选择要运行的机器人</string>
+    <string name="coding_search_tips_norobot">没有找到悟空机器人，请确保机器人在身边且已开机</string>
+    <string name="coding_bluetooth_open_btn">一键开启</string>
+    <string name="coding_bluetooth_open_title">请打开蓝牙开关</string>
+    <string name="coding_bluetooth_open_tips">手机与机器人需要建立蓝牙连接，才能运行程序</string>
+    <string name="coding_remind_bind_title">没有绑定机器人</string>
+    <string name="coding_remind_bind_tips">请先绑定悟空机器人，绑定后才能运行程序</string>
+    <string name="coding_robot_offline_title">机器人离线</string>
+    <string name="coding_robot_offline_tips">请为机器人切换Wi-Fi</string>
+    <string name="coding_disconnect_success">已成功断开机器人连接</string>
+    <string name="coding_switch_robot_title">确定切换机器人吗？</string>
+    <string name="coding_switch_robot_msg">切换后，将在新的机器人上运行程序</string>
+    <string name="coding_exit_codemao_msg">按一下机器人身上的电源键，可退出编程模式</string>
+    <string name="coding_exit_codemao_title">悟空正在执行编程</string>
+    <string name="coding_coming_soon">即将上线，敬请期待！</string>
+    <string name="coding_update">悟空机器人当前版本过低，请升级</string>
+    <string name="call_services">呼叫</string>
+    <string name="call_operation_fail">操作频繁，请稍后再试</string>
+
+    <!-- 祥云坐骑-->
+    <string name="car_title">祥云坐骑</string>
+    <string name="car_authrizon_words">官方台词</string>
+    <string name="car_define_words_bymyself">自定义</string>
+    <string name="car_police_mode">警车模式</string>
+    <string name="car_simple_mode">正常模式</string>
+    <string name="said_to_robot">"请对悟空说: "</string>
+    <string name="drive_car">“开车去浪”</string>
+    <string name="end_robot_to_say">"直到悟空播报 "</string>
+    <string name="enter_drive_car_mode">“进入开车模式，现在把我放在车上吧”</string>
+    <string name="select_connect_car">请选择要连接的祥云坐骑</string>
+    <string name="no_find_car">没找到祥云坐骑</string>
+    <string name="re_detect">重新检测</string>
+    <string name="customer_service_hotline">400-6666-700</string>
+    <string name="detecting">正在检测...</string>
+    <string name="exit">退出</string>
+    <string name="car_null_words_hint">自定义词汇内容不能为空</string>
+    <string name="dont_find_motor">检测不到电机</string>
+    <string name="install_motor">请检查电机是否安装正确</string>
+    <string name="dont_find_IR_sensor">检测不到红外传感器</string>
+    <string name="install_IR_sensor">请检查红外传感器是否安装</string>
+    <string name="dont_IR_sensor_and_motor">检测不到电机和红外传感器</string>
+    <string name="install_IR_sensor_and_motor">请检查电机和红外传感器是否安装正确</string>
+    <string name="see_jimu_video">观看jimu教程</string>
+    <string name="robot_no_response">悟空没反应?</string>
+    <string name="put_robot_on">请将坐骑开关打开,把悟空放在坐骑上</string>
+    <string name="robot_connect_success_noise">连接成功后,悟空会说一声:“Yahoo!”</string>
+    <string name="go_to_buy">马上去买</string>
+    <string name="services_num">400 666 6700</string>
+    <string name="make_call">电话</string>
+    <string name="car_help">帮助</string>
+    <string name="how_to_control_car">如何控制小车?</string>
+    <string name="move_back">前进后退</string>
+    <string name="control_direction">左右转动手机,控制坐骑方向</string>
+    <string name="how_exit_drive">如何退出开车模式</string>
+    <string name="exit_drive">对悟空说:“悟空,悟空,退出开车模式。”或者点击APP上角的返回按钮</string>
+    <string name="see_the_demo">查看动画演示</string>
+    <string name="see_all_cmd">查看全部语音指令</string>
+    <string name="all_voice_cmd">全部语音指令</string>
+    <string name="official_word">在官方台词页面，对机器人说出图标下的文字，悟空就可以说出对应的台词哦</string>
+    <string name="say_to_robot">对悟空说:</string>
+    <string name="control_car">按住前进按扭,左右转动手机,控制坐骑方向</string>
+    <string name="low_power">电量过低</string>
+    <string name="low_power_message">机器人和坐骑电量都太低啦\n请充电后再来开车吧!</string>
+    <string name="robot_low_power">悟空电量过低</string>
+    <string name="robot_low_power_message">机器人的电量低于20%\n请充电后再来开车吧!</string>
+    <string name="car_low_power">坐骑电量过低</string>
+    <string name="car_low_power_message">坐骑已经没电了!\n请充电后再来开车吧!</string>
+    <string name="disconnected_car">蓝牙断开连接</string>
+    <string name="disconnected_message">请将机器人放在小车附近重新进行蓝牙连接</string>
+    <string name="sure">好的</string>
+    <string name="robot_off_line">机器人离线</string>
+    <string name="connect_wifi_for_robot">请为机器人连接wifi</string>
+    <string name="phone_without_internet">手机无网络连接</string>
+    <string name="connect_internet">请将手机连接到机器人所在的wifi</string>
+    <string name="go_to_set">去设置</string>
+    <!-- 祥云坐骑-->
+
+    <!--app 自更新 start-->
+    <string name="app_update_failed">下载失败</string>
+    <string name="app_update_newest">已是最新</string>
+    <string name="app_update_title">检查更新</string>
+    <string name="app_update_time">发布日期</string>
+    <string name="app_update_content">更新内容</string>
+    <string name="app_update_size">更新大小</string>
+    <string name="app_update">立即更新</string>
+    <string name="app_update_downloading">当前正在下载更新包</string>
+    <string name="app_update_hint">版本更新</string>
+    <string name="app_update_message">原有版本已无法使用，请更新至最新版本。</string>
+    <string name="app_update_now_btn">立即更新</string>
+    <string name="app_update_install_now_btn">立即安装</string>
+    <!--app 自更新 end-->
+
+    <string name="publish">发布</string>
+    <string name="list_pictures">展示素材</string>
+    <string name="detail_description">详情描述</string>
+    <string name="work_introduce">作品简介</string>
+    <string name="add_pic_video">请添加图片或视频</string>
+    <string name="max_num">最多8张</string>
+    <string name="publish_work">发布作品</string>
+    <string name="sample_name">作品名称</string>
+    <string name="select_sample_title">最多8张图片或视频</string>
+    <string name="select_pic_max">最多只能选择8个素材</string>
+
+    <string name="dancing">动作广场</string>
+
+    <!--app 主动交流模式 start-->
+    <string name="app_conmunication_item_name">主动交流</string>
+    <string name="app_conmunication_mode">交流模式</string>
+    <string name="app_conmunication_open_hint">开启即代表同意</string>
+    <string name="app_conmunication_hint_agreenment">隐私协议</string>
+    <string name="app_conmunication_title_content">开启后，悟空若感知到有人靠近，可能会打开摄像头进行人脸识别，并主动交流。</string>
+    <string name="app_conmunication_hint_title">你也可以语音控制开启或关闭:</string>
+    <string name="app_conmunication_open">\"悟空悟空，打开主动交流模式\"</string>
+    <string name="app_conmunication_close">\"悟空悟空，关闭主动交流模式\"</string>
+    <string name="app_conmunication_network_fail">手机无网络连接，无法设置语音交互模式</string>
+    <string name="app_conmunication_im_connect_fail">机器人离线，无法设置语音交互模式</string>
+    <string name="app_conmunication_request_fail">网络不给力，无法设置语音交互模式</string>
+    <string name="app_conmunication_sub_title">该功能需要收集并上传图像数据至腾讯叮当，用以以下服务:</string>
+    <string name="app_conmunication_item_face_detect">·人脸检测</string>
+    <string name="app_conmunication_item_face_trace">·人脸追踪</string>
+    <string name="app_conmunication_item_face_recongnize">·人脸识别</string>
+    <string name="app_conmunication_item_detect">我们和腾讯叮当承诺将按照《隐私协议》的许可范围来处理使用该图像数据。</string>
+    <string name="app_conmunication_close_hint">开启后，你仍可以通过遮盖摄像头保护盖来保护隐私。</string>
+    <string name="app_conmunication_no_more">不再提醒</string>
+    <string name="app_conmunication_warm_hint">温馨提示</string>
+    <!--app 主动交流模式 end-->
+
+
+</resources>

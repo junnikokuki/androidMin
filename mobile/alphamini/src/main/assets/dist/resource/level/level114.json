@@ -1,0 +1,16 @@
+{
+    "id": 114,
+    "name": "势如破竹",
+    "preId": "pre114",
+    "mapId": "map114",
+    "objId": "obj114",
+    "taskId": "task114",
+    "visionOpen": 2,
+    "limitTime": 40.0,
+    "passCondition": [
+        1,
+        2
+    ],
+    "courses": "属性:坐标(pos)",
+    "describe": "尽管击溃了大量的敌人，但这并不能让人开心起来。/n终端似乎又恢复了正常，仿佛之前根本没有出现过任何的异常。/n那个声音究竟是怎么回事呢？"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索蓝牙"
+        android:id="@+id/scan_ble_btn"
+        android:visibility="gone"
+        />
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop_scan_btn"
+        android:layout_toRightOf="@+id/scan_ble_btn"
+        android:text="停止搜索"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_disconnect"
+        android:layout_toRightOf="@+id/stop_scan_btn"
+        android:text="断开连接"
+        android:visibility="gone"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入编程页面"
+        android:id="@+id/coding_btn"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_course"
+        android:layout_toRightOf="@+id/coding_btn"
+        android:layout_marginLeft="20dp"
+        android:text="进入课程页"
+        />
+
+    <EditText
+        android:id="@+id/et_code_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入编程页网址"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/coding_btn"
+        />
+
+    <EditText
+        android:id="@+id/et_course_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入课程页网址"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_code_url"
+        />
+    <ListView
+        android:id="@+id/devices_lv"
+        android:layout_below="@+id/et_course_url"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

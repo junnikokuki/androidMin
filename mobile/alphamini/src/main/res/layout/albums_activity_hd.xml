@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.ui.albums.MiniHDAlbumsActivity.EventReponse" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="response"
+            type="EventReponse" />
+
+        <variable
+            name="isZoomMode"
+            type="boolean" />
+
+        <variable
+            name="isShareMode"
+            type="boolean" />
+
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_underline_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fl_simple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{isShareMode ? View.GONE : View.VISIBLE}">
+
+
+            <com.ubtechinc.alpha.mini.widget.HackyViewPager
+                android:id="@+id/galley"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_network_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_default_mobile_without_network"
+                android:text="@string/network_unavaliable_album"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_connect_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_default_robot_offline"
+                android:text="@string/robot_offline"
+                android:textColor="@color/first_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_connect_sub_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_connect_error"
+                android:text="@string/robot_offline_message"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_top_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_height"
+                android:background="@drawable/shape_underline_bg"
+                android:visibility="@{isZoomMode ? View.GONE : View.VISIBLE}">
+
+                <View
+                    android:id="@+id/view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/border" />
+
+                <ImageView
+                    android:id="@+id/toolbar_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/left_text_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/first_text"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/message"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sm_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/about"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/right_text_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:textColor="@color/first_text"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/toolbar_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_messsage_setting" />
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/layout_connect"
+                layout="@layout/layout_connect_error"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/rl_top_title"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_deleteLay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_edit_background"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="@{isZoomMode ? View.GONE : View.VISIBLE}">
+
+
+
+                <ImageView
+                    android:id="@+id/iv_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_photo_save"
+                    android:alpha="0.3"
+                    android:onClick="@{response::saveOrigin2SysAlbums}"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.3"
+                    android:background="@drawable/ic_photo_share"
+                    android:onClick="@{response::shareImage}"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.3"
+                    android:onClick="@{response::deleteImage}"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_photo_delete" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_error_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/input_wifi_edittext_margin_right"
+                    android:gravity="center"
+                    android:text="@string/no_network_toast" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_underline_bg"
+            android:onClick="@{response::dismissShareView}"
+            android:visibility="@{isShareMode ? View.VISIBLE : View.GONE}">
+
+            <RelativeLayout
+                android:id="@+id/tool_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_height"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_btn_share"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="48dp"
+                android:background="@color/border" />
+
+            <com.ubtechinc.alpha.mini.ui.share.ScaleImageView
+                android:id="@+id/img_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="80dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_gravity="bottom"
+                android:background="@color/setting_bg"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/share_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/weixin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share_wechat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="微信"
+                            android:textColor="#A2A2A2"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="朋友圈"
+                            android:textColor="#A2A2A2"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/qq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share_qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="QQ"
+                            android:textColor="#A2A2A2"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_qzone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/qq_zone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share_qqzone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="QQ空间"
+                            android:textColor="#A2A2A2"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_sina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share_weibo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="微博"
+                            android:textColor="#A2A2A2"
+                            android:textSize="24px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="@{response::dismissShareView}"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_home_close" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</layout>

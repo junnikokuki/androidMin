@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/page_lay"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/robot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/robot_flag"
+        android:text="@string/alpha_mini"
+        android:textColor="@color/first_text"
+        android:textSize="26sp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/robot_switch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/robot_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/robot_switch_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/robot_name"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/robot_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/robot_name" />
+
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/power"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingRight="20dp"
+        android:text="@string/temp_power"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/power"
+        android:drawableLeft="@drawable/online_point_shape"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:text="@string/online"
+        app:layout_constraintBottom_toBottomOf="@+id/power"
+        app:layout_constraintLeft_toRightOf="@+id/power"
+        app:layout_constraintTop_toTopOf="@+id/power" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/robot_info_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/robot_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/power"
+        android:layout_marginTop="40dp"
+        android:text="@string/birthday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power" />
+
+    <TextView
+        android:id="@+id/robot_birthday_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/robot_birthday"
+        android:text="@string/temp_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/robot_info_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/robot_birthday" />
+
+
+    <TextView
+        android:id="@+id/robot_pet_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/pet_phrase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_birthday_value" />
+
+    <TextView
+        android:id="@+id/robot_pet_phrase_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_pet_phrase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_pet_phrase" />
+
+
+    <TextView
+        android:id="@+id/robot_representative_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/representative_action"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_pet_phrase_value" />
+
+    <TextView
+        android:id="@+id/robot_representative_action_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_pet_action"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_representative_action" />
+
+    <TextView
+        android:id="@+id/strategy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/action_btn_bg"
+        android:drawableLeft="@drawable/strategy"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/strategy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_representative_action_value" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/strategy_btn"
+        app:layout_constraintLeft_toLeftOf="@+id/robot_info_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power" />
+
+    <TextView
+        android:id="@+id/robot_skill_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/base_skill"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strategy_btn" />
+
+    <GridView
+        android:id="@+id/robot_skills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/robot_skill_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

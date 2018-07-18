@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "玩家存活",
+        "describe": "玩家必须活下来。",
+        "type": 1,
+        "argument": [
+            1,
+            0
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "代码限制",
+        "describe": "代码必须在3行内完成。",
+        "type": 5,
+        "argument": [
+            3
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 3,
+        "name": "坚持10秒",
+        "describe": "玩家需要坚持10秒不会死亡。",
+        "type": 9,
+        "argument": [
+            10
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

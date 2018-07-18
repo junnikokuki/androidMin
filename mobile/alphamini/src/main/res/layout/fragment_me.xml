@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="robotCounts"
+            type="int" />
+
+        <variable
+            name="msgCount"
+            type="int" />
+        <variable
+            name="msgCountString"
+            type="String" />
+
+        <variable
+            name="robotCountString"
+            type="String" />
+
+        <variable
+            name="user"
+            type="com.ubtechinc.alpha.mini.entity.UserInfo" />
+
+        <variable
+            name="giftType"
+            type="com.ubtechinc.alpha.mini.qqmusic.ReceiveStats" />
+
+        <variable
+            name="isMainAccount"
+            type="boolean" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg">
+
+        <ImageView
+            android:id="@+id/me_header_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/me_header_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/me_avatar_bg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/me_header_bg" />
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/unknown"
+            android:textColor="@color/first_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/me_avatar_bg"
+            app:layout_constraintTop_toTopOf="@id/me_avatar_bg"
+            app:layout_constraintRight_toRightOf="@id/me_header_bg"
+            app:layout_constraintBottom_toBottomOf="@id/me_avatar_bg" />
+
+
+        <TextView
+            android:id="@+id/my_robot"
+            style="@style/me_item"
+            android:drawableLeft="@drawable/ic_me_robot"
+            android:text="@string/my_robot"
+            app:layout_constraintTop_toBottomOf="@id/me_header_bg" />
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/me_item"
+            android:drawableLeft="@drawable/ic_me_message"
+            android:text="@string/message"
+            app:layout_constraintTop_toBottomOf="@id/my_robot" />
+
+        <TextView
+            android:id="@+id/qqmusicmember"
+            style="@style/me_item"
+            android:drawableLeft="@drawable/ic_me_music_member"
+            android:text="@string/qqmusicmember"
+            android:visibility="@{isMainAccount ? View.VISIBLE : View.GONE}"
+            app:layout_constraintTop_toBottomOf="@id/message" />
+
+        <TextView
+            android:id="@+id/setting"
+            style="@style/me_item"
+            android:drawableLeft="@drawable/ic_me_setting"
+            android:text="@string/setting"
+            app:layout_constraintTop_toBottomOf="@id/qqmusicmember" />
+
+        <TextView
+            android:id="@+id/feedback"
+            style="@style/me_item"
+            android:drawableLeft="@drawable/ic_me_feedback"
+            android:text="@string/suggestion"
+            app:layout_constraintTop_toBottomOf="@id/setting" />
+
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/me_item"
+            android:drawableLeft="@drawable/ic_me_about"
+            android:text="@string/about"
+            app:layout_constraintTop_toBottomOf="@id/feedback" />
+
+
+
+        <TextView
+            android:id="@+id/robot_show"
+            style="@style/me_item"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/ic_me_robot"
+            android:text="@string/robot_show"
+            app:layout_constraintTop_toBottomOf="@id/feedback" />
+
+
+
+        <TextView
+            android:id="@+id/robot_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:text="@{robotCounts > 0 ? robotCountString: @string/not_binded}"
+            android:textColor="@color/text_gray"
+            app:layout_constraintBottom_toBottomOf="@id/my_robot"
+            app:layout_constraintRight_toRightOf="@id/my_robot"
+            app:layout_constraintTop_toTopOf="@id/my_robot" />
+
+        <TextView
+            android:id="@+id/msg_count"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/shape_msg_count_bg"
+            android:gravity="center"
+            android:text="@{msgCountString}"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/message"
+            app:layout_constraintRight_toRightOf="@id/message"
+            app:layout_constraintTop_toTopOf="@id/message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginRight="45dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/red_point"
+            android:gravity="center"
+            android:text="待领取"
+            android:id="@+id/tv_receive"
+            android:textColor="@color/text_gray"
+            android:visibility="@{isMainAccount ? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="@id/qqmusicmember"
+            app:layout_constraintRight_toRightOf="@id/qqmusicmember"
+            app:layout_constraintTop_toTopOf="@id/qqmusicmember" />
+
+        <TextView
+            android:id="@+id/tv_red_point"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/menu_me"
+            android:layout_toRightOf="@+id/menu_me"
+            android:layout_marginRight="45dp"
+            android:visibility="gone"
+            android:background="@drawable/shape_red_point"
+            app:layout_constraintBottom_toBottomOf="@id/about"
+            app:layout_constraintRight_toRightOf="@id/about"
+            app:layout_constraintTop_toTopOf="@id/about"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

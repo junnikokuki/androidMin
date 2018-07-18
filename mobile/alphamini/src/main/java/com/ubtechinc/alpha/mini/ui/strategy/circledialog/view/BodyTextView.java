@@ -1,0 +1,94 @@
+package com.ubtechinc.alpha.mini.ui.strategy.circledialog.view;
+
+import android.content.Context;
+import android.os.Build;
+
+import com.ubtechinc.alpha.mini.ui.strategy.circledialog.CircleParams;
+import com.ubtechinc.alpha.mini.ui.strategy.circledialog.param.ButtonParams;
+import com.ubtechinc.alpha.mini.ui.strategy.circledialog.param.DialogParams;
+import com.ubtechinc.alpha.mini.ui.strategy.circledialog.param.TextParams;
+import com.ubtechinc.alpha.mini.ui.strategy.circledialog.param.TitleParams;
+import com.ubtechinc.alpha.mini.ui.strategy.circledialog.resource.CircleDrawable;
+
+
+/**
+ * 对话框纯文本视图
+ * Created by hupei on 2017/3/30.
+ */
+final class BodyTextView extends ScaleTextView {
+    private CircleParams mParams;
+
+    public BodyTextView(Context context, CircleParams params) {
+        super(context);
+        this.mParams = params;
+        init(params);
+    }
+
+    private void init(CircleParams params) {
+        DialogParams dialogParams = params.dialogParams;
+        TitleParams titleParams = params.titleParams;
+        TextParams textParams = params.textParams;
+        ButtonParams negativeParams = params.negativeParams;
+        ButtonParams positiveParams = params.positiveParams;
+        ButtonParams neutralParams = params.neutralParams;
+
+        setGravity(textParams.gravity);
+
+        //如果标题没有背景色，则使用默认色
+        int backgroundColor = textParams.backgroundColor != 0
+                ? textParams.backgroundColor : dialogParams.backgroundColor;
+
+        //有标题没按钮则底部圆角
+        if (titleParams != null && negativeParams == null && positiveParams == null
+                && neutralParams == null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                setBackground(new CircleDrawable(backgroundColor, 0, 0, dialogParams.radius,
+                        dialogParams.radius));
+            } else {
+                setBackgroundDrawable(new CircleDrawable(backgroundColor, 0, 0, dialogParams.radius,
+                        dialogParams.radius));
+            }
+        }
+        //没标题有按钮则顶部圆角
+        else if (titleParams == null
+                && (negativeParams != null || positiveParams != null || neutralParams != null)) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                setBackground(new CircleDrawable(backgroundColor, dialogParams.radius, dialogParams
+                        .radius, 0, 0));
+            } else {
+                setBackgroundDrawable(new CircleDrawable(backgroundColor, dialogParams.radius,
+                        dialogParams.radius, 0, 0));
+            }
+        }
+        //没标题没按钮则全部圆角
+        else if (titleParams == null && negativeParams == null && positiveParams == null
+                && neutralParams == null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                setBackground(new CircleDrawable(backgroundColor, dialogParams.radius));
+            } else {
+                setBackgroundDrawable(new CircleDrawable(backgroundColor, dialogParams.radius));
+            }
+        }
+        //有标题有按钮则不用考虑圆角
+        else setBackgroundColor(backgroundColor);
+
+        setHeight(textParams.height);
+        //setMinHeight(textParams.height);
+        setTextColor(textParams.textColor);
+        setTextSize(textParams.textSize);
+        setText(textParams.text);
+
+        int[] padding = textParams.padding;
+        if (padding != null) setAutoPadding(padding[0], padding[1], padding[2], padding[3]);
+    }
+
+    public void refreshText() {
+        if (mParams.textParams == null) return;
+        post(new Runnable() {
+            @Override
+            public void run() {
+                setText(mParams.textParams.text);
+            }
+        });
+    }
+}

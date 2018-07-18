@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <FrameLayout
+            android:id="@+id/surface_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#383f48">
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_error_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#383f48">
+
+            <TextView
+                android:id="@+id/tv_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/standard_text_size_15dp_t4"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_fail"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/avatar_retry_selector"
+                android:textSize="@dimen/standard_text_size_14dp_t5"
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"
+                android:text="@string/retry"/>
+
+
+            <ProgressBar
+                android:id="@+id/loading_view"
+                style="@style/loaddialog_style"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/loading_anim"
+                android:indeterminateOnly="true"
+                android:indeterminateBehavior="repeat"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_top_cancel_white"/>
+
+
+        <LinearLayout
+            android:id="@+id/user_lists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/avatar_lists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <com.ubtechinc.alpha.mini.avatar.widget.AvatarImageView
+                    android:id="@+id/iv_user_one"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"/>
+
+                <com.ubtechinc.alpha.mini.avatar.widget.AvatarImageView
+                    android:id="@+id/iv_user_two"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="-6dp"
+                    android:scaleType="centerCrop"/>
+
+                <com.ubtechinc.alpha.mini.avatar.widget.AvatarImageView
+                    android:id="@+id/iv_user_three"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="-6dp"
+                    android:scaleType="centerCrop"/>
+
+                <com.ubtechinc.alpha.mini.avatar.widget.AvatarImageView
+                    android:id="@+id/iv_user_four"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="-6dp"
+                    android:scaleType="centerCrop"/>
+
+                <com.ubtechinc.alpha.mini.avatar.widget.AvatarImageView
+                    android:id="@+id/iv_user_five"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="-6dp"
+                    android:scaleType="centerCrop"/>
+
+                <com.ubtechinc.alpha.mini.avatar.widget.AvatarImageView
+                    android:id="@+id/iv_user_six"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="-6dp"
+                    android:scaleType="centerCrop"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:text="@string/robot_avatar_user_number"
+                android:textSize="@dimen/standard_text_size_12dp_t7"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/bottom_bar_rl"
+        android:layout_below="@+id/video_container">
+
+        <RelativeLayout
+            android:id="@+id/rl_all_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_action_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/header_row_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/mini_hug"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/avatar_action_name"
+                            android:textSize="@dimen/action_name_size" />
+
+                        <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                            android:id="@+id/iv_progress_one"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_action_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/header_row_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="5dp"
+                            android:textSize="@dimen/action_name_size"
+                            android:drawableTop="@drawable/mini_hug"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/avatar_action_name" />
+
+                        <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                            android:id="@+id/iv_progress_two"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_action_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/header_row_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="5dp"
+                            android:textSize="@dimen/action_name_size"
+                            android:drawableTop="@drawable/mini_hug"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/avatar_action_name" />
+
+                        <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                            android:id="@+id/iv_progress_three"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_action_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/header_row_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="5dp"
+                            android:textSize="@dimen/action_name_size"
+                            android:drawableTop="@drawable/mini_hug"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/avatar_action_name" />
+
+                        <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                            android:id="@+id/iv_progress_four"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_show_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/avatar_bottom_showall_selector" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_action"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/ll_header"
+                android:layout_above="@+id/iv_dissmiss_action"/>
+
+            <ImageView
+                android:id="@+id/iv_dissmiss_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/avatar_bottom_dismiss_all_selector"/>
+
+            <View
+                android:id="@+id/split_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_line"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/control_panel_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/avatar_panel_background"
+            android:layout_below="@id/rl_all_action">
+
+            <com.ubtechinc.alpha.mini.avatar.widget.JoyStickView2
+                android:id="@+id/control_panel"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+
+            <com.ubtechinc.alpha.mini.avatar.widget.HalfJoyStickView
+                android:id="@+id/half_panel"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignTop="@id/control_panel"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/bottom_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/avatar_bottom_bar" />
+
+    <View
+        android:id="@+id/take_photo_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

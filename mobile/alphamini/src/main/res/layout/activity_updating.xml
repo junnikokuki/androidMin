@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_about_icon"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_about_icon"
+            android:textSize="@dimen/standard_text_size_18dp_t1"
+            android:textColor="@color/first_text"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/iv_about_icon"
+            android:textSize="@dimen/standard_text_size_14dp_t5"
+            android:textColor="@color/gray"
+            android:text="@string/app_update_time"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@color/border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/standard_text_size_16dp_t3"
+            android:textColor="@color/alexa_button_normal_blue"
+            android:text="@string/app_update_content"/>
+
+        <TextView
+            android:id="@+id/text_updata_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/standard_text_size_14dp_t5"
+            android:textColor="@color/gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size_16dp_t3"
+            android:textColor="@color/alexa_button_normal_blue"
+            android:text="@string/app_update_size"/>
+
+        <TextView
+            android:id="@+id/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size_14dp_t5"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/tv_update_now"
+        style="@style/BlueBtnStyle"
+        android:layout_height="44dp"
+        android:layout_marginBottom="45dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="update"
+        android:text="@string/app_update" />
+
+</LinearLayout>

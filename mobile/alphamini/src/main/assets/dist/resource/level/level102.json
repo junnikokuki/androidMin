@@ -1,0 +1,15 @@
+{
+    "id": 102,
+    "name": "森林小径",
+    "preId": "pre102",
+    "mapId": "map102",
+    "objId": "obj102",
+    "taskId": "task102",
+    "visionOpen": 0,
+    "limitTime": 30.0,
+    "passCondition": [
+        1
+    ],
+    "courses": "巩固: 基础移动",
+    "describe": "这里有一段被荒废的小路，依稀可以看见人类活动的痕迹，小路上有着不少的信息结晶，是谁把这些珍贵的资源遗弃在了这里？/n顺着这些散落的结晶，看能不能找到其他的人。"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_bind_phone_detail" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_phone"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/standard_text_size_19dp_t8"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/first_text" />
+
+    <TextView
+        android:id="@+id/text_bind_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_phone"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/standard_text_size_12dp_t7"
+        android:layout_marginTop="9dp"
+        android:text="当前绑定手机号" />
+
+    <TextView
+        style="@style/NormalBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:onClick="changeMobile"
+        android:text="更换手机号" />
+
+
+</RelativeLayout>

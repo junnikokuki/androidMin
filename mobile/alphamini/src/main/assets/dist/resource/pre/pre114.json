@@ -1,0 +1,57 @@
+[
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "喂？喂？咳咳，能听到么？"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "当然。"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "你恢复正常了？"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "恢复正常？ (; ´_ゝ`)"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "我不是一直正常的吗？"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "可你刚刚......"
+    },
+    {
+        "modId": 2,
+        "roleName": "源码终端",
+        "dialog": "只是在短时间内吸收了过多的晶石能量导致数据异常了而已。"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "（怎么看都觉得很可疑啊......）"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "（吸收过多晶石能量导致的......）"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "（既然如此，如果我继续为终端进行晶石充能，会不会让之前的情况再次发生呢？）"
+    },
+    {
+        "modId": 1,
+        "roleName": "我",
+        "dialog": "（嘿嘿，嘿嘿嘿...）"
+    }
+]

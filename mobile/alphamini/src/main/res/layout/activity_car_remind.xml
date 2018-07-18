@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.ubtechinc.alpha.mini.ui.car.CarRemindActivity.EventReponse" />
+
+        <variable
+            name="event"
+            type="EventReponse" />
+
+        <variable
+            name="isAuthWordsFragment"
+            type="boolean" />
+
+        <variable
+            name="isPoliceMode"
+            type="boolean"/>
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:background="@{isPoliceMode ? @drawable/bg_car : @drawable/car_simple_model_shape}">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="@{event::exit}"
+            android:padding="10dp"
+            android:src="@{isPoliceMode ? @drawable/ic_back_top_blue : @drawable/ic_back_top}" />
+
+        <ImageView
+            android:id="@+id/iv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_back"
+            android:layout_marginRight="10dp"
+            android:onClick="@{event::askForHelp}"
+            android:padding="10dp"
+            android:src="@{isPoliceMode ? @drawable/ic_top_help_police : @drawable/ic_top_help}" />
+
+        <com.ubtechinc.alpha.mini.widget.CarControlImageView
+            android:id="@+id/iv_move_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_move_backward"
+            android:layout_alignLeft="@+id/iv_move_backward"
+            android:layout_marginBottom="15dp"
+            android:onClick="@{event::forward}"
+            android:scaleType="centerCrop"
+            android:src="@{isPoliceMode?@drawable/ic_car_forward_police : @drawable/ic_car_forward}" />
+
+        <com.ubtechinc.alpha.mini.widget.CarControlImageView
+            android:id="@+id/iv_move_backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:onClick="@{event::backward}"
+            android:scaleType="centerCrop"
+            android:src="@{isPoliceMode ?@drawable/ic_car_backward_police :@drawable/ic_car_backward}" />
+
+
+        <ImageView
+            android:id="@+id/fl_mode_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_help"
+            android:onClick="@{event::modeChange}"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="36dp"
+            android:scaleType="centerCrop"
+            android:src="@{isPoliceMode?@drawable/btn_switch_police : @drawable/btn_switch_normal }" />
+
+
+        <com.ubtechinc.alpha.mini.widget.WaveLayout
+            android:id="@+id/wl_police_ring"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fl_mode_change"
+            android:visibility="@{isPoliceMode ? View.VISIBLE : View.GONE}">
+
+            <com.ubtechinc.alpha.mini.widget.WaveView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{event::policeRinging}"
+                app:centerImgIcon="@drawable/ic_car_police_ring"
+                app:waveColor="@color/color_car_wave_police_color" />
+        </com.ubtechinc.alpha.mini.widget.WaveLayout>
+
+        <com.ubtechinc.alpha.mini.widget.WaveLayout
+            android:id="@+id/wl_simple_mode_ring"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="@{isPoliceMode ? View.GONE : View.VISIBLE}">
+
+            <com.ubtechinc.alpha.mini.widget.WaveView
+                android:id="@+id/wave_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{event::simpleModeRing}"
+                app:centerImgIcon="@drawable/ic_car_horn"
+                app:waveColor="@color/color_car_auth_words_yellow" />
+        </com.ubtechinc.alpha.mini.widget.WaveLayout>
+
+        <com.ubtechinc.alpha.mini.widget.WaveLayout
+            android:id="@+id/wl_police_mode_ring"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="@{isPoliceMode ? View.VISIBLE : View.GONE}">
+
+            <com.ubtechinc.alpha.mini.widget.WaveView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{event::policeModeRing}"
+                app:centerImgIcon="@drawable/ic_car_horn_police"
+                app:waveColor="@color/color_car_wave_police_color" />
+        </com.ubtechinc.alpha.mini.widget.WaveLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fl_mode_change"
+            android:layout_toRightOf="@+id/iv_move_backward"
+            android:background="@{isPoliceMode ? @drawable/bg_car_police :@drawable/car_words_content_shape}"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_words_bar"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:paddingLeft="120dp"
+                android:paddingRight="120dp"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb_authroizes_words"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@drawable/car_title_checked_selector"
+                    android:gravity="center"
+                    android:text="@string/car_authrizon_words"
+                    android:textColor="@color/color_car_title_selector"
+                    android:textSize="@dimen/standard_text_size_15dp_t4"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_own_words"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/car_title_checked_selector"
+                    android:gravity="center"
+                    android:text="@string/car_define_words_bymyself"
+                    android:textColor="@color/color_car_title_selector"
+                    android:textSize="@dimen/standard_text_size_15dp_t4"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@{isPoliceMode ? @color/color_car_police_mode_line_color : @color/left_menu_line}" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_words"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/rl_define_own_words"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:visibility="@{isAuthWordsFragment ? View.GONE : View.VISIBLE}">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@{isPoliceMode ? @color/color_car_police_mode_line_color : @color/left_menu_line}" />
+
+                <EditText
+                    android:id="@+id/et_define_own"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionSend|flagNoFullscreen|flagNoExtractUi"
+                    android:background="@{isPoliceMode? @drawable/car_edit_police_mode_shape:@drawable/car_edit_shape}"
+                    android:hint="@string/car_define_words_bymyself"
+                    android:textColor="@color/first_text"
+                    android:textColorHint="@{isPoliceMode ? @color/color_car_define_words_et_hint_color :  @color/text_gray}"
+                    android:paddingLeft="20dp"
+                    android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>
+

@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/top_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_title">
+
+        <RelativeLayout
+            android:id="@+id/ablum_notifacation_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/back_btn_top_space"
+            android:background="@color/setting_bg"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar_dowanload"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:max="100"
+                android:progressDrawable="@drawable/bar_color" />
+
+            <ImageView
+                android:id="@+id/download_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_photo_download" />
+
+            <TextView
+                android:id="@+id/download_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="@dimen/tag_width_padding"
+                android:layout_toRightOf="@id/download_img"
+                android:text="@string/album_no_photo"
+                android:textColor="@color/alexa_color_main_two"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/ablum_frag_loading"
+        style="@style/loaddialog_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/rounder_loading_shape"
+        android:visibility="visible" />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/surveillance_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@id/top_message">
+
+        <ListView
+            android:id="@+id/sgv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+            android:divider="@color/transparent_background"
+            android:gravity="bottom"
+            android:listSelector="@color/transparent_background"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/nodata_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_message"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/ablum_nophoto_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@color/nophoto">
+
+            <ImageView
+                android:id="@+id/ablum_nophoto_imgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/action_image_height"
+                android:src="@mipmap/img_photo" />
+
+            <TextView
+                android:id="@+id/ablum_nophot_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ablum_nophoto_imgv"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                android:gravity="center"
+                android:text="@string/no_find_wifi"
+                android:textColor="@color/first_text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ablum_nophot_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ablum_nophot_tips"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/no_find_wifi_message"
+                android:textColor="@color/alexa_text_color_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_edit_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/select_all_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:gravity="center"
+            android:background="@drawable/ic_checkbox_uncheck"/>
+        <TextView
+            android:id="@+id/select_or_cancel_all_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12px"
+            android:gravity="center"
+            android:padding="10px"
+            android:layout_toRightOf="@id/select_all_view"
+            android:text="@string/common_select_all"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/save_all_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:gravity="center"
+            android:src="@drawable/ic_photo_save"
+            android:textSize="@dimen/text_second_size" />
+
+        <ImageView
+            android:id="@+id/delete_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_photo_delete" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ablum_notifacation_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_btn_top_space"
+        android:background="@color/connect_bg"
+        android:orientation="horizontal"
+        android:layout_below="@id/top_title"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ablum_notifacation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/tag_width_padding"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/album_notifacation"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/notifaciton_button"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="@dimen/tag_width_padding"
+                android:background="@mipmap/ic_close_tips" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

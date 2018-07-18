@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "收集晶石",
+        "describe": "收集所有的晶石。",
+        "type": 3,
+        "argument": [
+            2,
+            3,
+            4
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

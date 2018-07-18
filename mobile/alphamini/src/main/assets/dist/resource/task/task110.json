@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "消灭敌人",
+        "describe": "消灭追过来的敌人，保护友方。",
+        "type": 2,
+        "argument": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "友方存活",
+        "describe": "友方必须存活。",
+        "type": 1,
+        "argument": [
+            11,
+            0
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 3,
+        "name": "玩家存活",
+        "describe": "玩家必须存活。",
+        "type": 1,
+        "argument": [
+            1,
+            0
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

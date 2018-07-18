@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MissionItem" width="175" height="26" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="failed,success,active" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Label id="text" text="收集所有钻石" size="18" left="10" verticalCenter="0" textColor="0x929292" textColor.failed="0xdb2e2e" textColor.active="0xf7eded" x="10" y="4" scaleX="1" scaleY="1"/>
+		<e:Image id="icon" source="battle_scene_json.icon_success" right="10" verticalCenter="0" source.failed="battle_scene_json.icon_failed" visible.active="false" x="139" y="5" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" paddingLeft="10"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/action_btn_space"
+        android:text="@string/setting_robot_disconnect"
+        android:textColor="@color/first_text"
+        android:textSize="@dimen/standard_text_size_15dp_t4"/>
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:layout_above="@id/text_hint"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_default_nowifi" />
+
+
+    <TextView
+        android:id="@+id/btn_setting_wifi"
+        android:layout_below="@+id/text_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        style="@style/BlueBtnStyle"
+        android:gravity="center"
+        android:text="@string/start_setting_robot_wifi"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+</RelativeLayout>

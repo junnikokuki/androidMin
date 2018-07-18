@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="friendName"
+            type="String"/>
+
+        <variable
+            name="isChecked"
+            type="boolean"/>
+
+        <variable
+            name="isEdit"
+            type="boolean"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/avatar_friend_02" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:visibility="@{isEdit ? View.VISIBLE : View.INVISIBLE}"
+                android:src="@{isChecked ? @drawable/icon_check: @drawable/icon_uncheck}"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/first_text"
+            android:textSize="@dimen/font_size_mid"
+            android:text="@{friendName}" />
+
+
+    </LinearLayout>
+
+</layout>

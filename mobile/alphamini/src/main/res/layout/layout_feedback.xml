@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textview_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="@string/feedback"
+        android:textColor="@color/text_gray" />
+
+    <com.ubtechinc.alpha.mini.widget.MultiEditInputView
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/textview_top"
+        android:paddingLeft="5dp"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/feedback_detail" />
+
+    <TextView
+        android:id="@+id/count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edittext"
+        android:layout_alignRight="@+id/edittext"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/text_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textColor="@color/text_gray"
+        android:text="@string/contact_information" />
+
+    <EditText
+        android:id="@+id/edittext_connect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text_connect"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/text_gray"
+        android:lines="1"
+        android:inputType="phone"
+        android:hint="@string/connect_detail"/>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_serial_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_connect"
+        >
+        <TextView
+            android:id="@+id/text_serial_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textColor="@color/text_gray"
+            android:text="@string/robot_serial_number"
+            />
+
+        <TextView
+            android:id="@+id/text_serial"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/text_serial_num"
+            android:paddingRight="@dimen/standard_text_size_15dp_t4"
+            android:paddingLeft="@dimen/standard_text_size_15dp_t4"
+            android:textColor="@color/color_000000"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/log_remind"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/robot_normal_color"
+            android:layout_below="@+id/text_serial"
+            android:button="@null"
+            android:background="@null"
+            android:drawableLeft="@drawable/upload_log_selector"
+            android:drawablePadding="@dimen/dimen_8"
+            android:checked="false"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commit"
+        android:textAlignment="center"
+        android:layout_below="@+id/rlayout_serial_num"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        style="@style/BlueBtnStyle"
+        android:text="@string/commit" />
+
+    <RelativeLayout
+        android:id="@+id/call_phone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_underline_bg">
+
+        <ImageView
+            android:id="@+id/imagephone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_hotline" />
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/imagephone"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/border"/>
+
+        <TextView
+            android:id="@+id/phone_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/call"
+            android:textSize="12dp"
+            android:textColor="#A2A2A2"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_tips"
+            android:text="400-6666-700"
+            android:textSize="18dp"
+            android:textColor="#ff000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

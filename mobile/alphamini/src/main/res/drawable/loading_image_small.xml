@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_0"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_1"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_2"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_3"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_4"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_5"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_6"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_7"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_8"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_9"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_10"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_11"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_12"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_13"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_14"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_15"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_16"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_17"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_18"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_19"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_20"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_21"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_22"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_23"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_24"
+            android:gravity="left">
+        </clip>
+    </item>
+    <item android:duration="60">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/loading_small_25"
+            android:gravity="left">
+        </clip>
+    </item>
+    <!--<item android:drawable="@drawable/loading_small_1"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_2"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_3"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_4"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_5"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_6"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_7"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_8"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_9"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_10"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_11"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_12"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_13"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_14"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_15"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_16"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_17"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_18"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_19"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_20"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_21"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_22"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_23"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_24"
+        android:duration="60"/>
+    <item android:drawable="@drawable/loading_small_25"
+        android:duration="60"/>-->
+</animation-list>

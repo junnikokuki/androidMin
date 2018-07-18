@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        style="@style/BackButtonStyle"
+        />
+    <TextView
+        android:id="@+id/choose_wifi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="@string/please_choose_wifi"
+        android:textColor="@color/first_text"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/choose_wifi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ubtechinc.alpha.mini.widget.CustomSmallProgressBar
+            style="@style/progress_small"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/loading_pb"
+            android:layout_centerHorizontal="true"
+            android:indeterminateBehavior="repeat"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loading_pb"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:divider="@color/line_color"
+            android:dividerHeight="1px"
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/wifi_lv"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/choose_wifi_tv"
+        android:id="@+id/search_wifi_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_default_nowifi" />
+
+        <TextView
+            android:id="@+id/cannot_find_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/first_text"
+            android:text="@string/no_find_wifi"
+            android:textSize="@dimen/text_size_30px" />
+
+        <TextView
+            android:id="@+id/open_bluetooth"
+            style="@style/BlueBtnStyle"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/searching_bluetooth_retry_find_tips"/>
+
+    </LinearLayout>
+</RelativeLayout>

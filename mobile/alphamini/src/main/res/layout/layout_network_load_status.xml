@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ViewStub
+        android:id="@+id/vs_network_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/network_load_status_height"
+        android:layout="@layout/layout_no_network"/>
+
+    <ViewStub
+        android:id="@+id/vs_network_loading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/network_load_status_height"
+        android:layout="@layout/layout_loadding"/>
+
+    <ViewStub
+        android:id="@+id/vs_network_load_fail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/network_load_status_height"
+        android:layout="@layout/layout_load_fail"/>
+</FrameLayout>

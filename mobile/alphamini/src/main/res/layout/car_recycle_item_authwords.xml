@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/ll_auth_words_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_auth_words_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:minHeight="64dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/emotion_car_liao" />
+
+            <TextView
+                android:id="@+id/tv_say_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:layout_toLeftOf="@+id/pb_play_words"
+                android:textColor="@color/white"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:id="@+id/tv_content_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_say_words"
+                android:layout_below="@+id/tv_say_words"
+                android:layout_toLeftOf="@+id/pb_play_words"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/dimen_14"
+                android:textSize="@dimen/standard_text_size_12dp_t7" />
+
+            <com.ubtechinc.alpha.mini.widget.PlayerButton
+                android:id="@+id/pb_play_words"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+            </com.ubtechinc.alpha.mini.widget.PlayerButton>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

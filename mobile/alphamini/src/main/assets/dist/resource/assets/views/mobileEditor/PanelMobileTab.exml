@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PanelMobileTab" width="710" height="289" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="mobile_ui_json.common_frameS" horizontalCenter="0" verticalCenter="0"/>
+	<e:Button id="btnClose" label="" x="598" y="15">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="mobile_ui_json.btn_close2S" source.down="按下状态资源名mobile_ui_json.btn_close2S"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lbTitle" text="缩进" y="28" horizontalCenter="0" bold="true" textColor="0xA8E7C2"/>
+	<e:Button id="btnLeft" label="Button" skinName="BtnMobileLeft" left="92" bottom="41"/>
+	<e:Button id="btnRight" label="Button" skinName="BtnMobileRight" bottom="41" right="92"/>
+</e:Skin>

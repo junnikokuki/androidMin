@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_share"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ubtechinc.alpha.mini.ui.share.ShareActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/share_space" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/gray_bg_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/share_btn_height"
+        android:id="@+id/share_wechat"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:onClick="onShareWechat"
+        android:textColor="@color/first_text"
+        android:text="@string/share_to_wechat"
+        android:paddingLeft="20dp"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/ic_share_list_wechat"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="30dp"
+        android:background="@color/gray_bg_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/share_btn_height"
+        android:id="@+id/share_qq"
+        android:paddingLeft="20dp"
+        android:background="@android:color/white"
+        android:text="@string/share_to_qq"
+        android:gravity="center_vertical"
+        android:textColor="@color/first_text"
+        android:onClick="onShareQQ"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/ic_share_list_qq"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/gray_bg_color"/>
+</LinearLayout>

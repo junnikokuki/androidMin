@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "消灭敌人",
+        "describe": "消灭碰到的敌人",
+        "type": 2,
+        "argument": [
+            3
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "收集晶石",
+        "describe": "收集足够的晶石",
+        "type": 3,
+        "argument": [
+            2,
+            4,
+            5
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

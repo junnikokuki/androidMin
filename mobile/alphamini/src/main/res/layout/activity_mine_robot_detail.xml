@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.ubtechinc.alpha.mini.ui.MineRobotDetailInfoActivity.ClickEvent" />
+
+        <variable
+            name="event"
+            type="ClickEvent" />
+
+        <variable
+            name="isShowingUnbindView"
+            type="boolean" />
+
+        <variable
+            name="status"
+            type="String" />
+
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="27dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/text_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wu_kong"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_24dp_t1" />
+
+
+            <ImageView
+                android:id="@+id/robot_state_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_app_name"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/robot_status_level" />
+
+            <TextView
+                android:id="@+id/text_robot_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/robot_state_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/robot_state_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@{status ?? @string/unknown}" />
+
+            <TextView
+                android:id="@+id/text_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/robot_state_icon"
+                android:layout_marginTop="10dp"
+                android:text="@string/serial_number_1"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:id="@+id/text_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_serial"
+                android:layout_marginTop="10dp"
+                android:text="@string/manager_name"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/img_item_robot" />
+
+
+            <Button
+                android:id="@+id/button_unbind"
+                style="@style/DeleteBtnStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp"
+                android:onClick="@{event::showBottomUnbindView}"
+                android:text="@string/unbind"
+                android:visibility="@{isShowingUnbindView ? View.GONE : View.VISIBLE}" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

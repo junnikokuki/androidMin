@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_wheel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:background="@color/color_F2F2F2"
+        >
+        <TextView
+            android:id="@+id/text_wheel_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_btn_cancel"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_3FB4D5"
+            android:layout_marginLeft="@dimen/dimen_15"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/select_robot"
+            android:textColor="@color/color_000000"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/text_wheel_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_3FB4D5"
+            android:layout_marginRight="@dimen/dimen_15"
+            />
+    </RelativeLayout>
+
+    <com.ubtechinc.alpha.mini.widget.WheelDialog.LoopView
+        android:id="@+id/loopview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rlayout_wheel_title"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        app:awv_textsize="18"
+        app:awv_lineSpace="3"
+        app:awv_itemsVisibleCount="5"
+        />
+
+</RelativeLayout>

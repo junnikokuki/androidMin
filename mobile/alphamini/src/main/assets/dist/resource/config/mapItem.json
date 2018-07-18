@@ -1,0 +1,135 @@
+{
+    "1": {
+        "name": "gem",
+        "type": "gem",
+        "modId": 101,
+        "scale": 1.0,
+        "collisionRad": 5.0
+    },
+    "2": {
+        "name": "box",
+        "type": "box",
+        "modId": 102,
+        "scale": 1.0,
+        "collisionRad": 35.0
+    },
+    "3": {
+        "name": "button_1up",
+        "type": "button",
+        "modId": 103,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "4": {
+        "name": "button_1down",
+        "type": "button",
+        "modId": 104,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "5": {
+        "name": "button_2up",
+        "type": "button",
+        "modId": 105,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "6": {
+        "name": "button_2down",
+        "type": "button",
+        "modId": 106,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "7": {
+        "name": "button_3up",
+        "type": "button",
+        "modId": 107,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "8": {
+        "name": "button_3down",
+        "type": "button",
+        "modId": 108,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "9": {
+        "name": "button_4up",
+        "type": "button",
+        "modId": 109,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "10": {
+        "name": "button_4down",
+        "type": "button",
+        "modId": 110,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "11": {
+        "name": "button_5up",
+        "type": "button",
+        "modId": 111,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "12": {
+        "name": "button_5down",
+        "type": "button",
+        "modId": 112,
+        "scale": 1.0,
+        "collisionRad": 15.0
+    },
+    "13": {
+        "name": "tips_01",
+        "type": "tips",
+        "modId": 113,
+        "scale": 1.0,
+        "collisionRad": 0.0
+    },
+    "14": {
+        "name": "small hp pots",
+        "type": "small_hp_pots",
+        "modId": 114,
+        "scale": 1.0,
+        "collisionRad": 5.0
+    },
+    "15": {
+        "name": "heal_point",
+        "type": "heal_point",
+        "modId": 115,
+        "scale": 1.0,
+        "collisionRad": 10.0
+    },
+    "16": {
+        "name": "chest",
+        "type": "treasure_chest",
+        "modId": 116,
+        "scale": 1.0,
+        "collisionRad": 10.0
+    },
+    "17": {
+        "name": "chest",
+        "type": "treasure_chest_empty",
+        "modId": 117,
+        "scale": 1.0,
+        "collisionRad": 10.0
+    },
+    "18": {
+        "name": "chest",
+        "type": "treasure_chest_enemy",
+        "modId": 118,
+        "scale": 1.0,
+        "collisionRad": 10.0
+    },
+    "19": {
+        "name": "fence_01",
+        "type": "fence",
+        "modId": 119,
+        "scale": 1.0,
+        "collisionRad": 60.0
+    }
+}

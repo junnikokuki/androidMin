@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.ubtechinc.alpha.mini.ui.contacts.AlphaMiniContactActivity.EventResponse" />
+
+        <variable
+            name="reponse"
+            type="EventResponse" />
+
+        <variable
+            name="isContactFragment"
+            type="boolean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_simple"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:background="@drawable/shape_underline_bg">
+
+            <View
+                android:id="@+id/view_border"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/border" />
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="@{reponse::exitContacts}"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/selector_ic_top_back" />
+
+            <RadioGroup
+                android:id="@+id/rg_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/text_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/contacts_item_underline_seletor"
+                    android:text="@string/mini_contacts"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/mini_contacts_textcolor_selector" />
+
+
+                <RadioButton
+                    android:id="@+id/text_phone_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/contacts_item_underline_seletor"
+                    android:text="@string/mini_phone_history"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/mini_contacts_textcolor_selector" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/toolbar_more_function"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="@{reponse::showContactsDialog}"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/selector_contacts_more_function"
+                android:visibility="@{isContactFragment ? View.VISIBLE : View.GONE}"/>
+
+        </RelativeLayout>
+
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+</layout>
+

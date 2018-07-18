@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/bg_home_menu"
+    android:layout_marginRight="10dp"
+    android:paddingTop="13dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/text_import_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_address_book_black"
+        android:drawablePadding="15dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/first_text"
+        android:text="@string/mini_contacts_import" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/border" />
+
+    <TextView
+        android:id="@+id/text_new_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|left"
+        android:drawableLeft="@drawable/selector_contacts_add_friend"
+        android:drawablePadding="15dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/first_text"
+        android:text="@string/mini_contacts_new_contact" />
+</LinearLayout>

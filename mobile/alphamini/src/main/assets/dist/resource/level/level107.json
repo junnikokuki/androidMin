@@ -1,0 +1,17 @@
+{
+    "id": 107,
+    "name": "高能陷阱",
+    "preId": "pre107",
+    "mapId": "map107",
+    "objId": "obj107",
+    "taskId": "task107",
+    "visionOpen": 2,
+    "limitTime": 20.0,
+    "passCondition": [
+        3,
+        1,
+        2
+    ],
+    "courses": "循环; While True",
+    "describe": "没想到，这里居然布置了这种机关。/n低语者们到底有什么目的？/n等等，机关居然激活了！看来得谨慎行动了。"
+}

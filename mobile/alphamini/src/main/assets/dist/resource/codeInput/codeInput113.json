@@ -1,0 +1,34 @@
+{
+    "move": {
+        "move_xy": [
+            "number",
+            "number"
+        ]
+    },
+    "attack": {
+        "attack": [
+            "enemy"
+        ]
+    },
+    "var": {
+        "enemy": [
+            "coder.find_nearest_enemy()"
+        ],
+        "level": [
+            "coder.get_enemy_level()"
+        ]
+    },
+    "while": {
+        "while": [
+            "True"
+        ]
+    },
+    "if": {
+        "if": [
+            "enemy,level"
+        ],
+        "else": [
+            ""
+        ]
+    }
+}

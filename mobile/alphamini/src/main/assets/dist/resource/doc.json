@@ -1,0 +1,82 @@
+[
+    {
+        "title": "永远循环 |   while True:",
+        "describe": "while True 循环可以让角色重复执行一段代码。只需要将需要重复执行的代码，添加在while True 循环的后面，并在每行的开头缩进四个空格，就可以实现代码的重复执行！\n\n【例程】\n#举例：在四个点位循环移动。\nwhile True :\n    coder.move_right()\n    coder.move_down()\n    coder.move_left()\n    coder.move_up()\n\n#举例：循环侦测并攻击举例最近的敌人。\nwhile True :\n    enemy = coder.find_nearest_enemy()\n    if enemy:\n        coder.attack(enemy)",
+        "code": "while True:\n    "
+    },
+    {
+        "title": "判断语句 |   if :",
+        "describe": "if 语句可以让角色在限定条件成立的前提下，执行一段代码；否则跳过不执行。\n\n【例程】\n#举例：如果有发现敌人，那么就发起攻击吧！\nenemy = coder.find_nearest_enemy()\nif enemy :\n    coder.attack(enemy)",
+        "code": "if :\n    "
+    },
+    {
+        "title": "判断语句 |   if :  else:",
+        "describe": "if…else 语句可以让角色根据限定条件的成立与否，从两段代码中挑选其中之一来执行。\n如果条件成立，执行 if 语句后面的代码块，否则，执行 else 语句后面的代码块。\n\n【例程】\n#举例：如果发现敌人，就发起攻击；否则报告安全。\nenemy = coder.find_nearest_enemy()\nif enemy :\n    coder.attack(enemy)\nelse :\n    coder.say( \"前方道路安全！\" )",
+        "code": "if :\n    \nelse:\n    "
+    },
+    {
+        "title": "判断语句 | elif",
+        "describe": "\nif…elif…else 语句可以让角色进行多重判定，根据具体情况执行对应的代码块。\n如果 if 语句的条件成立，执行 if 语句后面的代码块；\n如果 if 语句的条件不成立，再检查 elif 语句的条件是否成立；\n如果成立，执行 elif 语句后面的代码块；如果还是不成立，执行 else 语句后面的代码块。\nelif 语句可以有多个。\n\n【例程】\n#举例：根据敌人的等级高低，判断攻击还是躲避，没有敌人时前进；\nenemy = coder.find_nearest_enemy()\nif enemy:\n    if coder.get_enemy_level(enemy) < 3 :\n        coder.attack(enemy)\n    elif coder.get_enemy_level(enemy) >= 3 :\n        coder.move_down(2)\n    else :\n        coder.move_up()\n",
+        "code": "elif :"
+    },
+    {
+        "title": "说话命令 |   coder.say(\" \")",
+        "describe": "say() 方法可以让角色自身说出一句话。\n\n【参数】\nmessage ：要说的话，字符串或数字类型的数据。\n例如：\"你好！\"\n\n【例程】\n#举例：打招呼~\ncoder.say(\"你好！\")",
+        "code": "coder.say(\" \")\n"
+    },
+    {
+        "title": "向上移动 |   coder.move_up()",
+        "describe": "move_up() 方法可以让角色自身向上方移动一个单元格。\n\n【参数】\nint：移动的格子数，默认值为1，数字类型的数据。\n\n【例程】\n#举例：向上移动1格；\ncoder.move_up()\n\n#举例：向上移动3格；\ncoder.move_up(3)",
+        "code": "coder.move_up()\n"
+    },
+    {
+        "title": "向下移动 |   coder.move_down()",
+        "describe": "move_down() 方法可以让角色自身向下方移动一个单元格。\n\n【参数】\nint：移动的格子数，默认值为1，数字类型的数据。\n\n【例程】\n#举例：向下移动1格；\ncoder.move_down()\n\n#举例：向下移动3格；\ncoder.move_down(3)",
+        "code": "coder.move_down()\n"
+    },
+    {
+        "title": "向左移动 |   coder.move_left()",
+        "describe": "move_left() 方法可以让角色自身向左方移动一个单元格。\n\n【参数】\nint：移动的格子数，默认值为1，数字类型的数据。\n\n【例程】\n#举例：向左移动1格；\ncoder.move_left()\n\n#举例：向左移动3格；\ncoder.move_left(3)",
+        "code": "coder.move_left()\n"
+    },
+    {
+        "title": "向右移动 |   coder.move_right()",
+        "describe": "move_right() 方法可以让角色自身向右方移动一个单元格。\n\n【参数】\nint：移动的格子数，默认值为1，数字类型的数据。\n\n【例程】\n#举例：向右移动1格；\ncoder.move_right()\n\n#举例：向右移动3格；\ncoder.move_right(3)",
+        "code": "coder.move_right()\n"
+    },
+    {
+        "title": "移动到指定位置 |   coder.move_xy( , )",
+        "describe": "move_xy() 方法可以让角色自身移动到一个给定的坐标位置。\n如果角色自身与目标位置的直线路径上有障碍物，则自动绕行。\n如果该位置不可到达，则在移动路径上最后的可移动区域停下。\n\n【参数】\nx：目标位置坐标的 x 值，数字类型的数据。\ny：目标位置坐标的 y 值，数字类型的数据。\n\n【例程】\n#举例：移动到坐标(10,50)。\ncoder.move_xy(10,50)",
+        "code": "coder.move_xy(,)\n"
+    },
+    {
+        "title": "找到最近的敌人 |   coder.find_nearest_enemy()",
+        "describe": "find_nearest_enemy() 方法可以侦测角色自身视野范围内，距离最近的敌方单位。\n\n【返回值】\n如果侦测到敌人，返回一个对象。\n如果侦测不到敌人，返回空值。\n\n【例程】\n#举例：找到最近的敌人，并攻击他。\nenemy = coder.find_nearest_enemy()\nif enemy:\n    coder.attack(enemy)",
+        "code": "coder.find_nearest_enemy()\n"
+    },
+    {
+        "title": "测量与目标的距离 |   coder.distance_to()",
+        "describe": "distanceTo() 方法可以侦测一个目标与角色自身之间的距离。\n\n【参数】\nobj：要侦测的目标，对象类型的数据。\n\n【返回值】\n返回一个数字。\n\n【例程】\n#举例：侦测附近的敌人，如果敌人距离小于10，就攻击他，否则挑衅他。\nenemy = coder.find_nearest_enemy()\nif enemy:\n    if coder.distance_to(enemy) < 10 :\n        coder.attack(enemy)\n    else :\n        coder.say( “放马过啦呀！” )",
+        "code": "coder.distance_to()\n"
+    },
+    {
+        "title": "攻击目标 |   coder.attack()",
+        "describe": "attack() 方法可以让角色自身对敌方目标发起一次攻击。\n如果敌方目标不在攻击范围，将会先靠近目标直到其进入攻击范围。\n\n【参数】\ntarget：可以是敌方单位的名字(字符串类型数据)；也可以就是敌方单位(对象类型数据)。\n\n【例程】\n#举例：攻击名为“阿福”敌人\ncoder.attack(\"阿福\")\n\n#举例：侦测最近的敌人，并攻击他。\nenemy = coder.find_nearest_enemy()\nif enemy:\n    coder.attack(enemy)",
+        "code": "coder.attack()\n"
+    },
+    {
+        "title": "找到最近的晶石 | coder.find_nearest_gem()",
+        "describe": "\ncoder.find_nearest_gem() 方法可以侦测角色自身视野范围内，距离最近的晶石。\n\n【返回值】\n如果侦测到晶石，返回一个对象。\n如果侦测不到晶石。返回空值。\n\n【例程】\n#举例：找到最近的晶石，并移动到晶石的位置。\ngem = coder.find_nearest_gem()\nif gem :\n    newX = gem.pos.x\n    newY = gem.pos.y\n    coder.move_xy(newX, newY )\n",
+        "code": "coder.find_nearest_gem()"
+    },
+    {
+        "title": "获取敌人的等级 | coder.get_enemy_level()",
+        "describe": "\ncoder.get_enemy_level(enemy) 方法可以侦测敌人的等级。\n\n【返回值】\n返回敌人的等级数值，数字类型。\n\n【例程】\n#举例：发现敌人，如果敌人等级小于3级，攻击他；\nenemy = coder.find_nearest_enemy()\nif enemy:\n    if coder.get_enemy_level(enemy) < 3 :\n        coder.attack(enemy)\n",
+        "code": "coder.get_enemy_level()"
+    },
+    {
+        "title": "晶石当前位置坐标 | gem.pos",
+        "describe": "\n晶石当前所在位置的坐标，字典类型的数据。\n可以用 gem.pos.x 和 gem.pos.y 分别取出坐标的 x 和 y 值。\n\n【例程】\n#举例：找到最近的晶石，并移动到晶石的位置。\ngem = coder.find_nearest_gem()\nif gem :\n    newX = gem.pos.x\n    newY = gem.pos.y\n    coder.move_xy(newX, newY )\n",
+        "code": "gem.pos"
+    }
+]

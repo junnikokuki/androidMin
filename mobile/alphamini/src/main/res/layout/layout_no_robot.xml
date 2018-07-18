@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="77dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/img_noenjoy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/first_text"
+        android:textSize="@dimen/standard_text_size_16dp_t3"
+        android:text="@string/share_no_user_hint"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/standard_text_size_14dp_t5"
+        android:text="@string/share_no_user_sub_hint"/>
+    
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/btn_share"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        style="@style/BlueBtnStyle"
+        android:text="@string/add_share"/>
+
+
+
+
+</LinearLayout>

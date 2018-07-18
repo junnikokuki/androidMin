@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.ui.AlphaMiniModifyPhraseActivity.Presenter" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenter"
+            type="Presenter" />
+
+        <variable
+            name="hasContent"
+            type="boolean" />
+        
+        <variable
+            name="phraseValidate"
+            type="boolean"/>
+
+        <variable
+            name="hintContent"
+            type="String"/>
+        
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <include
+            android:id="@+id/layout_connect"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            layout="@layout/layout_connect_error"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <EditText
+                android:id="@+id/et_phrase_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="@color/colorWhite"
+                android:onTextChanged="@{presenter::onTextChanged}"
+                android:text="" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:onClick="@{presenter::clearContent}"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/ic_archives_clear"
+                android:visibility="@{hasContent ? View.VISIBLE : View.INVISIBLE}" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_12"
+            android:drawableLeft="@{phraseValidate ? null : @drawable/ic_input_warn}"
+            android:drawablePadding="8dp"
+            android:textColor="@{phraseValidate ? @color/text_gray : @color/btn_red}"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@{hintContent}" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_setting_recommend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_recomand_phrase"
+                android:textColor="@color/alexa_text_color_black" />
+        </LinearLayout>
+
+        <com.ubtechinc.alpha.mini.widget.taglayout.TagFlowLayout
+            android:id="@+id/tf_phrase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"/>
+
+
+    </LinearLayout>
+
+</layout>

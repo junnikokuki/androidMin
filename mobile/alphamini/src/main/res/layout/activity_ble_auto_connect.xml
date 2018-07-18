@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/page_bg">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        style="@style/BackButtonStyle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/open_power_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="@string/please_close_to_the_alpha_mini"
+        android:textColor="@color/first_text"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/more_close_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/first_text"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/open_power_tv"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:text="@string/more_close"/>
+
+    <TextView
+        android:id="@+id/no_response_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/color_normal_border"
+        android:textSize="@dimen/standard_text_size_15dp_t4"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:text="@string/no_response"
+        />
+
+    <ImageView
+        android:id="@+id/close_to_robot_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_close_tv"
+        android:layout_above="@id/no_response_tv"
+        android:layout_alignParentLeft="true"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/connect_success_fl"
+        android:visibility="gone"
+        android:background="@color/page_bg">
+        <TextView
+            android:layout_marginTop="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_pairing"
+            android:gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/first_text"
+            android:drawableTop="@drawable/ic_default_success"/>
+    </FrameLayout>
+</RelativeLayout>

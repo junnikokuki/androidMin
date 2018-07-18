@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:indicator="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_action_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingTop="30px">
+
+        <LinearLayout
+            android:id="@+id/ll_change_action1"
+            style="@style/avatar_action_linearlayout">
+
+            <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                android:id="@+id/iv_change_action1"
+                style="@style/avatar_action_imageview"
+                app:border_color_round="@color/avatar_model_stop_btn_color"
+                app:border_type_round="short_line"
+                app:border_width_round="2dp"
+                app:shape_type="rectangle"
+                android:src="@drawable/ic_hi_test_gray" />
+
+            <TextView
+                android:id="@+id/tv_change_action1"
+                style="@style/avatar_action_textview"
+                android:text="HiHiHai"
+                android:textColor="@color/alexa_color_main_seven"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_change_action2"
+            style="@style/avatar_action_linearlayout">
+
+            <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                android:id="@+id/iv_change_action2"
+                style="@style/avatar_action_imageview"
+                app:border_color_round="@color/avatar_model_stop_btn_color"
+                app:border_type_round="short_line"
+                app:border_width_round="2dp"
+                app:shape_type="rectangle"
+                android:src="@drawable/ic_hi_test_gray" />
+
+            <TextView
+                android:id="@+id/tv_change_action2"
+                style="@style/avatar_action_textview"
+                android:text="Hi"
+                android:textColor="@color/alexa_color_main_seven" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_change_action3"
+            style="@style/avatar_action_linearlayout">
+
+            <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                android:id="@+id/iv_change_action3"
+                style="@style/avatar_action_imageview"
+                app:border_color_round="@color/avatar_model_stop_btn_color"
+                app:border_type_round="short_line"
+                app:border_width_round="2dp"
+                app:shape_type="rectangle"
+                android:src="@drawable/ic_hi_test_gray" />
+
+            <TextView
+                android:id="@+id/tv_change_action3"
+                style="@style/avatar_action_textview"
+                android:text="Hi"
+                android:textColor="@color/alexa_color_main_seven" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_change_action4"
+            style="@style/avatar_action_linearlayout">
+
+            <com.ubtechinc.alpha.mini.avatar.widget.RoundProgressImageView
+                android:id="@+id/iv_change_action4"
+                style="@style/avatar_action_imageview"
+                app:border_color_round="@color/avatar_model_stop_btn_color"
+                app:border_type_round="short_line"
+                app:border_width_round="2dp"
+                app:shape_type="rectangle"
+                android:src="@drawable/ic_hi_test_gray" />
+
+            <TextView
+                android:id="@+id/tv_change_action4"
+                style="@style/avatar_action_textview"
+                android:text="Hi"
+                android:textColor="@color/alexa_color_main_seven" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_change_action5"
+            style="@style/avatar_action_linearlayout">
+
+            <ImageView
+                android:id="@+id/iv_change_action5"
+                style="@style/avatar_action_imageview"
+                android:src="@drawable/alexa_action_change" />
+
+            <TextView
+                android:id="@+id/tv_change_action5"
+                style="@style/avatar_action_textview"
+                android:text="@string/login_done"
+                android:textColor="@color/alexa_color_main_seven" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/ll_action_more_layout"
+        android:background="@color/avatar_model_heng_split_line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line">
+
+        <com.ubtechinc.alpha.mini.avatar.widget.MenuView
+            android:id="@+id/springboard"
+            style="@style/Springboard"
+            app:column_count="2"
+            app:delete_icon="@drawable/icon_delete"
+            app:divider_color="@android:color/transparent"
+            app:divider_width="0dp"
+            app:folder_column_count="3"
+            app:folder_dialog_background="@android:color/transparent"
+            app:folder_edittext_textcolor="@android:color/white"
+            app:folder_edittext_textsize="16sp"
+            app:folder_row_count="3"
+            app:is_last_item_stable="false"
+            app:row_count="3"
+            app:stable_header_count="0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/xCircleIndicator"
+            android:layout_centerInParent="true"
+            android:paddingTop="65px" />
+
+        <com.ubtechinc.alpha.mini.avatar.widget.XCircleIndicator
+            android:id="@+id/xCircleIndicator"
+            indicator:fillColor="@color/action_name_color"
+            indicator:radius="4dp"
+            indicator:strokeColor="@color/alexa_color_main_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px" />
+    </RelativeLayout>
+</RelativeLayout>

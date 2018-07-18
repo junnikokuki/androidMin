@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PanelFuncChoose" width="710" height="289" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="mobile_ui_json.common_frameS" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group id="gpChoose" y="79" horizontalCenter="0.5" height="200">
+		<e:layout>
+			<e:HorizontalLayout gap="11" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+		<e:Button label="" x="-34" y="-12" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_move" source.down="mobile_ui_json.btn_move" source.disabled="mobile_ui_json.btn_moveS"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" x="-24" y="-2" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_attack" source.down="mobile_ui_json.btn_attack" source.disabled="mobile_ui_json.btn_attackS"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" x="-14" y="8" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_value" source.down="mobile_ui_json.btn_value" source.disabled="mobile_ui_json.btn_valueS"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" x="-4" y="18" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_while" source.down="mobile_ui_json.btn_while" source.disabled="mobile_ui_json.btn_whileS"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" x="6" y="28" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_if" source.down="mobile_ui_json.btn_if" source.disabled="mobile_ui_json.btn_ifS"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Label id="lbTitle" text="Label" y="28" horizontalCenter="0" textColor="0xA8E7C2" bold="true"/>
+	<e:Button id="btnClose" label="" x="598" y="15">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mobile_ui_json.btn_close2S" source.down="按下状态资源名mobile_ui_json.btn_close2S"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

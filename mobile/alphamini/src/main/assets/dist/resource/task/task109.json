@@ -1,0 +1,275 @@
+[
+    {
+        "id": 1,
+        "name": "破解谜题",
+        "describe": "用正确的方法解开谜题。",
+        "type": 8,
+        "argument": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "获得晶石",
+        "describe": "获得隐藏的晶石。",
+        "type": 3,
+        "argument": [
+            12
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 3,
+        "name": "代码限制",
+        "describe": "代码必须在6行内完成。",
+        "type": 5,
+        "argument": [
+            6
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 4,
+        "name": "移动到数字1",
+        "describe": "移动到数字1：关闭原图片，打开踩下图片 。",
+        "type": 7,
+        "argument": [
+            9,
+            10
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 5,
+        "name": "移动到数字2",
+        "describe": "移动到数字2：关闭原图片，打开踩下图片。",
+        "type": 7,
+        "argument": [
+            11,
+            12
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 6,
+        "name": "移动到数字3",
+        "describe": "移动到数字3：关闭原图片，打开踩下图片。",
+        "type": 7,
+        "argument": [
+            13,
+            14
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 7,
+        "name": "移动到数字4",
+        "describe": "移动到数字4：关闭原图片，打开踩下图片。",
+        "type": 7,
+        "argument": [
+            15,
+            16
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 8,
+        "name": "移动到数字5",
+        "describe": "移动到数字5：关闭原图片，打开踩下图片。",
+        "type": 7,
+        "argument": [
+            17,
+            18
+        ],
+        "state": 1,
+        "completeOperate": 3,
+        "operateTarget": 13,
+        "toggleStatus": "playActive"
+    },
+    {
+        "id": 9,
+        "name": "关闭数字1图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            12,
+            14,
+            20
+        ],
+        "state": 1,
+        "completeOperate": 2,
+        "operateTarget": 2,
+        "toggleStatus": ""
+    },
+    {
+        "id": 10,
+        "name": "激活数字1图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            12,
+            14,
+            20
+        ],
+        "state": 1,
+        "completeOperate": 1,
+        "operateTarget": 3,
+        "toggleStatus": ""
+    },
+    {
+        "id": 11,
+        "name": "关闭数字2图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            31,
+            23,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 2,
+        "operateTarget": 4,
+        "toggleStatus": ""
+    },
+    {
+        "id": 12,
+        "name": "激活数字2图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            31,
+            23,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 1,
+        "operateTarget": 5,
+        "toggleStatus": ""
+    },
+    {
+        "id": 13,
+        "name": "关闭数字3图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            24,
+            9,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 2,
+        "operateTarget": 6,
+        "toggleStatus": ""
+    },
+    {
+        "id": 14,
+        "name": "激活数字3图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            24,
+            9,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 1,
+        "operateTarget": 7,
+        "toggleStatus": ""
+    },
+    {
+        "id": 15,
+        "name": "关闭数字4图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            17,
+            26,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 2,
+        "operateTarget": 8,
+        "toggleStatus": ""
+    },
+    {
+        "id": 16,
+        "name": "激活数字4图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            17,
+            26,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 1,
+        "operateTarget": 9,
+        "toggleStatus": ""
+    },
+    {
+        "id": 17,
+        "name": "关闭数字5图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            34,
+            16,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 2,
+        "operateTarget": 10,
+        "toggleStatus": ""
+    },
+    {
+        "id": 18,
+        "name": "激活数字5图片",
+        "describe": " ",
+        "type": 4,
+        "argument": [
+            1,
+            34,
+            16,
+            30
+        ],
+        "state": 1,
+        "completeOperate": 1,
+        "operateTarget": 11,
+        "toggleStatus": ""
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "id": 108,
+    "name": "意图不明",
+    "preId": "pre108",
+    "mapId": "map108",
+    "objId": "obj108",
+    "taskId": "task108",
+    "visionOpen": 2,
+    "limitTime": 50.0,
+    "passCondition": [
+        1,
+        2,
+        3
+    ],
+    "courses": "进阶: 循环",
+    "describe": "看来这营地里藏了不少重要的东西，低语者准备这么多的物资，到底想要做什么？/n探查这片营地，解决遇到的敌人，带走他们藏在这里的所有物资。"
+}

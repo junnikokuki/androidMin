@@ -1,0 +1,17 @@
+{
+    "id": 106,
+    "name": "清扫障碍",
+    "preId": "pre106",
+    "mapId": "map106",
+    "objId": "obj106",
+    "taskId": "task106",
+    "visionOpen": 2,
+    "limitTime": 45.0,
+    "passCondition": [
+        1,
+        2,
+        3
+    ],
+    "courses": "函数: 寻找敌人",
+    "describe": "没想到，居然误打误撞找到了这些低语者的营地……不过这些家伙的实力好像并不强，想办法找到他们的核心晶石，进入营地一探究竟。"
+}

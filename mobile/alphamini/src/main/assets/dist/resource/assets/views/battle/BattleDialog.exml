@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleDialog" width="1334" height="341" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1615a4e87ae"/>
+	<e:Image left="0" right="0" top="-1" bottom="1" fillMode="scale" source="public_res_json.dialog_mask"/>
+	<e:Image source="public_res_json.green_line" scale9Grid="35,6,21,36" left="0" right="0" top="50"/>
+	<e:Image source="public_res_json.green_line" scaleY="-1" scale9Grid="39,6,16,36" left="0" right="0" bottom="20"/>
+	<e:Group width="200" height="66.66" anchorOffsetY="0" top="78" left="33">
+		<e:Image source="battle_scene_json.dialog_name" x="-394" y="24.45" scaleX="-1" scaleY="1"/>
+		<e:Label id="nameLabel" text="源码终端" x="85" y="48.3" textColor="0x7dcdff"/>
+		<e:Image source="battle_scene_json.dialog_name" x="-384" y="39.3" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="contentLabel" text="因为检查到了一次传送误差\n因为检查到了一次传送误差\n因为检查到了一次传送误差" anchorOffsetY="0" left="36" right="35" top="171" bottom="70" anchorOffsetX="0" lineSpacing="20" size="26"/>
+	<e:Button id="skipBtn" label="跳过剧情" right="40" top="77" height="56" anchorOffsetY="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" width="192" height="52">
+	<e:Rect anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0" strokeAlpha="0" touchChildren="true" touchEnabled="true" width="192" x="0" height="52" y="0"/>
+			<e:Image source="battle_scene_json.forward_btn" source.down="battle_scene_json.forward_btn" right="0" verticalCenter="0"/>
+	<e:Label id="labelDisplay" text="跳过剧情" size="24" right="50" height="26" textColor="0x94EAB8" verticalCenter="2"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="nextBtn" label="" right="34" bottom="50">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="public_res_json.next_btn" source.down="public_res_json.next_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

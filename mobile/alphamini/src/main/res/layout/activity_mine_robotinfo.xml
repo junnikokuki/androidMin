@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/data_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_robot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingBottom="100dp"
+            android:layout_marginTop="20dp"></android.support.v7.widget.RecyclerView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@id/rv_robot">
+            <TextView
+                android:id="@+id/tv_add_robot"
+                style="@style/BlueBtnStyle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:onClick="addRobot"
+                android:text="@string/add_new_alphamini"
+                android:paddingLeft="42dp"
+                android:paddingRight="42dp"
+                android:drawableLeft="@drawable/ic_addrobot"
+                android:textColor="@color/colorWhite" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_connect"
+        layout="@layout/layout_connect_error"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:visibility="gone" />
+
+    <ViewStub
+        android:id="@+id/empty_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_mini_robot_empty" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+{
+    "id": 112,
+    "name": "脱离森林",
+    "preId": "pre112",
+    "mapId": "map112",
+    "objId": "obj112",
+    "taskId": "task112",
+    "visionOpen": 2,
+    "limitTime": 40.0,
+    "passCondition": [
+        1,
+        2
+    ],
+    "courses": "条件判断:elif",
+    "describe": "终于摆脱了那些追兵。/n陌生的探险者向你告别，你们各自踏上了旅程。/n树林当中一片静谧，现在能够作伴的就只剩下手上的终端了。"
+}

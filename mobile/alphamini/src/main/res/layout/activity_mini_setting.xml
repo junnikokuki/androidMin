@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="serailNumber"
+            type="String" />
+
+        <variable
+            name="userName"
+            type="String" />
+
+        <variable
+            name="wifiName"
+            type="String" />
+        
+        <variable
+            name="network"
+            type="boolean"/>
+
+        <variable
+            name="cellularState"
+            type="int"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:background="@color/setting_bg">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:layout_below="@+id/toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/header_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_unregister_btn_bg"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/me_avatar_bg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/me_avatar_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wu_kong_robot"
+                    android:textColor="@color/first_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/serail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@{serailNumber ?? @string/unknown}"
+                    android:textColor="@color/msg_sub"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/setting_robot_wifi_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:id="@+id/wifi_tv"
+                style="@style/setting_text_style"
+                android:text="@string/setting_robot_wifi" />
+
+            <ImageView
+                android:id="@+id/rigth_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:id="@+id/wifi_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/rigth_arrow_iv"
+                android:gravity="right"
+                android:text="@{wifiName ?? @string/no_connect}"
+                android:textColor="@color/msg_sub"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_h_view"/>
+
+        <RelativeLayout
+            android:id="@+id/setting_cellular_data_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorWhite"
+            android:enabled="@{cellularState != 0}"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:id="@+id/cellular_data"
+                style="@style/setting_text_style"
+                android:alpha="@{cellularState == 0?0.3f:1.0f}"
+                android:text="@string/cellular_data" />
+
+            <ImageView
+                android:id="@+id/cellular_data_rigth_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:id="@+id/cellular_data_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/cellular_data_rigth_arrow_iv"
+                android:gravity="right"
+                android:alpha="@{cellularState == 0?0.3f:1.0f}"
+                android:text="@{cellularState == 0? @string/not_sim:cellularState == 1?@string/open:@string/close}"
+                android:textColor="@color/msg_sub"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_h_view"/>
+
+        <RelativeLayout
+            android:id="@+id/voice_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="14dp">
+
+            <TextView
+                style="@style/setting_text_style"
+                android:text="@string/voice_mutile_interact" />
+
+            <ImageView
+                android:id="@+id/voice_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_voice"
+                android:layout_toLeftOf="@id/voice_arrow"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/shape_msg_count_bg"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line_h_view"/>
+
+        <RelativeLayout
+            android:id="@+id/headware_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="14dp">
+
+            <TextView
+                style="@style/setting_text_style"
+                android:text="@string/headware_update" />
+
+            <ImageView
+                android:id="@+id/upgrade_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_arrow_right" />
+            
+            <TextView
+                android:id="@+id/upgrade_flag"
+                android:layout_toLeftOf="@id/upgrade_arrow"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/shape_msg_count_bg"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line_h_view"/>
+
+        <RelativeLayout
+            android:id="@+id/system_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorWhite"
+            android:paddingLeft="14dp">
+
+            <TextView
+                style="@style/setting_text_style"
+                android:background="@color/colorWhite"
+                android:text="@string/system_update" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/under_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/system_info_rl"
+            android:background="@color/border" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/adb_switch_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/system_info_rl"
+            android:background="@color/colorWhite"
+            android:paddingLeft="14dp">
+
+            <TextView
+                style="@style/setting_text_style"
+                android:background="@color/colorWhite"
+                android:text="@string/usb_test" />
+
+            <com.ubtechinc.alpha.mini.widget.SwitchButton
+                android:id="@+id/switch_btn_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                app:kswBackDrawable="@drawable/switch_btn_bg"
+                app:kswThumbDrawable="@drawable/switch_thumb_drawable"
+                app:kswThumbHeight="25dip"
+                app:kswThumbMargin="3dip"
+                app:kswThumbWidth="25dip" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/btn_unbind"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:background="@{network ? @drawable/shape_unregister_btn_bg : @drawable/shape_setting_bg}"
+            android:gravity="center"
+            android:text="解绑"
+            android:clickable="@{network ? true : false}"
+            android:textColor="@{network ? @color/btn_red : @color/setting_bg}"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</layout>

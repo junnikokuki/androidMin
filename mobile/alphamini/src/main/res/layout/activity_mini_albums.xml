@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.ui.albums.MiniAlbumsActivity.EventReponse"/>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="response"
+            type="EventReponse"/>
+
+        <variable
+            name="isSelectedAll"
+            type="boolean"/>
+
+        <variable
+            name="checkedNumber"
+            type="int"/>
+
+        <variable
+            name="noPhoto"
+            type="boolean"/>
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/titlebar"
+                layout="@layout/toolbar" />
+
+            <include
+                android:id="@+id/layout_connect"
+                layout="@layout/layout_connect_error"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{noPhoto ? View.GONE : View.VISIBLE}"
+            android:layout_below="@+id/ll_header">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_albums"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+        <!--网络异常状态提示 start-->
+        <TextView
+            android:id="@+id/tv_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_default_robot_offline"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:text="@string/robot_offline"/>
+
+        <TextView
+            android:id="@+id/tv_mobile_without_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_default_mobile_without_network"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/network_unavaliable_album"/>
+
+        <TextView
+            android:id="@+id/tv_moible_network_suck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_default_network_suck"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="@string/setting_network_error"
+            android:textColor="@color/black" />
+        <!--网络异常状态提示 end-->
+
+        <!--顶部下载出现的layout-->
+        <RelativeLayout
+            android:id="@+id/rl_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/back_btn_top_space"
+            android:background="@color/setting_bg"
+            android:layout_below="@+id/ll_header"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pb_dowanload"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:max="100"
+                android:progressDrawable="@drawable/bar_color" />
+
+            <ImageView
+                android:id="@+id/img_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_photo_download" />
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_download"
+                android:text="@string/album_no_photo"
+                android:textColor="@color/alexa_color_main_two"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <!--底部编辑的layout-->
+        <RelativeLayout
+            android:id="@+id/rl_bottom_edit"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/bottom_edit_background"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@{isSelectedAll ? @drawable/icon_check : @drawable/icon_selectall}"
+                android:drawablePadding="8dp"
+                android:onClick="@{response::doSelectAllOrCancelSelectAll}"
+                android:padding="10dp"
+                android:text="@{isSelectedAll ? @string/common_deselect_all : @string/common_select_all  }"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:clickable="@{checkedNumber == 0 ? false : true}"
+                android:onClick="@{response :: downloadPhotos}"
+                android:src="@drawable/ic_photo_save"
+                android:textSize="@dimen/text_second_size" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:cropToPadding="true"
+                android:clickable="@{checkedNumber == 0 ? false : true}"
+                android:onClick="@{response :: deletePhotos}"
+                android:src="@drawable/ic_photo_delete" />
+
+        </RelativeLayout>
+
+        <!--无数据的页面layout-->
+        <RelativeLayout
+            android:id="@+id/rl_no_data_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_no_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_default_photo" />
+
+            <TextView
+                android:id="@+id/tv_no_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_no_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/first_text"
+                android:text="@string/album_no_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_hint"
+                android:layout_centerHorizontal="true"
+                android:text="@string/album_no_photo_hint"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/standard_text_size_15dp_t4"
+                android:textColor="@color/text_gray"/>
+
+            <TextView
+                android:id="@+id/text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="80dp"
+                android:text="@string/album_no_photo_phrase"
+                android:textColor="@color/open_ble"
+                android:textSize="@dimen/standard_text_size_18dp_t1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

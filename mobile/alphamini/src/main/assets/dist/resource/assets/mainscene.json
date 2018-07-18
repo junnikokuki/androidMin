@@ -1,0 +1,7 @@
+{"file":"mainscene.png","frames":{
+"scroller_base":{"x":1000,"y":1,"w":12,"h":40,"offX":0,"offY":0,"sourceW":12,"sourceH":40},
+"scroller_bar":{"x":984,"y":1,"w":12,"h":40,"offX":0,"offY":0,"sourceW":12,"sourceH":40},
+"notice_bottom":{"x":1,"y":1,"w":979,"h":597,"offX":0,"offY":0,"sourceW":979,"sourceH":597},
+"label":{"x":832,"y":602,"w":150,"h":40,"offX":0,"offY":0,"sourceW":150,"sourceH":40},
+"button_split":{"x":1,"y":602,"w":827,"h":28,"offX":0,"offY":0,"sourceW":827,"sourceH":28},
+"close_main":{"x":1,"y":634,"w":99,"h":52,"offX":0,"offY":0,"sourceW":99,"sourceH":52}}}

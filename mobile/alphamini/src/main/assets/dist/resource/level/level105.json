@@ -1,0 +1,17 @@
+{
+    "id": 105,
+    "name": "隐秘营地",
+    "preId": "pre105",
+    "mapId": "map105",
+    "objId": "obj105",
+    "taskId": "task105",
+    "visionOpen": 2,
+    "limitTime": 45.0,
+    "passCondition": [
+        3,
+        1,
+        2
+    ],
+    "courses": "变量",
+    "describe": "前面有动静。/n又是低语者，这些潜伏在数据废墟当中的家伙总在酝酿着一个又一个的阴谋，他们聚集在这里究竟是为了什么？"
+}

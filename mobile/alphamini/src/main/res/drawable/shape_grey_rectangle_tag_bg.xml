@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#F0F0F0" />
+    <corners android:radius="25dp"/>
+    <stroke android:width="1px" android:color="@color/share_tag"/>
+    <padding android:bottom="@dimen/tag_height_padding"
+        android:left="@dimen/tag_width_padding" android:right="@dimen/tag_width_padding" android:top="@dimen/tag_height_padding"></padding>
+</shape>

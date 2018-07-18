@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PanelChoose" width="710" height="469" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="mobile_ui_json.common_frame2"/>
+	<e:Button id="btnBack" label="" x="13" y="15">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="mobile_ui_json.btn_back" source.down="mobile_ui_json.btn_backS"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Scroller id="scroller" width="684" height="362.67" x="13.67" y="82" anchorOffsetX="0" anchorOffsetY="0">
+		<e:List id="list">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="2" horizontalGap="20" verticalGap="13" paddingLeft="18"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Button id="btnClose" label="" x="598" y="15">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mobile_ui_json.btn_close2S" source.down="mobile_ui_json.btn_close2S"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group width="200" height="46" x="96" y="20" anchorOffsetY="0">
+		<e:Label id="lbDesc" text="Label" size="26" bold="true" scaleX="1" scaleY="1" verticalCenter="0" left="0" fontFamily="Arial"/>
+		<e:Image id="imgLine" scaleX="1" scaleY="1" verticalCenter="0" left="0" source="mobile_ui_json.line"/>
+	</e:Group>
+	<e:Group id="gpNum" width="681.33" height="369.33" x="15" y="74.67" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Button id="btnNum1" label="1" x="13" y="16" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum2" label="2" x="23" y="26" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum3" label="3" x="33" y="36" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum4" label="4" x="43" y="46" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum5" label="5" x="53" y="56" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum6" label="6" x="63" y="66" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum7" label="7" x="73" y="76" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum8" label="8" x="83" y="86" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum9" label="9" x="93" y="96" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNumDel" label="删除" x="103" y="106" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNum0" label="0" x="113" y="116" skinName="BtnNumKey">
+		</e:Button>
+		<e:Button id="btnNumYes" label="确定" x="123" y="126" skinName="BtnNumKey">
+		</e:Button>
+		<e:layout>
+			<e:TileLayout horizontalAlign="center" verticalAlign="middle" horizontalGap="20" paddingLeft="18" verticalGap="20" paddingTop="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="gpCampare" width="681.33" height="369.33" x="15" y="74.67" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		<e:Button id="btnCamp0" label="1" x="13" y="16">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp1" label="1" x="23" y="26">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp2" label="1" x="33" y="36">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp3" label="1" x="43" y="46">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp4" label="1" x="53" y="56">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp5" label="1" x="63" y="66">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp6" label="1" x="73" y="76">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp7" label="1" x="83" y="86">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp8" label="1" x="93" y="96">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp9" label="1" x="103" y="106">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp10" label="1" x="113" y="116">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCamp11" label="1" x="123" y="126">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="mobile_ui_json.btn_num" source.down="mobile_ui_json.btn_num2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:layout>
+		<e:TileLayout horizontalAlign="center" verticalAlign="middle" horizontalGap="20" paddingLeft="18" verticalGap="20" paddingTop="10"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

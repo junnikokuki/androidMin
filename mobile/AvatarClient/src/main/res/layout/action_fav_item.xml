@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:clickable="true"
+             android:focusable="true"
+             android:longClickable="true">
+
+    <RelativeLayout
+        android:id="@id/shake_zone_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <FrameLayout
+            android:id="@id/center_zone_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_zone_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:gravity="center"
+            android:textColor="@color/action_name_color"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="474">
+	<e:Group anchorOffsetY="0" left="0" right="0" top="0" height="80">
+		<e:Button id="itemBtn" label="" left="0" right="0" top="0" bottom="0" x="-219" y="-92" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="public_res_json.bg1" source.down="public_res_json.bg2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="addBtn" label="" right="10" verticalCenter="0" x="125" y="-86" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="battle_scene_json.add_btn" source.down="battle_scene_json.add_btn"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="flag" source="public_res_json.triangle_btn" left="25" verticalCenter="0" anchorOffsetX="6" anchorOffsetY="10" x="-194" y="-74" scaleX="1" scaleY="1" touchEnabled="false"/>
+		<e:Label id="title" text="while True: ——代码块" scaleX="1" scaleY="1" left="60" verticalCenter="0" size="20" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="contentGroup" left="0" right="0" top="80" height="62">
+		<e:Label id="content" text="Label" size="16" anchorOffsetY="0" left="15" right="15" top="15" anchorOffsetX="0" height="62" textColor="0x83bf87" lineSpacing="8"/>
+	</e:Group>
+</e:Skin>

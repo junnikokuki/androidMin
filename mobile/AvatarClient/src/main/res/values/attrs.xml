@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Springboard">
+        <attr name="row_count" format="integer"/>
+        <attr name="column_count" format="integer"/>
+        <attr name="divider_color" format="color"/>
+        <attr name="divider_width" format="dimension"/>
+        <attr name="default_folder_name" format="string|reference"/>
+        <attr name="delete_icon" format="reference"/>
+        <attr name="page_divider_width" format="dimension"/>
+        <attr name="is_last_item_stable" format="boolean"/>
+        <attr name="stable_header_count" format="integer"/>
+        <attr name="folder_dialog_background" format="color|reference"/>
+        <attr name="folder_view_background" format="color|reference"/>
+        <attr name="folder_row_count" format="integer"/>
+        <attr name="folder_column_count" format="integer"/>
+        <attr name="folder_edittext_background" format="color|reference"/>
+        <attr name="folder_edittext_textcolor" format="color|reference"/>
+        <attr name="folder_edittext_textsize" format="dimension|reference"/>
+        <attr name="is_support_longclick" format="boolean"/>
+
+    </declare-styleable>
+
+    <!--自定义MLImageView的属性-->
+    <declare-styleable name="MLImageView">
+        <attr name="press_alpha" format="integer" />
+        <attr name="press_color" format="color" />
+        <attr name="radius_progress" format="dimension"/>
+        <attr name="border_width_round" format="dimension" />
+        <attr name="border_color_round" format="color"/>
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="rectangle" value="1" />
+        </attr>
+
+        <attr name="border_type_round" format="enum">
+            <enum name="full_line" value="0"/>
+            <enum name="short_line" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XCircleIndicator">
+        <!-- 被选中圆点的颜色 -->
+        <attr name="fillColor" format="color"/>
+        <!-- 未选中圆点的颜色 -->
+        <attr name="strokeColor" format="color"/>
+        <!-- 圆点的大小 -->
+        <attr name="radius" format="dimension"/>
+        <!-- 圆点间间距的大小 -->
+        <attr name="circleInterval" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomCircleProgressBar">
+        <attr name="outside_color" format="color" />
+        <attr name="outside_radius" format="dimension" />
+        <attr name="inside_color" format="color" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="max_progress" format="integer" />
+        <attr name="progress" format="float" />
+        <attr name="direction">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundProgressImageView">
+        <attr name="rg_radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="myrectWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+    </declare-styleable>
+</resources>

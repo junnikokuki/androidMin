@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/tool_bar_height"
+    android:background="@drawable/shape_underline_bg">
+
+
+    <TextView
+        android:id="@+id/btn_back"
+        style="@style/top_back_button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_back"
+        android:drawablePadding="@dimen/text_size_32"
+        />
+
+
+    <TextView
+        android:id="@+id/authorize_title"
+        style="@style/top_title_text_style"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="visible" />
+    <ImageView
+        style="@style/top_right_button_style"
+        android:id="@+id/btn_top_right"
+        android:background="@drawable/icon_top_edit"/>
+
+
+</RelativeLayout>

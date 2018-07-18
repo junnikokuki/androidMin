@@ -1,0 +1,245 @@
+{
+    "1": {
+        "name": "war_male_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/war_male_01",
+        "sound": "",
+        "soundWalk": "resource/sound/walking_sand.mp3",
+        "soundAtk": "resource/sound/coder_war_atk.mp3",
+        "soundDie": ""
+    },
+    "2": {
+        "name": "war_female_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/war_female_01",
+        "sound": "",
+        "soundWalk": "resource/sound/walking_sand.mp3",
+        "soundAtk": "resource/sound/coder_war_atk.mp3",
+        "soundDie": ""
+    },
+    "101": {
+        "name": "gem",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/gem_collect",
+        "sound": "resource/sound/crystal_pickup.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "102": {
+        "name": "box",
+        "type": "image",
+        "url": "resource/mod/image/box.png",
+        "sound": "resource/sound/box_push.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "103": {
+        "name": "button_1up",
+        "type": "image",
+        "url": "resource/mod/image/button_1up.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "104": {
+        "name": "button_1down",
+        "type": "image",
+        "url": "resource/mod/image/button_1down.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "105": {
+        "name": "button_2up",
+        "type": "image",
+        "url": "resource/mod/image/button_2up.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "106": {
+        "name": "button_2down",
+        "type": "image",
+        "url": "resource/mod/image/button_2down.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "107": {
+        "name": "button_3up",
+        "type": "image",
+        "url": "resource/mod/image/button_3up.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "108": {
+        "name": "button_3down",
+        "type": "image",
+        "url": "resource/mod/image/button_3down.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "109": {
+        "name": "button_4up",
+        "type": "image",
+        "url": "resource/mod/image/button_4up.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "110": {
+        "name": "button_4down",
+        "type": "image",
+        "url": "resource/mod/image/button_4down.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "111": {
+        "name": "button_5up",
+        "type": "image",
+        "url": "resource/mod/image/button_5up.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "112": {
+        "name": "button_5down",
+        "type": "image",
+        "url": "resource/mod/image/button_5down.png",
+        "sound": "resource/sound/button_stepon.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "113": {
+        "name": "tips_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/tips_01",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "114": {
+        "name": "small_hp_pots",
+        "type": "dragonbones",
+        "url": "",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "115": {
+        "name": "heal_point",
+        "type": "image",
+        "url": "resource/mod/image/heal_point.png",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "116": {
+        "name": "treasure_chest",
+        "type": "dragonbones",
+        "url": "",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "117": {
+        "name": "treasure_chest_empty",
+        "type": "dragonbones",
+        "url": "",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "118": {
+        "name": "treasure_chest_enemy",
+        "type": "dragonbones",
+        "url": "",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "119": {
+        "name": "fence_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/fence_01",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "1001": {
+        "name": "arrow_organ",
+        "type": "image",
+        "url": "resource/mod/image/tower1_down.png",
+        "sound": "resource/sound/bow_shoot.mp3",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "1002": {
+        "name": "arrow",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/tower1_bullet",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    },
+    "2001": {
+        "name": "wis_war_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/wis_war_01",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "resource/sound/wis_war_atk.mp3",
+        "soundDie": "resource/sound/wis_all_die.mp3"
+    },
+    "2002": {
+        "name": "wis_arc_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/wis_arc_01",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "resource/sound/wis_arc_atk.mp3",
+        "soundDie": "resource/sound/wis_all_die.mp3"
+    },
+    "2003": {
+        "name": "wis_mag_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/wis_mag_01",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "resource/sound/wis_mag_atk.mp3",
+        "soundDie": "resource/sound/wis_all_die.mp3"
+    },
+    "2004": {
+        "name": "npc_female_01",
+        "type": "dragonbones",
+        "url": "resource/mod/dragonbones/npc_female_01",
+        "sound": "",
+        "soundWalk": "",
+        "soundAtk": "",
+        "soundDie": ""
+    }
+}

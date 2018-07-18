@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        style="@style/BackButtonStyle"
+        />
+
+    <TextView
+        android:id="@+id/open_power_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/first_text"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_power_tip"/>
+
+    <TextView
+        style="@style/BlueBtnStyle"
+        android:enabled="false"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/next_step_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:text="@string/next_step"
+        />
+    <LinearLayout
+        android:id="@+id/open_power_ll"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/next_step_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:button="@null"
+            android:background="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/is_open_power_selector"
+            android:id="@+id/is_stand_up_cb"
+            android:layout_width="wrap_content"
+            android:text="@string/alpha_mini_stand_up"
+            android:textColor="@color/first_text"
+            android:drawablePadding="6dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/open_power_iv"
+        android:layout_marginTop="28dp"
+        android:layout_width="240dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/open_power_tv"
+        android:layout_above="@id/open_power_ll"
+        android:layout_alignStart="@+id/next_step_btn"/>
+</RelativeLayout>

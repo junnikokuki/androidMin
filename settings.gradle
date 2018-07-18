@@ -1,0 +1,14 @@
+include ':lancommunicationhelper'
+include ':bluetoothlibrary', ':xingepushlibrary'
+include ':utilcode'
+//include ':servicesdk'
+include ':netutils'
+include ':servicemodel'
+include ':protocollibrary'
+include ':codemaosdk'
+include ':FastBleLib'
+
+// mobile
+include ':mobile:alphamini'
+include ':mobile:tvsloginsupport'
+include ':mobile:AvatarClient'

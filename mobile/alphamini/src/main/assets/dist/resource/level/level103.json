@@ -1,0 +1,17 @@
+{
+    "id": 103,
+    "name": "信息结晶",
+    "preId": "pre103",
+    "mapId": "map103",
+    "objId": "obj103",
+    "taskId": "task103",
+    "visionOpen": 0,
+    "limitTime": 30.0,
+    "passCondition": [
+        1,
+        4,
+        5
+    ],
+    "courses": "进阶: 基础移动",
+    "describe": "为什么会有箱子挡在路上？箱子后面的地上似乎还有机关？/n看来并不是平白无故掉落了那么多信息结晶，一定是发生了什么。/n先把箱子推过去看看好了。"
+}

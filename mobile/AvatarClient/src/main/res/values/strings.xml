@@ -1,0 +1,74 @@
+<resources>
+    <string name="skill_name">视频监控</string>
+
+    <string name="login_done">完成</string>
+
+    <string name="string_start_avatar_mode_fail">视频监控开启失败，请重试</string>
+
+    <!-- 手机权限申请-->
+    <string name="permissions_cellphone_microphone_title">允许使用手机麦克风</string>
+    <string name="permissions_cellphone_microphone_dialogue">请允许使用手机麦克风，以便和机器人进行通话</string>
+
+    <string name="common_btn_allow_access">允许</string>
+    <string name="common_btn_not_allow">拒绝</string>
+
+
+    <!--视频监控-->
+    <string name="avatar_robot_power">Battery</string>
+    <string name="avatar_robot_voice">麦克风已开启</string>
+    <string name="avatar_robot_album">照片已保存到相册</string>
+    <string name="avatar_page_battery">"电量: "</string>
+    <string name="avatar_more">更多</string>
+    <string name="avatar_save_photo">照片已保存到相册</string>
+
+    <string name="home_battery_charge_full">充满</string>
+    <string name="home_battery_charge">充电中</string>
+
+
+    <string name="str_get_it">我知道了</string>
+    <string name="avatar_guide_text_1">左摇杆控制机器人脚步移动方向</string>
+    <string name="avatar_guide_text_2">右摇杆控制机器人头部转动方向</string>
+    <string name="robot_offline">机器人离线</string>
+    <string name="network_disconnect">网络连接中断</string>
+    <string name="connect_fail">机器人连接失败</string>
+    <string name="retry">重试</string>
+    <string name="echo_tips">为避免产生回声,手机与机器人应至少相距3米</string>
+    <string name="mic">麦克风</string>
+    <string name="stand">站起来</string>
+    <string name="camera">拍照</string>
+    <string name="low_power">机器人电量过低，无法进行视频监控</string>
+    <string name="common_button_settings">设置</string>
+
+    <string name="robot_exit_title">提示</string>
+    <string name="robot_dialog_title">提示</string>
+
+    <string name="robot_pat_head_meassage">有人拍了悟空的头部，将退出视频监控</string>
+    <string name="robot_exit_with_unkown_meassage">悟空视频因未知原因退出</string>
+
+    <string name="robot_low_power_message">电量低于20%,即将退出视频监控</string>
+    <string name="robot_low_power_30_message">电量低于30%,请尽快给悟空充电吧</string>
+
+
+    <string name="robot_connect_failed">机器人连接失败</string>
+    <string name="robot_connecting">机器人正在连接</string>
+    <string name="robot_start_video_fail">视频监控开启失败，请重试</string>
+    <string name="robot_avatar_network_suck">网络不给力</string>
+    <string name="robot_avatar_network_error">网络连接中断</string>
+    <string name="robot_shut_down_exit_message">有人命令悟空关机,即将退出视频监控</string>
+    <string name="robot_speech_exit_message">有人命令悟空退出,即将退出视频监控</string>
+    <string name="robot_speech_rest_exit_message">有人命令悟空休息,即将退出视频监控</string>
+    <string name="robot_fail_down">悟空摔到了，请确保周围环境较为安全，再让悟空站起来哦</string>
+    <string name="robot_mic_enable">麦克风已开启</string>
+
+    <string name="robot_mic_disable">麦克风已关闭</string>
+    <string name="robot_save_photo">照片已保存在相册</string>
+    <string name="robot_get_in_room">%1$s已进入</string>
+    <string name="robot_left_room">%1$s已离开</string>
+    <string name="robot_control_message_succ">悟空刚刚已经站起来了，现在你可以和他一起玩了</string>
+    <string name="robot_control_message_standing">悟空正在站起来，马上就可以和他一起玩</string>
+    <string name="robot_control_message_fail">悟空刚刚没有站起来，先保持现状进行监控吧。</string>
+    <string name="robot_control_message_forbid">有人正在控制悟空，暂时无法做动作或移动</string>
+
+
+    <string name="robot_avatar_user_number">%1$d人正在使用中</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HpBar" width="65" height="11" currentState="noLv" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="lv,noLv"  width.lv="98">
+	<e:Group width="33" includeIn="lv" left="0" top="0" bottom="0" anchorOffsetX="0">
+		<e:Image source="battle_scene_json.lv" left="0" verticalCenter="0"/>
+		<e:Image id="num1" source="battle_scene_json.1" x="17" y="6"/>
+		<e:Image id="num2" source="battle_scene_json.0" x="16" y="3"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group includeIn="lv,noLv" right="0" top="0" bottom="0" width="80" left.noLv="0" right.noLv="0" top.noLv="0" bottom.noLv="0" width.lv="65">
+		<e:Image source="battle_scene_json.hp_bar_bg" right="0" scale9Grid="5,5,5,1" scaleX.lv="1" scaleY.lv="1" left="0" top="0" bottom="0" left.noLv="0" right.noLv="0" top.noLv="0" bottom.noLv="0" left.lv="0" right.lv="0" top.lv="0" bottom.lv="0"/>
+		<e:Image id="hp" source="battle_scene_json.hp_bar" anchorOffsetY="3.47" anchorOffsetX="0" scale9Grid="7,3,1,1" scaleX="1" fillMode="scale" scaleY="1" width="74" height="7" x.lv="3.0799999999999983" y.lv="2" scaleX.lv="1" scaleY.lv="1" left="3" verticalCenter="0" left.noLv="3" verticalCenter.noLv="0" width.noLv="59" left.lv="3" verticalCenter.lv="0" width.lv="59"/>
+	</e:Group>
+</e:Skin>

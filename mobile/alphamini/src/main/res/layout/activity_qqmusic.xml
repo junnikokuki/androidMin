@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_qqmusic_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_qqmusic_blue"/>
+
+    <Space
+        android:id="@+id/space_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ubtechinc.alpha.mini.ui.title.TitleBackItemView
+        android:id="@+id/title_back_item_view"
+        style="@style/title_back_item_view"
+        android:layout_below="@id/space_status_bar"
+        app:iconBack="@drawable/ic_top_back_white"
+        app:title="@string/qq_member_title"/>
+
+    <com.ubtechinc.alpha.mini.qqmusic.model.ScaleImageView
+        android:id="@+id/iv_qqmusic_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_back_item_view"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_qqmusic_card_blue"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_card"
+        android:layout_alignTop="@id/iv_qqmusic_card"
+        android:layout_alignBottom="@id/iv_qqmusic_card"
+        android:layout_alignRight="@id/iv_qqmusic_card"
+        android:layout_alignLeft="@id/iv_qqmusic_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:text="@string/open_member"
+            android:id="@+id/tv_open_member"
+            android:background="@drawable/qqmusic_btn_bg"/>
+
+        <ImageView
+            android:id="@+id/me_avatar_bg"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@id/me_avatar_bg" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/standard_text_size_18dp_t1"
+                android:layout_below="@id/me_avatar_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:id="@+id/receive_des"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/standard_text_size_13dp_t6"
+                    android:background="@drawable/btn_qqmusic_blue"
+                    android:id="@+id/tv_receive_stats"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:layout_alignLeft="@id/rl_card"
+        android:layout_alignRight="@id/rl_card"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rl_card"
+        android:text="@string/qqmusic_tip"
+        android:textColor="#A2A2A2"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/qqmusicmember"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/tv_tip" />
+
+</RelativeLayout>

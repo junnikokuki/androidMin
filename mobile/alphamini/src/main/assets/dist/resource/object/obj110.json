@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "type": "player",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 37.0,
+            "y": 25.0
+        },
+        "spawnFace": "left",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 2,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 0.0,
+            "y": 26.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            27.0,
+            22.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 3,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 10.0,
+        "spawnPos": {
+            "x": 40.0,
+            "y": 0.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            28.0,
+            18.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 4,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 6.0,
+        "spawnPos": {
+            "x": 79.0,
+            "y": 31.0
+        },
+        "spawnFace": "left",
+        "moveType": 1,
+        "path": [
+            32.0,
+            22.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 5,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 27.0,
+        "spawnPos": {
+            "x": 0.0,
+            "y": 26.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            27.0,
+            22.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 6,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 36.0,
+        "spawnPos": {
+            "x": 40.0,
+            "y": 0.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            28.0,
+            18.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 7,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 32.0,
+        "spawnPos": {
+            "x": 79.0,
+            "y": 31.0
+        },
+        "spawnFace": "left",
+        "moveType": 1,
+        "path": [
+            32.0,
+            22.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 8,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 51.0,
+        "spawnPos": {
+            "x": 0.0,
+            "y": 26.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            27.0,
+            22.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 9,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 60.0,
+        "spawnPos": {
+            "x": 40.0,
+            "y": 0.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            28.0,
+            18.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 10,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 56.0,
+        "spawnPos": {
+            "x": 79.0,
+            "y": 31.0
+        },
+        "spawnFace": "left",
+        "moveType": 1,
+        "path": [
+            32.0,
+            22.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 11,
+        "type": "npc",
+        "typeId": 107,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 34.0,
+            "y": 23.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            27.0,
+            22.0,
+            29.0,
+            23.0,
+            25.0,
+            22.0,
+            27.0,
+            18.0,
+            31.0,
+            19.0,
+            31.0,
+            22.0,
+            28.0,
+            22.0
+        ],
+        "loop": 0
+    }
+]

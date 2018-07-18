@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="avatar_action_imageview">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="avatar_action_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/action_name_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">10px</item>
+    </style>
+
+    <style name="avatar_action_linearlayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="Springboard">
+        <item name="row_count">3</item>
+        <item name="column_count">3</item>
+        <item name="divider_width">1dp</item>
+        <item name="delete_icon">@drawable/icon_delete</item>
+        <item name="folder_dialog_background">#eeffffff</item>
+        <item name="folder_row_count">3</item>
+        <item name="folder_column_count">3</item>
+        <item name="is_last_item_stable">false</item>
+        <item name="stable_header_count">0</item>
+        <item name="folder_edittext_textcolor">@android:color/white</item>
+        <item name="folder_edittext_textsize">16sp</item>
+        <item name="page_divider_width">2dp</item>
+    </style>
+    <style name="loaddialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DialogActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dialog_action_button_height</item>
+        <item name="android:minWidth">@dimen/dialog_action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/dialog_action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/dialog_action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

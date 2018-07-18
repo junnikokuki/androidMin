@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/app_conmunication_warm_hint"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_18dp_t1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/app_conmunication_title_content"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_sub_title"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_item_face_detect"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_item_face_trace"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_item_face_recongnize"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_item_detect"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_close_hint"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+            <CheckBox
+                android:id="@+id/cb_no_more_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_conmunication_no_more" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_disagree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/disagree"
+                android:textColor="@color/color_communication_privacy"
+                android:textSize="@dimen/standard_text_size_18dp_t1"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/border" />
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/agree"
+                android:textColor="@color/color_communication_privacy"
+                android:textSize="@dimen/standard_text_size_18dp_t1"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tips_container"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/alexa_input_nomal_color"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:visibility="visible">
+    <ImageView
+        android:id="@+id/tips_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_warning"/>
+    <TextView
+        android:id="@+id/tip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tips_icon"
+        android:layout_centerVertical="true"
+        android:alpha="0.2"
+        android:text="@string/avatar_page_battery"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tip_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tip_text"
+        android:textColor="@color/alexa_text_color_red"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/tip_close_btn"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_close" />
+
+</RelativeLayout>

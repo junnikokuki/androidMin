@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data/>
+
+    <RelativeLayout
+        android:id="@+id/tool_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:background="@drawable/shape_underline_bg">
+
+        <TextView
+            android:id="@+id/title_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="@string/simple_message_cancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting_choose_action"
+            android:textColor="@color/first_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_comfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="@string/simple_message_comfire"
+            android:textColor="@color/btn_blue"
+            android:layout_alignBaseline="@+id/title_cancel"
+            android:layout_alignBottom="@+id/title_cancel"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+</layout>
+

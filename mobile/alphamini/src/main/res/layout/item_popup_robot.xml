@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="robot"
+            type="com.ubtechinc.alpha.mini.entity.RobotInfo" />
+
+        <variable
+            name="currentRobotId"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/popup_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_row_select"
+            android:visibility="@{robot.robotUserId.equals(currentRobotId)? View.VISIBLE : View.INVISIBLE}" />
+
+        <ImageView
+            android:id="@+id/status_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@{robot.onlineState== robot.ROBOT_STATE_ONLINE ? @drawable/img_robot_avatar_online:@drawable/img_robot_avatar_offline}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/popup_choose"
+            android:layout_toRightOf="@id/status_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/popup_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="@string/wu_kong"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/popup_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popup_title"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@{robot.robotUserId}"
+                android:textColor="@color/popup_sub_title"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

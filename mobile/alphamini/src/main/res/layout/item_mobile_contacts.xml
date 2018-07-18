@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isAdded"
+            type="boolean" />
+
+        <variable
+            name="isSelected"
+            type="boolean" />
+
+        <variable
+            name="isLeagal"
+            type="boolean" />
+
+        <variable
+            name="contact"
+            type="com.ubtechinc.alpha.mini.entity.Contact" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/contact_selected_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@{contact.isAdded ? @drawable/ic_checkbox_disable : contact.isSelected ? @drawable/ic_checkbox_check : @drawable/ic_checkbox_uncheck }" />
+            <LinearLayout
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/contact_selected_v"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingRight="40dp"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:id="@+id/contact_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/first_text"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:text="@{contact.name}"/>
+            <TextView
+                android:id="@+id/mobile_contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/text_gray"
+                android:paddingTop="3dp"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                android:text="@{contact.phone}"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@id/text_content"
+                android:padding="10dp"
+                android:src="@{contact.nameInvalide?@drawable/icon_tips_warn:null}"
+                android:visibility="@{contact.selected &amp;&amp; contact.nameInvalide? View.VISIBLE : View.GONE}" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</layout>

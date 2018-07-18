@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/say_to_robot"
+        android:textSize="@dimen/standard_text_size_14dp_t5"
+        android:textColor="@color/color_666666"
+        />
+    <TextView
+        android:id="@+id/tv_cmditem_cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_text_size_14dp_t5"
+        android:textColor="@color/color_0BA3FF"
+        />
+    <TextView
+        android:id="@+id/tv_cmditem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_text_size_14dp_t5"
+        android:textColor="@color/color_666666"
+        />
+</LinearLayout>

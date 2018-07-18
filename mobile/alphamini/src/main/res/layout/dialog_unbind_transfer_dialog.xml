@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/first_text"
+        android:text="@string/robot_detail_master_unbind_mine_robot_title"/>
+
+    <TextView
+        android:id="@+id/text_new_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/robot_detail_new_master"
+        android:textColor="@color/color_unbind_gray"
+        android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="left"
+        android:text="@string/robot_detail_master_unbind_mine_robot_message"
+        android:textSize="@dimen/standard_text_size_14dp_t5"
+        android:textColor="@color/color_unbind_red" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ScreenLoadingSkin" width="1280" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15fa042d924" ></w:Config>
+	<e:Group id="container" width="550" height="400" horizontalCenter="0" verticalCenter="0">
+	</e:Group>
+	<e:Label id="label" text="正在加载...0%" textAlign="center" horizontalCenter="0" size="14" verticalCenter="148"/>
+</e:Skin>

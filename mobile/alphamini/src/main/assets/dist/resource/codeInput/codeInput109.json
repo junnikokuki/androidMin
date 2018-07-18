@@ -1,0 +1,23 @@
+{
+    "move": {
+        "move_xy": [
+            "number",
+            "number"
+        ]
+    },
+    "attack": {
+        "attack": [
+            "enemy"
+        ]
+    },
+    "var": {
+        "enemy": [
+            "coder.find_nearest_enemy()"
+        ]
+    },
+    "while": {
+        "while": [
+            "True"
+        ]
+    }
+}

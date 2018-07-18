@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/grid_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/line_lay"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dataType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/first_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="@dimen/text_size_30px"/>
+
+
+        <com.ubtechinc.alpha.mini.viewmodel.PhotoGridView
+            android:id="@+id/photo_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:horizontalSpacing="2dp"
+            android:button="@drawable/photo_item_check_selector"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="2dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/grid_lay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/grid_lay"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/null_view"
+            android:layout_width="1dp"
+            android:layout_height="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/alext_color_timer_line"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/point_imgv"
+            android:layout_width="16px"
+            android:layout_height="16px"
+            android:layout_below="@+id/null_view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/timer_liner_point"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/point_imgv"
+            android:layout_centerHorizontal="true"
+            android:background="@color/alext_color_timer_line"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</RelativeLayout>

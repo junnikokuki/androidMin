@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="isEmpty"
+            type="boolean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{isEmpty?View.VISIBLE:View.GONE}">
+                <include layout="@layout/fragment_no_data" />
+            </FrameLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{isEmpty?View.GONE:View.VISIBLE}"/>
+
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <!--下面的自定义属性都是默认的,可以不写-->
+        <com.ubtechinc.alpha.mini.widget.QuickSideBarTipsView
+            android:id="@+id/quickSideBarTipsView"
+            android:layout_width="@dimen/height_quicksidebartips"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/quickSideBarView"
+            app:sidebarBackgroundColor="@color/color_contacts_choose"
+            app:sidebarTextColor="@android:color/white"
+            app:sidebarTextSize="@dimen/textSize_quicksidebartips" />
+        <!-- 这个是字母栏的提示 -->
+        <!--下面的自定义属性都是默认的,可以不写-->
+        <com.ubtechinc.alpha.mini.widget.QuickSideBarView
+            android:id="@+id/quickSideBarView"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:sidebarTextColor="@android:color/black"
+            app:sidebarTextColorChoose="@color/color_contacts_choose"
+            android:visibility="@{isEmpty?View.GONE:View.VISIBLE}"
+            app:sidebarTextSize="@dimen/textSize_quicksidebar"
+            app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose" />
+    </RelativeLayout>
+</layout>

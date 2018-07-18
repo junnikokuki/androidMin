@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.entity.Message" />
+        <import type="android.view.View" />
+
+        <variable
+            name="msg"
+            type="com.ubtechinc.alpha.mini.entity.Message" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginRight="10dp"
+                android:visibility="@{msg.isRead == 1?View.GONE:View.VISIBLE}"
+                android:background="@drawable/shape_red_point"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{msg.noticeType == Message.TYPE_SHARE? msg.typeTitle:msg.noticeTitle}"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="@{msg.noticeType == Message.TYPE_SHARE? msg.noticeTitle:msg.noticeDes}"
+            android:textColor="@color/msg_sub"
+            android:textSize="14sp" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/ic_row_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/check_msg_detail"
+            android:textColor="@color/msg_detail"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:visibility="@{String.valueOf(Message.OP_EXPIRE).equals(msg.operation)?View.VISIBLE:View.GONE}"
+            android:background="@drawable/ic_me_systems_push_expired"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+</layout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.ui.contacts.AlphaMiniContactDetailActivity"/>
+        <import type="android.view.View"/>
+
+        <variable
+            name="contact"
+            type="com.ubtechinc.alpha.mini.entity.Contact" />
+
+        <variable
+            name="state"
+            type="int" />
+
+        <variable
+            name="nameTips"
+            type="String" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="45dp"
+            android:visibility="@{state ==AlphaMiniContactDetailActivity.STATE_NORMAL?View.VISIBLE:View.GONE }">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/shape_contacts_blue_bg"
+                android:gravity="center"
+                android:text="@{contact.name!= null?(contact.name.length() > 0?contact.name.substring(0,1):@string/empty):@string/empty}"
+                android:textColor="@color/colorPrimary"
+                android:textSize="34dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@{contact.name}"
+                android:textColor="@color/first_text"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_personal_phone"
+                android:drawablePadding="6dp"
+                android:text="@{contact.phone}"
+                android:textColor="@color/text_gray" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="25dp"
+            android:visibility="@{state ==AlphaMiniContactDetailActivity.STATE_NORMAL?View.GONE :View.VISIBLE}">
+
+            <TextView
+                android:id="@+id/contact_avatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/avatar_friend_01"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:textSize="34dp" />
+
+            <LinearLayout
+                android:id="@+id/contact_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_avatar"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <com.ubtechinc.alpha.mini.widget.ClearEditText
+                    android:id="@+id/et_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="添加姓名"
+                    android:background="@drawable/contact_edit_bg"
+                    android:backgroundTint="@color/text_gray"
+                    android:text="@{contact.name}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@{nameTips == null? null:@drawable/ic_input_warn}"
+                    android:textColor="@{nameTips == null? @color/text_gray:@color/robot_offline_color}"
+                    android:text="@{nameTips == null?@string/mini_contacts_name_tips:nameTips}"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.ubtechinc.alpha.mini.widget.ClearEditText
+                android:id="@+id/contact_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_below="@id/contact_name_input"
+                android:background="@drawable/contact_edit_bg"
+                android:backgroundTint="@color/text_gray"
+                android:hint="添加电话"
+                android:inputType="phone"
+                android:text="@{contact.phone}"/>
+
+            <TextView
+                android:id="@+id/delete_btn"
+                android:layout_width="240dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                style="@style/DeleteBtnStyle"
+                android:text="@string/delete"
+                android:visibility="@{state ==AlphaMiniContactDetailActivity.STATE_EDIT?View.VISIBLE:View.GONE }"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/upgrade_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar
+            style="@style/progress_normal"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/first_text"
+            android:text="@string/checking_version"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upgrade_robot_offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_default_robot_offline"
+            android:text="@string/robot_offline"
+            android:textColor="@color/first_text"
+            android:drawablePadding="15dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/robot_offline_summary"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/upgrade_mobile_offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_default_mobile_without_network"
+            android:text="@string/network_unavaliable_album"
+            android:textColor="@color/first_text"
+            android:drawablePadding="15dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_offline_summary"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upgrade_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_default_network_suck"
+            android:text="@string/net_work_error"
+            android:textColor="@color/first_text"
+            android:drawablePadding="15dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</FrameLayout>

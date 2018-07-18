@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_third_size">15sp</dimen>
+    <dimen name="input_wifi_edittext_margin_right">15dp</dimen>
+
+    <dimen name="action_image_height">60dp</dimen>
+    <dimen name="text_small_size">12sp</dimen>
+    <dimen name="text_click_size">12sp</dimen>
+    //对话框
+    <dimen name="action_button_height">32dp</dimen>
+    <dimen name="action_button_text_size">14sp</dimen>
+    <dimen name="action_button_min_width">56dp</dimen>
+    <dimen name="action_button_padding_horizontal">4dp</dimen>
+    <dimen name="action_name_size">11sp</dimen>
+
+    <!--标准字体大小-->
+    <dimen name="standard_text_size_24dp_t1">24dp</dimen>
+    <dimen name="standard_text_size_18dp_t1">18dp</dimen>
+    <dimen name="standard_text_size_16dp_t3">16dp</dimen>
+    <dimen name="standard_text_size_15dp_t4">15dp</dimen>
+    <dimen name="standard_text_size_14dp_t5">14dp</dimen>
+    <dimen name="standard_text_size_13dp_t6">13dp</dimen>
+    <dimen name="standard_text_size_12dp_t7">12dp</dimen>
+    <dimen name="standard_text_size_19dp_t8">19dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="dialog_action_button_height">32dp</dimen>
+    <dimen name="dialog_action_button_text_size">14sp</dimen>
+    <dimen name="dialog_action_button_min_width">56dp</dimen>
+    <dimen name="dialog_action_button_padding_horizontal">4dp</dimen>
+</resources>

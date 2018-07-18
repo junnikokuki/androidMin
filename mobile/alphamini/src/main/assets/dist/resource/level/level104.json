@@ -1,0 +1,17 @@
+{
+    "id": 104,
+    "name": "战斗开始",
+    "preId": "pre104",
+    "mapId": "map104",
+    "objId": "obj104",
+    "taskId": "task104",
+    "visionOpen": 2,
+    "limitTime": 30.0,
+    "passCondition": [
+        1,
+        2,
+        3
+    ],
+    "courses": "攻击;字符串",
+    "describe": "低语者，这些通过非正常渠道入侵数据空间的家伙……他们怎么会出现在这里？他们到底想要做什么？/n刚好，战斗系统已经激活了，让我们先来热热手吧。"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="cellData"
+            type="boolean"/>
+        <variable
+            name="roamData"
+            type="boolean"/>
+
+        <variable
+            name="disableAll"
+            type="boolean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/setting_bg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <LinearLayout
+            android:id="@+id/cellular_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/toolbar"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textColor="@{disableAll?@color/text_gray:@color/first_text}"
+                android:text="@string/cell_data"/>
+            <com.ubtechinc.alpha.mini.widget.SwitchButton
+                android:id="@+id/cellular_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:kswBackDrawable="@drawable/switch_btn_bg"
+                app:kswThumbDrawable="@drawable/switch_thumb_drawable"
+                app:kswThumbHeight="20dip"
+                app:kswThumbMargin="3dip"
+                app:kswThumbWidth="20dip"
+                android:checked="@{cellData}"
+                android:enabled="@{!disableAll}"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/cellular_data"
+            android:background="@color/border"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@id/line"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textColor="@{disableAll?@color/text_gray:cellData?@color/first_text:@color/text_gray}"
+                android:text="@string/cell_roam"/>
+
+            <com.ubtechinc.alpha.mini.widget.SwitchButton
+                android:id="@+id/roam_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:kswBackDrawable="@drawable/switch_btn_bg"
+                app:kswThumbDrawable="@drawable/switch_thumb_drawable"
+                app:kswThumbHeight="20dip"
+                app:kswThumbMargin="3dip"
+                app:kswThumbWidth="20dip"
+                android:checked="@{roamData?cellData:false}"
+                android:enabled="@{disableAll?false:cellData}"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/toolbar" />
+    </RelativeLayout>
+
+
+</layout>

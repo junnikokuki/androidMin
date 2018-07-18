@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ubtechinc.alpha.mini.ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ubtechinc.alpha.mini.widget.ControlScrollableViewPager
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.ubtechinc.alpha.mini.widget.ControlScrollableViewPager>
+
+        <RadioGroup
+            android:id="@+id/menu_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/menu_bg"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/menu_robot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/menu_item_underline_selector"
+                android:drawableTop="@drawable/ic_robot_selector"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/menu_coding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@null"
+                android:drawableBottom="@drawable/menu_item_underline_selector"
+                android:drawableTop="@drawable/ic_coding_selector"
+                android:gravity="center"
+                android:textSize="0sp" />
+
+
+            <com.ubtechinc.alpha.mini.widget.CustomRadioButton
+                android:id="@+id/menu_me"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:layout_centerHorizontal="true"
+                android:drawableBottom="@drawable/menu_item_underline_selector"
+                android:drawableTop="@drawable/ic_me_selector"
+                android:gravity="center"
+                android:textSize="0sp" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_blur"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:onClick="dismissBackground"
+        android:src="@drawable/bg_tabbar"
+        android:visibility="gone"/>
+
+</FrameLayout>
+
+

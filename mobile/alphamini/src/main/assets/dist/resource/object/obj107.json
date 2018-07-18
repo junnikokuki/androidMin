@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "type": "player",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 19.0,
+            "y": 22.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 2,
+        "type": "npc",
+        "typeId": 106,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 19.0,
+            "y": 12.0
+        },
+        "spawnFace": "down",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 3,
+        "type": "npc",
+        "typeId": 106,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 25.0,
+            "y": 12.0
+        },
+        "spawnFace": "down",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    }
+]

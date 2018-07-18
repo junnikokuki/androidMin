@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#91000000">
+
+    <RelativeLayout
+        android:layout_marginTop="338dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.ubtechinc.alpha.mini.avatar.widget.JoyStickView
+            android:id="@+id/control_panel"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <com.ubtechinc.alpha.mini.avatar.widget.HalfJoyStickView
+            android:id="@+id/half_panel"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/control_panel"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guide_panel_right"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/ic_avatar_guide_2"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/arrow_iv"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/guide_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alexa_input_nomal_color"
+                android:text="右摇杆控制机器人移动"/>
+
+            <TextView
+                android:id="@+id/guide_btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_get_it_btn"
+                android:textColor="@color/alexa_input_nomal_color"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@id/guide_tips"
+                android:layout_above="@id/arrow_iv"
+                android:text="我知道了"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/guide_panel_left"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/guide_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_avatar_guide_1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/guide_arrow_left"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/guide_tips_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alexa_input_nomal_color"
+                android:text="左摇杆控制机器人头部移动"/>
+
+            <TextView
+                android:id="@+id/guide_btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_get_it_btn"
+                android:textColor="@color/alexa_input_nomal_color"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@id/guide_tips"
+                android:layout_above="@id/arrow_iv"
+                android:text="我知道了"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

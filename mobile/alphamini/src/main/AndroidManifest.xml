@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ubtechinc.alpha.mini">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 允许一个程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 往sdcard中读取数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 高德地图  配置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 创建和删除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <!-- 由于MOTO的部分机型还要加上以下 创建和删除快捷方式权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lenovo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lenovo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="dianxin.permission.ACCESS_LAUNCHER_DATA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 蓝牙操作权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:name=".AlphaMiniApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${appName}"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label,icon,theme,allowBackup">
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.OpenBluetoothActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.SearchBluetoothActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.OpenPowerTipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.BleAutoConnectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.ChooseWifiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.RequestContrRightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BangdingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MineRobotInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.SettingConnectWiffActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.bluetooth.ConnectWifiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.bluetooth.SettingChooseWifiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bluetooth.SettingShowRobotWifiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AlphaMiniSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SystemInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ServiceAgreementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.upgrade.UpgradeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 友盟接入 -->
+
+        <activity
+            android:name=".ui.StrategyActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58c8db1bcae7e72cd40009f3" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <!-- 騰訊IM接入 -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE" />
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE" />
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+        <service
+            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+            android:process=":filedownloader" />
+
+        <!-- 【必须】 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.bluetooth.BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.update.AppUpdateBroadCastReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+
+            <!-- ImSDK 3.0.2 后添加 -->
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.service.TASK_REMOVED" />
+            </intent-filter>
+        </receiver>
+        <!-- &lt;!&ndash;全面屏支持&ndash;&gt; -->
+        <!-- <meta-data android:name="android.max_aspect" -->
+        <!-- android:value="ratio_float"/> -->
+
+        <activity
+            android:name=".ui.msg.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.msg.MessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.msg.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.share.ShareListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.share.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.share.SharePermissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.share.SharePermissionUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".support.avatar.AvatarActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.AlphaMiniFileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ubtechinc.alpha.ShowControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AlphaMiniModifyPhraseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.friend.AlphaMiniFriendActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.friend.InputMiniFriendNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.friend.MiniFriendInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.friend.ModifyFriendAvatarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.friend.ModifyFriendNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.friend.DetectMiniFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.contacts.AlphaMiniContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.contacts.AlphaMiniContactDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CellularSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.contacts.AlphaMiniMobileContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MineRobotDetailInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bind.AlphaMiniUnbindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.albums.MiniAlbumsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.albums.MiniHDAlbumsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BindMobileNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingMobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BindPhoneDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.codemao.ConnectActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.codemao.CodeMaoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/CodingStyle"
+             />
+        <activity
+            android:name=".ui.codemao.SearchBleForCodingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.codemao.RemindBindRobotActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.codemao.OpenBluetoothForCodingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".qqmusic.QQMusicActivity"
+            android:label="@string/title_activity_qqmusic"
+            android:screenOrientation="portrait" />
+        <activity android:name=".qqmusic.model.TestQQActivity" />
+        <activity android:name=".ui.codemao.StarTrekActivity"
+            android:theme="@style/CodingStyle" />
+        <activity
+            android:name=".ui.codemao.VideoPlayerActivity"
+            android:theme="@style/CodingStyle" />
+
+        <activity android:name=".ui.update.MiniAppUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.MutilVoiceInteractActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.car.CarActivity"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+                <!--Uri传递参数 alphamini://mini/toycar-->
+                <data
+                    android:scheme="alphamini"
+                    android:host="mini"
+                    android:path="/toycar"
+                    />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.car.CarRemindActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.car.CarWaitingConnectActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.car.NoResponseActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.car.CarListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.car.DetectingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.car.DetectedResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.car.CarHelpActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.car.CarAllVoiceCmdActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ui.car.CarDemoShowActivity"
+            android:theme="@style/myTransparent"
+            android:screenOrientation="landscape"/>
+
+        <!--暂时这样处理，app改版的时候需求替换-->
+        <activity android:name=".ui.friend.AlphaMiniCameraPrivacyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.friend.AgreementActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+
+</manifest>

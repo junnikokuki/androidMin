@@ -1,0 +1,176 @@
+[
+    {
+        "id": 1,
+        "type": "player",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 11.0,
+            "y": 37.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 2,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 11.0,
+            "y": 32.0
+        },
+        "spawnFace": 0.0,
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 3,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 23.0,
+            "y": 35.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 4,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 35.0,
+            "y": 32.0
+        },
+        "spawnFace": 0.0,
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 5,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 47.0,
+            "y": 25.0
+        },
+        "spawnFace": 0.0,
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 6,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 59.0,
+            "y": 35.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 7,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 71.0,
+            "y": 31.0
+        },
+        "spawnFace": 0.0,
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 8,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 12.0,
+            "y": 12.0
+        },
+        "spawnFace": "right",
+        "moveType": 1,
+        "path": [
+            28.0,
+            12.0,
+            29.0,
+            22.0,
+            15.0,
+            23.0,
+            12.0,
+            12.0
+        ],
+        "loop": 1
+    },
+    {
+        "id": 9,
+        "type": "npc",
+        "typeId": 105,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 74.0,
+            "y": 6.0
+        },
+        "spawnFace": "left",
+        "moveType": 1,
+        "path": [
+            58.0,
+            7.0,
+            58.0,
+            17.0,
+            74.0,
+            17.0,
+            74.0,
+            6.0
+        ],
+        "loop": 1
+    }
+]

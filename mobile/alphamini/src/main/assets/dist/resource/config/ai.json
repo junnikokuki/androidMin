@@ -1,0 +1,11 @@
+{
+	"fool":{
+        "judgeFight": 0
+    },
+    "fightback":{
+        "judgeFight": 1
+    },
+    "active": {
+        "judgeFight": 2
+    }
+}

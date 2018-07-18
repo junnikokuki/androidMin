@@ -1,0 +1,32 @@
+{
+    "1": {
+        "name": "阿短",
+        "job": "warrior",
+        "modId": 1,
+        "scale": 0.8,
+        "collisionRad": 10.0,
+        "moveSpd": 84.0,
+        "visionAngle": 360.0,
+        "visionRange": 144.0,
+        "atkRange": 50.0,
+        "atkSpd": 1.25,
+        "atkValue": 10.0,
+        "defValue": 0.0,
+        "hp": 100.0
+    },
+    "2": {
+        "name": "阿咪",
+        "job": "warrior",
+        "modId": 2,
+        "scale": 0.8,
+        "collisionRad": 10.0,
+        "moveSpd": 84.0,
+        "visionAngle": 360.0,
+        "visionRange": 144.0,
+        "atkRange": 50.0,
+        "atkSpd": 1.25,
+        "atkValue": 10.0,
+        "defValue": 0.0,
+        "hp": 100.0
+    }
+}

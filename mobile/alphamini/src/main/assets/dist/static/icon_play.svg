@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_play</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="主页" transform="translate(-34.000000, -333.000000)" fill="#FFA45B">
+            <g id="index_blocks_flat">
+                <g id="btn_play" transform="translate(2.000000, 323.000000)">
+                    <g id="icn_play" transform="translate(32.000000, 10.000000)">
+                        <path d="M11.0064337,3.63856712 L25.6236587,12.779995 C26.8496354,13.5467053 27.2219443,15.1620974 26.455234,16.3880741 C26.2446881,16.7247389 25.9603235,17.0091035 25.6236587,17.2196494 L11.0064337,26.3610773 C9.780457,27.1277876 8.16506498,26.7554787 7.39835463,25.529502 C7.13803743,25.1132524 7,24.6321968 7,24.1412501 L7,5.85839431 C7,4.41241242 8.17219993,3.24021249 9.61818182,3.24021249 C10.1091286,3.24021249 10.5901842,3.37824992 11.0064337,3.63856712 Z" id="Rectangle"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

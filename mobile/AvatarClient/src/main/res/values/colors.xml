@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alexa_text_color_light_red">#ffdfef</color>
+    <color name="alexa_text_color_red">#ff4646</color>
+    <color name="alexa_text_color_red_bg">#66ff4646</color>
+    <color name="alexa_input_nomal_color">#eef1f7</color>
+    <color name="black_de">#DE000000</color>
+    <color name="first_text">#000000</color>
+    <color name="alexa_bg_press_color">#f7f7f7</color>
+    <color name="avatar_model_stop_btn_color">#00C1DE</color>
+    <color name="alexa_color_main_seven">#ababab</color>
+    <color name="avatar_model_heng_split_line_color">#E0E0E0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#3d3d3d</color>
+    <color name="alexa_text_color_gray">#9ca1b5</color>
+    <color name="action_name_color">#ABABAB</color>
+
+    <color name="alexa_color_main_three">#ff4646</color>
+
+    <color name="text_gray2">#b7b7b7</color>
+    <color name="alexa_text_color_light_blue">#727a99</color>
+    <color name="avatar_mode_bg_color">#AA000000</color>
+    <color name="text_color_t3">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="alexa_button_press_blue">#00b0ca</color>
+    <color name="alexa_button_normal_blue">#00c1de</color>
+    <color name="black_hint">#9a9aa4</color>
+    <color name="alexa_color_main_eight">#e0e0e0</color>
+    <color name="text_gray">#9c9c9c</color>
+
+    <color name="card_background">#ffffff</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="avatar_action_name">#a6adbc</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="avatar_panel_background">#EAEDEF</color>
+    <color name="window_background">#00000000</color>
+
+    <color name="main_color">#00c1de</color>
+    <color name="main_color_press">#00b0ca</color>
+    <color name="bottom_bar_border">#ababab</color>
+    <color name="divider_line">#e2e2e2</color>
+
+    <color name="alexa_red_press">#ff4646</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_3FB4D5">#3FB4D5</color>
+    <color name="gray">#6b6b6b</color>
+</resources>

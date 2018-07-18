@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_define_words_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/car_auth_words_yellow_bg"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="15dp"
+            android:minHeight="42dp">
+
+            <com.ubtechinc.alpha.mini.widget.PlayerButton
+                android:id="@+id/iv_player_control"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_define_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_player_control"
+                android:textColor="@color/white"
+                android:textSize="@dimen/standard_text_size_14dp_t5" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

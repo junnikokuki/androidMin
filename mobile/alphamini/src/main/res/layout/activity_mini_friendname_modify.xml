@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.ui.friend.InputMiniFriendNameActivity.Presenter" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenter"
+            type="Presenter" />
+
+        <variable
+            name="hintContent"
+            type="String" />
+
+        <variable
+            name="friendNameValidate"
+            type="boolean" />
+
+        <variable
+            name="hasContent"
+            type="boolean" />
+
+        <variable
+            name="saveEnable"
+            type="boolean" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/friend_name_modify_title"
+            android:textColor="@color/first_text"
+            android:textSize="@dimen/text_size_23" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical|bottom"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_friend_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:onTextChanged="@{presenter::onTextChanged}"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|bottom"
+                android:onClick="@{presenter::clearContent}"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="7dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_archives_clear"
+                android:visibility="@{hasContent ? View.VISIBLE : View.INVISIBLE}" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@{friendNameValidate ? @color/unable_save_bg : @color/connect_error_bg}" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@{friendNameValidate ? null : @drawable/ic_input_warn}"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@{hintContent}"
+            android:textColor="@{friendNameValidate ? @color/text_gray : @color/btn_red}"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <TextView
+            android:id="@+id/next_step"
+            android:layout_width="240dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            style="@style/BlueBtnStyle"
+            android:onClick="@{presenter::nextStep}"
+            android:text="@string/next_step"/>
+
+    </LinearLayout>
+
+
+</layout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/img_robot_starttolink" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/alpha_mini"
+        android:textSize="@dimen/text_size_46px"
+        android:textColor="@color/first_text"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bindstart_tips"
+        android:textSize="@dimen/text_size_32px"
+        android:textColor="@color/popup_sub_title"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/start_bangding"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/next_step_selector"
+        android:textColor="@color/card_background"
+        android:text="开始绑定" />
+
+    <TextView
+        android:id="@+id/enter_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/open_ble"
+        android:text="进入首页" />
+</LinearLayout>

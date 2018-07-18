@@ -1,0 +1,16 @@
+{
+    "id": 113,
+    "name": "伺机待发",
+    "preId": "pre113",
+    "mapId": "map113",
+    "objId": "obj113",
+    "taskId": "task113",
+    "visionOpen": 2,
+    "limitTime": 40.0,
+    "passCondition": [
+        1,
+        2
+    ],
+    "courses": "if嵌套",
+    "describe": "在这里，逐渐可以看见一些属于城市的痕迹了。/n这些布满泥泞的老旧道路上有着非常多人类活动的痕迹……/n让人在意的是，这些痕迹似乎是不久前留下的。"
+}

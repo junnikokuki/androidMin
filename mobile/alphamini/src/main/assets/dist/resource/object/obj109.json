@@ -1,0 +1,236 @@
+[
+    {
+        "id": 1,
+        "type": "player",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 17.0,
+            "y": 3.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 2,
+        "type": "mapItem",
+        "typeId": 3,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 12.0,
+            "y": 14.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 3,
+        "type": "mapItem",
+        "typeId": 4,
+        "active": 0,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 12.0,
+            "y": 14.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 4,
+        "type": "mapItem",
+        "typeId": 5,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 31.0,
+            "y": 23.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 5,
+        "type": "mapItem",
+        "typeId": 6,
+        "active": 0,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 31.0,
+            "y": 23.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 6,
+        "type": "mapItem",
+        "typeId": 7,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 24.0,
+            "y": 9.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 7,
+        "type": "mapItem",
+        "typeId": 8,
+        "active": 0,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 24.0,
+            "y": 9.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 8,
+        "type": "mapItem",
+        "typeId": 9,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 17.0,
+            "y": 26.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 9,
+        "type": "mapItem",
+        "typeId": 10,
+        "active": 0,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 17.0,
+            "y": 26.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 10,
+        "type": "mapItem",
+        "typeId": 11,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 34.0,
+            "y": 16.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 11,
+        "type": "mapItem",
+        "typeId": 12,
+        "active": 0,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 34.0,
+            "y": 16.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 12,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 23.0,
+            "y": 19.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 13,
+        "type": "mapItem",
+        "typeId": 19,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 23.0,
+            "y": 19.0
+        },
+        "spawnFace": 0.0,
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    }
+]

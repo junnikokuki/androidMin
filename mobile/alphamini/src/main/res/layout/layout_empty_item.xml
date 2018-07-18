@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemData"
+            type="com.ubtechinc.alpha.mini.widget.recyclerview.item.EmptyListItem" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@{() -> itemData.onStateClickListener.onStateClick()}">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/select_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_addto" />
+
+        <TextView
+            android:id="@+id/select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/toast_blue"
+            android:textSize="12sp"
+            android:text="@string/add_pic_video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_icon" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/max_num"
+            android:textSize="12sp"
+            android:textColor="@color/toast_blue"
+            app:layout_constraintEnd_toEndOf="@+id/select_text"
+            app:layout_constraintStart_toStartOf="@+id/select_text"
+            app:layout_constraintTop_toBottomOf="@+id/select_text" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

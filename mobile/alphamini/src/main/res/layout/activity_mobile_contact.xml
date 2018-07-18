@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.ubtechinc.alpha.mini.ui.contacts.AlphaMiniMobileContactActivity.EventResponse" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isSelectedAll"
+            type="boolean" />
+
+        <variable
+            name="reponse"
+            type="EventResponse" />
+
+        <variable
+            name="isEmpty"
+            type="boolean" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_import_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:background="@drawable/shape_underline_bg">
+
+            <TextView
+                android:id="@+id/text_seletec_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@{isSelectedAll ? @drawable/icon_check : @drawable/icon_selectall}"
+                android:drawablePadding="8dp"
+                android:onClick="@{reponse::selectAllContacts}"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/common_select_all"
+                android:textColor="@color/first_text"
+                android:enabled="@{!isEmpty}"
+                android:textSize="@dimen/text_size_14" />
+
+
+            <TextView
+                android:id="@+id/text_contacts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mini_contacts_choose_contact"
+                android:textColor="@color/first_text"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/iv_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:onClick="@{reponse::exitImportContacts}"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_simple_ic_top_cancel" />
+
+        </RelativeLayout>
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/import_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{isEmpty?View.GONE:View.VISIBLE}">
+        </android.support.v7.widget.RecyclerView>
+        <!--下面的自定义属性都是默认的,可以不写-->
+        <com.ubtechinc.alpha.mini.widget.QuickSideBarTipsView
+            android:id="@+id/quickSideBarTipsView"
+            android:layout_width="@dimen/height_quicksidebartips"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/quickSideBarView2"
+            app:sidebarBackgroundColor="@color/color_contacts_choose"
+            app:sidebarTextColor="@android:color/white"
+            app:sidebarTextSize="@dimen/textSize_quicksidebartips" />
+        <!-- 这个是字母栏的提示 -->
+        <!--下面的自定义属性都是默认的,可以不写-->
+        <com.ubtechinc.alpha.mini.widget.QuickSideBarView
+            android:id="@+id/quickSideBarView2"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:sidebarTextColor="@android:color/black"
+            app:sidebarTextColorChoose="@color/color_contacts_choose"
+            android:visibility="@{isEmpty?View.GONE:View.VISIBLE}"
+            app:sidebarTextSize="@dimen/textSize_quicksidebar"
+            app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:visibility="@{isEmpty?View.GONE:View.VISIBLE}">
+            <TextView
+                android:id="@+id/btn_import"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:onClick="@{reponse::importContact}"
+                android:gravity="center"
+                android:background="@drawable/import_contact_button_selector"
+                android:text="@string/import_all_contact"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="@{isEmpty?View.VISIBLE:View.GONE}">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_default_address_book"
+                android:drawablePadding="6dp"
+                android:text="@string/mini_contacts_no_contact"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

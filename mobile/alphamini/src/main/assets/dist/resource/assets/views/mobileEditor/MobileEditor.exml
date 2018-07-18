@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MobileEditor" width="496" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:codearena="codearena.*">
+	<e:Image source="mobile_ui_json.Mobile_BG" horizontalCenter="1" verticalCenter="1"/>
+	<e:Button id="btnClose" label="" verticalCenter="0" left="-10">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close" source.down="btn_closeS"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnOpen" label="" verticalCenter="0" left="-10">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mobile_ui_json.btn_open" source.down="mobile_ui_json.btn_openS"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnTips" label="" top="8" left="-57">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="battle_scene_json.help_btn" source.down="battle_scene_json.help_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="gpContent" left="37" right="11" top="33" bottom="219" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="mobile_ui_json.text_box" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="mobile_ui_json.line_left" x="0" scaleX="1" scaleY="1" scale9Grid="5,26,30,11" anchorOffsetY="0" top="-19" bottom="-22"/>
+		<e:Scroller id="scroller" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" scaleX="1" scaleY="1" verticalScrollBar="VMyScrollerBar" anchorOffsetX="0">
+		<e:Group anchorOffsetX="0" width="471.27" x="16" y="0">
+			<e:Group id="gpLines" x="0" y="0">
+			</e:Group>
+		</e:Group>
+		</e:Scroller>
+		<e:Group id="gpMask" scaleX="1" scaleY="1" anchorOffsetX="0" left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+	<e:Group height="187" bottom="6" x="27" y="534.4" scaleX="1" scaleY="1" anchorOffsetX="0" width="464">
+		<e:Image source="mobile_ui_json.bottom_kuang" horizontalCenter="0" verticalCenter="0"/>
+		<codearena:MyButton id="btnRun" skinName="BtnMobileBig" top="4" left="7"/>
+		<codearena:MyButton id="btnStop" skinName="BtnMobileBig" top="4" left="7"/>
+		<codearena:MyButton id="btnAdd" x="154" y="2" skinName="BtnMobileSmall"/>
+		<codearena:MyButton id="btnModify" x="303" y="2" skinName="BtnMobileSmall"/>
+		<codearena:MyButton id="btnDel" x="154" y="89" skinName="BtnMobileSmall"/>
+		<codearena:MyButton id="btnTab" x="303" y="89" skinName="BtnMobileSmall"/>
+	</e:Group>
+</e:Skin>

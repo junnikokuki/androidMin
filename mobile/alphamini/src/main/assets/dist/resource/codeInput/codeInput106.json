@@ -1,0 +1,26 @@
+{
+    "move": {
+        "move_up": [
+            "number"
+        ],
+        "move_down": [
+            "number"
+        ],
+        "move_left": [
+            "number"
+        ],
+        "move_right": [
+            "number"
+        ]
+    },
+    "attack": {
+        "attack": [
+            "enemy"
+        ]
+    },
+    "var": {
+        "enemy": [
+            "coder.find_nearest_enemy()"
+        ]
+    }
+}

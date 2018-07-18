@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MissionComplete" width="851" height="418" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="success,failed"  width.success="1051" height.success="518">
+	<e:Image source="public_res_json.bg_tile" height="361" verticalCenter="0" left="0" right="0" fillMode="scale"/>
+	<e:Image source="public_res_json.alert_bg" left="0" verticalCenter="0"/>
+	<e:Image source="public_res_json.alert_bg" right="0" width="283" verticalCenter="0" scaleX="-1"/>
+	<e:Image source="battle_scene_json.mission_complete" horizontalCenter="0" verticalCenter="-60" source.failed="battle_scene_json.mission_failed"/>
+	<e:Image source="public_res_json.green_line" rotation="-90" verticalCenter="0" horizontalCenter="-336.5" anchorOffsetX="0" width="256" scale9Grid="35,6,23,36"/>
+	<e:Image source="public_res_json.green_line" rotation="90" verticalCenter="0" horizontalCenter="336.5" anchorOffsetX="0" width="256" scale9Grid="35,6,23,36" scaleX="1"/>
+	<e:Button id="redoBtn" label="重新挑战" horizontalCenter="-125" verticalCenter="57.5" horizontalCenter.failed="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="public_res_json.btn_normal" source.down="public_res_json.btn_down"/>
+			<e:Label id="labelDisplay" horizontalCenter="-9.5" verticalCenter="0.5" text="重新挑战" size="24" textColor="0x0f300e"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="continueBtn" label="继续冒险" horizontalCenter="125" verticalCenter="57.5" visible.failed="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="public_res_json.btn_normal" source.down="public_res_json.btn_down"/>
+			<e:Label id="labelDisplay" horizontalCenter="-9.5" verticalCenter="0.5" text="重新挑战" size="24" textColor="0x0f300e"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

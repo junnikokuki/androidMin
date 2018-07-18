@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="9px" viewBox="0 0 10 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 10@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="CSS_Sprite-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-252.000000, -143.000000)" fill="#FFFFFF">
+            <path d="M258.611566,143.757413 L261.593777,147.815686 C262.247856,148.705774 262.056533,149.957567 261.166446,150.611646 C260.823117,150.863939 260.408191,151 259.982132,151 L254.017709,151 C252.913139,151 252.017709,150.104569 252.017709,149 C252.017709,148.573941 252.153769,148.159015 252.406063,147.815686 L255.388275,143.757413 C256.042353,142.867326 257.294147,142.676003 258.184234,143.330082 C258.347501,143.450058 258.49159,143.594146 258.611566,143.757413 Z" id="Rectangle-10" transform="translate(257.000000, 147.000000) scale(1, -1) translate(-257.000000, -147.000000) "></path>
+        </g>
+    </g>
+</svg>

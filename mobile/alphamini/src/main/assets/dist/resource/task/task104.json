@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "偷袭敌人",
+        "describe": "从背后偷袭看守晶石的敌人。",
+        "type": 2,
+        "argument": [
+            2
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "收集晶石",
+        "describe": "收集晶石。",
+        "type": 3,
+        "argument": [
+            3
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 3,
+        "name": "玩家存活",
+        "describe": "玩家角色不能死亡。",
+        "type": 1,
+        "argument": [
+            1,
+            0
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

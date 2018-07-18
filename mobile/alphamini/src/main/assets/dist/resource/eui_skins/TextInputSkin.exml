@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?> <e:Skin class="skins.TextInputSkin" minHeight="40" minWidth="300" 
+	states="normal,disabled,normalWithPrompt,disabledWithPrompt" xmlns:e="http://ns.egret.com/eui" height.normal="53"> 
+ 
+ 
+ 
+		<e:Group anchorOffsetX="0" left="0" right="0" top="0" bottom="0" left.disabled="0" right.disabled="0" top.disabled="0" bottom.disabled="0" height.normal="53">
+			<e:Image source="public_res_json.input_noLight" left="0" right="0" top="0" bottom="0" scale9Grid="19,12,84,29" source.normal="scene_public_res_json.inputBg" left.normal="-11" right.normal="-12" top.normal="-12" bottom.normal="-14" anchorOffsetY.normal="0" scale9Grid.normal="40,24,49,29" anchorOffsetX.normal="0" left.disabled="0" right.disabled="0" top.disabled="0" bottom.disabled="0"/>
+			<e:EditableText id="textDisplay" width="200" height="20" size="24" text="" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" textAlign="center" textColor="0xffffff" horizontalCenter.disabled="0" height.disabled="30" verticalCenter.disabled="0" verticalCenter="0" textColor.disabled="0xffffff" height.normalWithPrompt="30" height.disabledWithPrompt="30" verticalAlign.disabledWithPrompt="middle" verticalAlign.normalWithPrompt="middle" verticalAlign.disabled="middle" verticalAlign.normal="middle" height.normal="30"/>
+			<e:Label id="promptDisplay" width="200" height="20" size="24" touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt" text="" anchorOffsetX="0" horizontalCenter="0" textAlign="center" textColor="0xffffff" fontFamily="Microsoft YaHei" x="0" scaleX="1" scaleY="1" verticalCenter="0" verticalAlign.normalWithPrompt="middle" verticalAlign.disabledWithPrompt="middle" height.disabledWithPrompt="30"/>
+		</e:Group> 
+</e:Skin>

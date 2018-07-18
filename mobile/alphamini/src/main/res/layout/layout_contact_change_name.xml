@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/first_text"
+        android:text="@string/please_change_concat_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"
+        android:textSize="14sp"
+        android:text="@string/mini_contacts_name_tips_same_or_english"/>
+    <com.ubtechinc.alpha.mini.widget.ClearEditText
+        android:id="@+id/contact_change_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_border_rectangle_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="1565165165"/>
+    <TextView
+        android:id="@+id/contact_name_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_input_warn"
+        android:textColor="@color/robot_offline_color"
+        android:drawablePadding="6dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:text="@string/mini_contacts_name_tips_chinese"/>
+
+</LinearLayout>

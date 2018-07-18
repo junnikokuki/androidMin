@@ -1,0 +1,17 @@
+{
+    "id": 111,
+    "name": "重重包围",
+    "preId": "pre111",
+    "mapId": "map111",
+    "objId": "obj111",
+    "taskId": "task111",
+    "visionOpen": 2,
+    "limitTime": 60.0,
+    "passCondition": [
+        1,
+        2,
+        3
+    ],
+    "courses": "进阶:条件判断;if...else...",
+    "describe": "这里已经是森林的边缘了。/n没想到，低语者居然在这里布置了这么多的守卫，而且看上去都非常强大。/n糟糕，那个同伴落单了，赶紧回头掩护他！"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="isEditingPhotos"
+            type="boolean" />
+
+        <variable
+            name="isDownloading"
+            type="boolean" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.ubtechinc.alpha.mini.widget.SquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/v_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/img_photo"
+            android:layout_alignLeft="@id/img_photo"
+            android:layout_alignParentRight="@id/img_photo"
+            android:layout_alignTop="@id/img_photo"
+            android:background="@color/img_dialog_bg"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/photo_item_check_selector"
+            android:padding="5dp"
+            android:visibility="@{isEditingPhotos ? View.VISIBLE : View.GONE}" />
+
+        <FrameLayout
+            android:id="@+id/fl_downloading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/img_photo"
+            android:layout_alignLeft="@id/img_photo"
+            android:layout_alignParentRight="@id/img_photo"
+            android:layout_alignTop="@id/img_photo"
+            android:background="@color/img_dialog_bg"
+            android:visibility="@{isDownloading ? View.VISIBLE : View.GONE}">
+
+            <ProgressBar
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/loading_image"
+                android:indeterminateOnly="true" />
+        </FrameLayout>
+
+    </com.ubtechinc.alpha.mini.widget.SquareLayout>
+
+
+</layout>

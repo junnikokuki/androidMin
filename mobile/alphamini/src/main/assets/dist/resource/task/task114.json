@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "name": "收集晶石",
+        "describe": "收集所有的晶石。",
+        "type": 3,
+        "argument": [
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    },
+    {
+        "id": 2,
+        "name": "玩家存活",
+        "describe": "玩家必须存活。",
+        "type": 1,
+        "argument": [
+            1,
+            0
+        ],
+        "state": 1,
+        "completeOperate": 0,
+        "operateTarget": 0,
+        "toggleStatus": ""
+    }
+]

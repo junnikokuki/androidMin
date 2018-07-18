@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_default_address_book"/>
+
+    <TextView
+        android:id="@+id/text_no_contact_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/first_text"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/mini_contacts_no_contact"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:maxLines="1"
+            android:text="@string/mini_contacts_robot_number_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/mini_contacts_robot_number"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/import_contacts"
+        style="@style/BlueBtnStyle"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center"
+        android:onClick="importContacts">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_address_book_white"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:text="@string/mini_contacts_import"
+            android:textColor="@color/colorWhite" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/text_new_contact"
+        style="@style/lightGreenBtnStyle"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:background="@drawable/shape_contacts_no_data_new"
+        android:drawableLeft="@drawable/ic_add_friend_white"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="15dp"
+        android:onClick="importContacts"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_add_friend_white"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:text="@string/mini_contacts_new_contact"
+            android:textColor="@color/colorWhite" />
+    </FrameLayout>
+
+</LinearLayout>

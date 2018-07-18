@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "type": "player",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 37.0,
+            "y": 19.0
+        },
+        "spawnFace": "right",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 2,
+        "type": "mapItem",
+        "typeId": 2,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 37.0,
+            "y": 13.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 3,
+        "type": "mapItem",
+        "typeId": 2,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 13.0,
+            "y": 13.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 4,
+        "type": "mapItem",
+        "typeId": 1,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 13.0,
+            "y": 7.0
+        },
+        "spawnFace": "0",
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    },
+    {
+        "id": 5,
+        "type": "mapItem",
+        "typeId": 19,
+        "active": 1,
+        "spawnTime": 0.0,
+        "spawnPos": {
+            "x": 13.0,
+            "y": 7.0
+        },
+        "spawnFace": 0.0,
+        "moveType": 0,
+        "path": [
+            0.0,
+            0.0
+        ],
+        "loop": 0
+    }
+]

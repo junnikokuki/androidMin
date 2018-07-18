@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="canEdit"
+            type="boolean"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titlebar"
+            layout="@layout/toolbar" />
+
+        <include
+            android:id="@+id/layout_connect"
+            layout="@layout/layout_connect_error"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:enabled="@{canEdit ? true : false}"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_multi_interact_item_name"
+                android:textColor="@{canEdit ? @color/first_text :@color/text_gray}"
+                android:textSize="@dimen/font_size_big" />
+
+            <com.ubtechinc.alpha.mini.widget.SwitchButton
+                android:id="@+id/switchbtn_multi_interact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:enabled="@{canEdit ? true : false}"
+                app:kswBackDrawable="@drawable/switch_multi_conver"
+                app:kswThumbDrawable="@drawable/switch_thumb_multi_drawable"
+                app:kswThumbHeight="25dip"
+                app:kswThumbMargin="3dip"
+                app:kswThumbWidth="25dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/multi_interact_text"
+            android:textSize="@dimen/standard_text_size_12dp_t7"
+            android:text="@string/setting_multi_interact_title_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="@dimen/standard_text_size_14dp_t5"
+            android:textColor="@color/first_text"
+            android:text="@string/setting_multi_interact_title_content"/>
+
+
+
+    </LinearLayout>
+</layout>
+
+

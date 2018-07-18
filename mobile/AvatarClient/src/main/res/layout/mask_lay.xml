@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mask_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AAABABAB"
+        android:clickable="true"
+        android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/warming_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/avatar_model_warming_bg_shape"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/warming_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/warming_iv"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_remind"/>
+
+            <TextView
+                android:id="@+id/warming_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/warming_iv"
+                android:text="@string/robot_offline"
+                android:textColor="@color/avatar_mode_bg_color"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/warming_ll"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_start_avatar_sel"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/retry"
+            android:textAllCaps="false"
+            android:textColor="@drawable/alexa_start_surveillance_text_color"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:text="@string/connect_fail"/>
+
+    <Button
+        android:id="@+id/start_avatar_model_btn"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tips_text"
+        android:background="@drawable/btn_retry_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_t3"
+        android:textSize="16sp"
+        android:visibility="visible"/>
+
+    <ProgressBar
+        android:id="@+id/loading_view"
+        style="@style/loaddialog_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/loading_anim"
+        android:indeterminateOnly="true"
+        android:indeterminateBehavior="repeat"
+        android:visibility="visible"/>
+
+</RelativeLayout>
